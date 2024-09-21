@@ -13,6 +13,8 @@ RansomLook
     .. image:: https://img.shields.io/github/stars/RansomLook/RansomLook.svg?style=flat-square
         :alt: Stars
 
+    .. image:: https://readthedocs.org/projects/ransomlook/badge/?version=latest
+        :alt: Documentation Status
 
 Presentation
 ------------
@@ -47,8 +49,9 @@ There are various ways to stay updated with new posts:
 
 * By running your own instance and enabling RocketChat and/or email notifications
 * By checking the public instance: https://www.ransomlook.io
-* By accessing the API
-* By following us on Mastodon: @Ransomlook@social.circl.lu
+* By accessing the API: https://www.ransomlook.io/doc
+* By following us on Mastodon: `@Ransomlook@social.circl.lu <https://social.circl.lu/@Ransomlook>`_
+* By following us on BlueSkye: `ransomlook.bsky.social <https://bsky.app/profile/ransomlook.bsky.social>`_
 
 There is NO official Telegram Channel!
 
