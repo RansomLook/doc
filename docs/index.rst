@@ -16,6 +16,16 @@ RansomLook
     .. image:: https://readthedocs.org/projects/ransomlook/badge/?version=latest
         :alt: Documentation Status
 
+.. toctree::
+    :caption: Technical considerations
+    :maxdepth: 3
+    :hidden:
+
+    prerequisites
+    installation
+    update
+    command-line-interface
+
 Presentation
 ------------
 
