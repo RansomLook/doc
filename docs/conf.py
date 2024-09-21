@@ -54,7 +54,7 @@ html_static_path = ["_static"]
 html_title = "RansomLook"
 html_theme_options = {
     "path_to_docs": "docs",
-    "repository_url": "https://github.com/RansomLook/RansomLook",
+    "repository_url": "https://github.com/RansomLook/doc.git",
     # "repository_branch": "gh-pages",  # For testing
     "launch_buttons": {
         "binderhub_url": "https://github.com/RansomLook/RansomLook",

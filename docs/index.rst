@@ -34,5 +34,5 @@ Contact
 License
 -------
 
-Vulnerability Lookup is licensed under
+RansomLook is licensed under
 `GNU Affero General Public License version 3 <https://www.gnu.org/licenses/agpl-3.0.html>`_.
