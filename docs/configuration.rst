@@ -14,7 +14,7 @@ This entry take the value 'true' or 'false' depending if you want to have a blac
 email
 ~~~~~
 This section contains all the information to send the notification to specific users.
-```
+
     "email": {
         "smtp_server": "localhost", # Address for the SMTP server
         "smtp_port": 25, # Port to use
@@ -25,8 +25,6 @@ This section contains all the information to send the notification to specific u
         "message_head": "Hello,\n\nPlease check the new entries in RansomLook:", # Header for your mail
         "message_foot": "Best regards,\n\nRansomlook Team" # Footer for your mail
     }
-``` 
-
 
 email_smtp_auth
 ~~~~~~~~~~~~~~~
