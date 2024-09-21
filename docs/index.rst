@@ -23,8 +23,10 @@ RansomLook
 
     prerequisites
     installation
+    configuration
     update
     command-line-interface
+
 
 Presentation
 ------------
@@ -96,6 +98,7 @@ Contact
 -------
 
 Ping us on Twitter or Mastodon, or you can directly contact us via issue on Github.
+You can also contact us by using: contact [at] ransomlook [dot] io
 
 License
 -------

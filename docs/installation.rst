@@ -6,9 +6,7 @@ This section covers the installation steps of the sofware.
 System dependencies
 -------------------
 
-You need Poetry installed, see the `install guide <https://python-poetry.org/docs/>`_.
-
-
+You need Poetry installed, see the `install guide <https://python-poetry.org/docs/#installing-with-the-official-installer>`_.
 
 Prerequisites
 -------------
@@ -87,9 +85,10 @@ Copy the config file:
 
     cp config/generic.json.sample config/generic.json
 
-And configure it accordingly to your needs.
+And configure it accordingly to your needs (check configuration page for more details).
 
-### Update and launch
+Update and launch
+~~~~~~~~~~~~~~~~~
 
 Run the following command to fetch the required javascript deps and run RansomLook.
 
