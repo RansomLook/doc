@@ -28,6 +28,20 @@ RansomLook
     command-line-interface
     production
 
+.. toctree::
+    :caption: Adminstration
+    :maxdepth: 3
+    :hidden:
+
+    admin
+
+.. toctree::
+    :caption: API
+    :maxdepth: 3
+    :hidden:
+
+    api
+
 
 Presentation
 ------------
