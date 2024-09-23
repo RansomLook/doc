@@ -62,6 +62,7 @@ starting a new scraping task.
     0 2 * * * cd /opt/ransomlook/RansomLook ; /home/user/.local/bin/poetry run notes
 
 In this exemple :
+
 * Scraping is done very hours following by parsing, screenshots of post and then torrent
 * Half past every hours breach and telegram account are scraped
 * Every days at 1 a.m. cryptocurrencies are updated
