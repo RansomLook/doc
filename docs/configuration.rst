@@ -15,6 +15,8 @@ email
 ~~~~~
 This section contains all the information to send the notification to specific users.
 
+.. code-block:: 
+
     "email": {
         "smtp_server": "localhost", # Address for the SMTP server
         "smtp_port": 25, # Port to use
