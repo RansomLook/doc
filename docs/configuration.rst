@@ -1,10 +1,10 @@
 Configuration
 =============
 
-This section covers the configuration file.
+This section covers the configuration file. We recommand to you to restart the RansomLook after any change in the configuration file.
 
 alertondashboard
-~~~~~~~~~~~~~~~~
+----------------
 This entry take the value 'true' or 'false' depenfing if you want to see your alerting keywords on the main page. It's only appears for the last 24 hours.
 
 darkmode
