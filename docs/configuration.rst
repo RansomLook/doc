@@ -1,7 +1,11 @@
+
 Configuration
 =============
 
 This section covers the configuration file. We recommand to you to restart the RansomLook after any change in the configuration file.
+
+Entries details
+---------------
 
 alertondashboard
 ^^^^^^^^^^^^^^^^
@@ -66,7 +70,7 @@ URL used to access to your instance. It's used by the differents modules of the 
 
 thread
 ^^^^^^
-Number of threads to use for scraping.
+Number of threads to use for scraping. You need to adjust the value with your CPU and RAM.
 
 twitter
 ^^^^^^^
@@ -85,7 +89,7 @@ website_listen_port
 Port to use by gunicorn.
 
 Sample of configuration file
-============================
+----------------------------
 
 .. code-block::
 
