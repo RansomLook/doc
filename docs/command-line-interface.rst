@@ -33,7 +33,7 @@ Select if you want to add a Group (with their DLS) or a forum. DB to use is 0 or
 
 .. code-block:: bash
 
-    $ poetry run 'Name of the group' url 0|3
+    $ poetry run add 'Name of the group' url 0|3
 
 Scrape all groups
 ^^^^^^^^^^^^^^^^^
@@ -117,4 +117,43 @@ Send notification of previous day leaks
 Tools
 -----
 
+Get list of databreaches
+^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. code-block:: bash
+
+    $ poetry run tools/breach.py
+
+
+Reparse groups
+^^^^^^^^^^^^^^
+
+This command reparse files associated to a group and update the screen data in order to be captured during next screen session.
+
+.. code-block:: bash
+
+    $ poetry run tools/getpreviousscreen.py [GroupName]
+
+Import data from Malpedia
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    $ poetry run tools/malpedia.py
+
+Import data from the public instance
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Redownload data from public instance, should be used only for the first populating.
+
+.. code-block:: bash
+
+    $ poetry run tools/import_from_instance
+
+
+Generate a csv stats file
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    $ poetry run tools/stats.py
