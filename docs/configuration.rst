@@ -79,3 +79,79 @@ IP to use by gunicorn.
 website_listen_port
 ~~~~~~~~~~~~~~~~~~~
 Port to use by gunicorn.
+
+Sample of configuration file
+============================
+
+.. code-block::
+
+    {                                                                                    
+        "email": {                         
+            "smtp_server": "localhost",
+            "smtp_port": 25,
+            "to": ["Team <team@myinstance.local>"],                                                                                                                        [42/314]
+            "to_bcc": [],   
+            "subject": "New Notification from RansomLook",                     
+            "message_head": "Hello,\n\nPlease check the new entries in RansomLook:",
+            "message_foot": "Best regards,\n\nRansomlook Team"
+        },
+        "email_smtp_auth": {
+            "auth": false,  
+            "smtp_user":"johndoe@myinstance.local", 
+            "smtp_pass":"password",
+            "smtp_use_starttls": true,
+            "verify_certificate": false
+        },
+        "rocketchat": {        
+            "enable": false,
+            "server": "localhost",                                                       
+            "ssl_verify": false,
+            "user_id": "",             
+            "auth_token": "",       
+            "channel_name": ""    
+        },               
+        "ldap": {                          
+            "enable": false,
+            "server": "ldpas://localhost",
+            "root_dn": "ou=Users,dc=my,dc=domain,dc=tld",
+            "base_dn": "uid",                                                            
+            "ssl": true,                                                                 
+            "verify": true,                                                              
+            "cert": "/path/to/cert.ext"                                                                                                                                       
+        },                                                                               
+        "twitter": {                                                                     
+            "enable": false,                                                                                                                                                  
+            "consumer_key": "",              
+            "consumer_secret": "",                                                       
+            "access_token": "",                                                          
+            "access_token_secret": ""                                                    
+        },                                   
+        "mastodon":{                                                                     
+            "enable": false,               
+            "url": "",
+            "token": ""
+        },
+        "bluesky":{
+            "enable": false,
+            "url": "",
+            "BLUESKY_HANDLE": "",
+            "BLUESKY_APP_PASSWORD":""
+        },
+        "misp": {
+            "enable": false,
+            "url": "",
+            "apikey": "",
+            "tls_verify": true,
+            "publish": true
+        },
+        "users": {"fkz":"fkz","admin":"mypassword"},
+        "malpedia": "",
+        "rf": "",
+        "thread": 32,
+        "website_listen_ip": "0.0.0.0",
+        "website_listen_port": 8000,
+        "alertondashboard": false,
+        "darkmode": true,
+        "siteurl": "http://myinstance.local",
+    }
+
