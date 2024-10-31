@@ -40,7 +40,7 @@ In order to compile and test valkey, you will need a few packages:
 
     git clone https://github.com/valkey-io/valkey
     cd valkey
-    git checkout 7.2
+    git checkout 8.0
     make
     # Optionally, you can run the tests:
     make test
