@@ -31,10 +31,13 @@ and high availability.
 In order to compile and test valkey, you will need a few packages:
 
 .. code-block:: bash
-
+    # Ubuntu
     sudo apt-get update
-    sudo apt install build-essential tcl
+    sudo apt install build-essential tcl git
 
+    # Arch
+    sudo pacman -Syy
+    sudo pacman -S base-devel tcl git
 
 .. code-block:: bash
 
@@ -61,11 +64,17 @@ Installation
 Install system dependencies (requires root)
 
 .. code-block:: bash
-
+   # Ubuntu
     sudo apt install python3-dev
     sudo apt install libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libxkbcommon0 libxdamage1 libgbm1 libpango-1.0-0 libcairo2 libatspi2.0-0 libxcomposite1 libxfixes3 libxrandr2 libasound2 libwayland-client0 
     sudo apt install libgtk-3-0 libpangocairo-1.0-0 libcairo-gobject2 libgdk-pixbuf2.0-0 libx11-xcb1 libxcursor1
     sudo apt install tor ffmpeg
+
+    # Arch
+    sudo pacman -S python3 
+    sudo pacman -S nss nspr gtk3 alsa-lib at-spi2-core mesa 
+    sudo pacman -S tor ffmpeg
+
 
 From the directory you just cloned, run:
 
@@ -96,4 +105,28 @@ Run the following command to fetch the required javascript deps and run RansomLo
 
     poetry run update --yes
 
-With the default configuration, you can access the web interface on `http://0.0.0.0:8000`.
+With the default configuration, you can access the web interface on `http://127.0.0.1:8000`.
+
+Troubleshooting
+~~~~~~~~~~~~~~~
+.. note:: 
+    The currently activated Python version 3.13.1 is not supported by the project (^3.10,<3.11).
+    Trying to find and use a compatible version.
+
+    Poetry was unable to find a compatible version. 
+
+.. code-block:: bash
+
+    # Arch
+
+    ## check https://wiki.archlinux.org/title/Python and install python AUR package fit for your poetry installation
+
+    ## Example for poetry 1.8.5
+    sudo cd /usr/local/src/
+    sudo git clone https://aur.archlinux.org/python310.git
+    cd python310
+    makepkg -sic # Install package with dependencies + post installation cleaning
+    
+    
+
+

@@ -6,7 +6,7 @@ Software
 
 Generally speaking, requirements are the following:
 
-- A GNU/Linux distribution. Tested on Ubuntu 22.04.3 LTS
+- A GNU/Linux distribution. Tested on Ubuntu 22.04.3 LTS and Arch 6.12.4
 - Python version = 3.10. Didn't tested with Python 3.11 and 3.12
 - `Valkey <https://github.com/valkey-io/valkey>`_ database
 - `Poetry <https://python-poetry.org>`_
