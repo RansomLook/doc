@@ -6,8 +6,10 @@ This section covers the installation steps of the sofware.
 System dependencies
 -------------------
 
-You need Poetry installed, see the `install guide <https://python-poetry.org/docs/#installing-with-the-official-installer>`_.
-
+You need poetry 1.8.4 installed.
+```bash
+curl -sSL https://install.python-poetry.org | python3 - --version 1.8.4
+``` 
 Prerequisites
 -------------
 
