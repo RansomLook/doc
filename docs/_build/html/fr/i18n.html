@@ -1,0 +1,689 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Internationalisation (i18n) &#8212; RansomLook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=8e3b808b"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'i18n';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Administration" href="admin.html" />
+    <link rel="prev" title="Architecture" href="architecture.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">RansomLook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Recherche</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    RansomLook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Considérations techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">Prérequis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Mettre à jour l’application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Interface en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">Utilisation en production</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interface web</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="features.html">Interface web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Internationalisation (i18n)</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="admin.html">Administration</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/edit/main/docs/i18n.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/issues/new?title=Issue%20on%20page%20%2Fi18n.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/i18n.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Internationalisation (i18n)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Internationalisation (i18n)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-locale-is-chosen">Comment la locale est choisie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#switching-language-on-demand">Changer de langue à la demande</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-layout">Arborescence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-contributors">Workflow pour les contributeurs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extracting-strings">Extraire les chaînes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-existing-catalogues">Mettre à jour les catalogues existants</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-translations">Éditer les traductions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-language">Ajouter une nouvelle langue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compiling">Compiler</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#escaping-signs">Échapper les <code class="docutils literal notranslate"><span class="pre">%</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plural-forms">Formes plurielles</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#translating-the-documentation-itself">Traduire la documentation elle-même</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-setup">Configuration locale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-and-update-catalogues">Extraire et mettre à jour les catalogues</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-a-localised-version">Builder une version localisée</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wiring-it-up-on-read-the-docs">Câblage sur Read the Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keeping-translations-in-sync">Maintenir les traductions à jour</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="internationalization-i18n">
+<h1>Internationalisation (i18n)<a class="headerlink" href="#internationalization-i18n" title="Lien vers cette rubrique">#</a></h1>
+<p>L’interface web de RansomLook prend en charge plusieurs langues via <a class="reference external" href="https://python-babel.github.io/flask-babel/">Flask-Babel</a>. Le projet fournit actuellement des traductions en <strong>anglais</strong> (langue source) et <strong>français</strong>.</p>
+<section id="how-the-locale-is-chosen">
+<h2>Comment la locale est choisie<a class="headerlink" href="#how-the-locale-is-chosen" title="Lien vers cette rubrique">#</a></h2>
+<p>À chaque requête, la locale active est choisie dans cet ordre :</p>
+<ol class="arabic simple">
+<li><p><strong>Cookie ``locale``</strong> — posé par l’utilisateur quand il clique sur le switcher <code class="docutils literal notranslate"><span class="pre">EN</span> <span class="pre">/</span> <span class="pre">FR</span></code> de la barre du haut. Persisté un an.</p></li>
+<li><p><strong>``Accept-Language`` du navigateur</strong> — sans cookie, on prend la meilleure correspondance avec les locales disponibles.</p></li>
+<li><p><strong>Fallback</strong> — <code class="docutils literal notranslate"><span class="pre">en</span></code>.</p></li>
+</ol>
+</section>
+<section id="switching-language-on-demand">
+<h2>Changer de langue à la demande<a class="headerlink" href="#switching-language-on-demand" title="Lien vers cette rubrique">#</a></h2>
+<p>Appeler <code class="docutils literal notranslate"><span class="pre">/set-locale/&lt;code&gt;</span></code> (par exemple <code class="docutils literal notranslate"><span class="pre">/set-locale/fr</span></code>) pose le cookie sur la locale demandée et redirige vers la page d’origine. Le switcher de la barre du haut est simplement une paire de liens vers ces endpoints.</p>
+</section>
+<section id="file-layout">
+<h2>Arborescence<a class="headerlink" href="#file-layout" title="Lien vers cette rubrique">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">babel</span><span class="o">.</span><span class="n">cfg</span>                                   <span class="c1"># extraction config (Python + Jinja2)</span>
+<span class="n">messages</span><span class="o">.</span><span class="n">pot</span>                                <span class="c1"># extracted template catalogue</span>
+<span class="n">translations</span><span class="o">/</span>
+    <span class="n">en</span><span class="o">/</span><span class="n">LC_MESSAGES</span><span class="o">/</span><span class="n">messages</span><span class="o">.</span><span class="n">po</span>              <span class="c1"># English source strings</span>
+    <span class="n">en</span><span class="o">/</span><span class="n">LC_MESSAGES</span><span class="o">/</span><span class="n">messages</span><span class="o">.</span><span class="n">mo</span>              <span class="c1"># compiled (binary)</span>
+    <span class="n">fr</span><span class="o">/</span><span class="n">LC_MESSAGES</span><span class="o">/</span><span class="n">messages</span><span class="o">.</span><span class="n">po</span>              <span class="c1"># French translations</span>
+    <span class="n">fr</span><span class="o">/</span><span class="n">LC_MESSAGES</span><span class="o">/</span><span class="n">messages</span><span class="o">.</span><span class="n">mo</span>              <span class="c1"># compiled (binary)</span>
+</pre></div>
+</div>
+<p>Flask-Babel charge les fichiers <code class="docutils literal notranslate"><span class="pre">.mo</span></code> au démarrage du processus. Il faut <strong>redémarrer</strong> le serveur web (gunicorn / runner de dev) après recompilation pour que les changements prennent effet.</p>
+</section>
+<section id="workflow-for-contributors">
+<h2>Workflow pour les contributeurs<a class="headerlink" href="#workflow-for-contributors" title="Lien vers cette rubrique">#</a></h2>
+<section id="extracting-strings">
+<h3>Extraire les chaînes<a class="headerlink" href="#extracting-strings" title="Lien vers cette rubrique">#</a></h3>
+<p>À chaque fois qu’un template ou un fichier Python gagne un nouvel appel <code class="docutils literal notranslate"><span class="pre">_('...')</span></code> ou <code class="docutils literal notranslate"><span class="pre">gettext(...)</span></code> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>pybabel<span class="w"> </span>extract<span class="w"> </span>-F<span class="w"> </span>babel.cfg<span class="w"> </span>-o<span class="w"> </span>messages.pot<span class="w"> </span>.
+</pre></div>
+</div>
+</section>
+<section id="updating-existing-catalogues">
+<h3>Mettre à jour les catalogues existants<a class="headerlink" href="#updating-existing-catalogues" title="Lien vers cette rubrique">#</a></h3>
+<p>Fusionner les nouvelles chaînes dans chaque catalogue de langue tout en préservant les traductions existantes (les correspondances fuzzy sont marquées, pas écrasées) :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>pybabel<span class="w"> </span>update<span class="w"> </span>-i<span class="w"> </span>messages.pot<span class="w"> </span>-d<span class="w"> </span>translations
+</pre></div>
+</div>
+</section>
+<section id="editing-translations">
+<h3>Éditer les traductions<a class="headerlink" href="#editing-translations" title="Lien vers cette rubrique">#</a></h3>
+<p>Ouvrez <code class="docutils literal notranslate"><span class="pre">translations/&lt;lang&gt;/LC_MESSAGES/messages.po</span></code> dans un éditeur PO (Poedit, Emacs po-mode, plugins gettext pour VS Code, …). Remplissez les <code class="docutils literal notranslate"><span class="pre">msgstr</span> <span class="pre">&quot;&quot;</span></code> vides et retirez le flag <code class="docutils literal notranslate"><span class="pre">#,</span> <span class="pre">fuzzy</span></code> une fois la suggestion revue.</p>
+</section>
+<section id="adding-a-new-language">
+<h3>Ajouter une nouvelle langue<a class="headerlink" href="#adding-a-new-language" title="Lien vers cette rubrique">#</a></h3>
+<p>Initialiser un catalogue depuis le template :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>pybabel<span class="w"> </span>init<span class="w"> </span>-i<span class="w"> </span>messages.pot<span class="w"> </span>-d<span class="w"> </span>translations<span class="w"> </span>-l<span class="w"> </span>de
+</pre></div>
+</div>
+<p>Puis exposer la nouvelle locale dans <code class="docutils literal notranslate"><span class="pre">website/web/__init__.py</span></code> :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">AVAILABLE_LOCALES</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="s2">&quot;fr&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>et ajouter la traduction du nom de la langue dans le switcher (<code class="docutils literal notranslate"><span class="pre">base.html</span></code>).</p>
+</section>
+<section id="compiling">
+<h3>Compiler<a class="headerlink" href="#compiling" title="Lien vers cette rubrique">#</a></h3>
+<p>Avant de lancer l’application, compiler <code class="docutils literal notranslate"><span class="pre">.po</span></code> → <code class="docutils literal notranslate"><span class="pre">.mo</span></code> :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>pybabel<span class="w"> </span>compile<span class="w"> </span>-d<span class="w"> </span>translations
+</pre></div>
+</div>
+</section>
+</section>
+<section id="escaping-signs">
+<h2>Échapper les <code class="docutils literal notranslate"><span class="pre">%</span></code><a class="headerlink" href="#escaping-signs" title="Lien vers cette rubrique">#</a></h2>
+<p>Flask-Babel / gettext utilisent le format <code class="docutils literal notranslate"><span class="pre">%</span></code> de Python. Tout signe pourcent littéral dans une chaîne traduisible doit être échappé en <code class="docutils literal notranslate"><span class="pre">%%</span></code>. C’est pour cela que <code class="docutils literal notranslate"><span class="pre">Normalize</span> <span class="pre">(%%)</span></code> apparaît dans les templates plutôt que <code class="docutils literal notranslate"><span class="pre">Normalize</span> <span class="pre">(%)</span></code>. Oublier l’échappement provoque <code class="docutils literal notranslate"><span class="pre">ValueError:</span> <span class="pre">unsupported</span> <span class="pre">format</span> <span class="pre">character</span></code> au rendu.</p>
+</section>
+<section id="plural-forms">
+<h2>Formes plurielles<a class="headerlink" href="#plural-forms" title="Lien vers cette rubrique">#</a></h2>
+<p>Utiliser <code class="docutils literal notranslate"><span class="pre">ngettext</span></code> (l’alias <code class="docutils literal notranslate"><span class="pre">_()</span></code> ne marche pas pour les pluriels) :</p>
+<div class="highlight-jinja notranslate"><div class="highlight"><pre><span></span><span class="cp">{{</span> <span class="nv">ngettext</span><span class="o">(</span><span class="s1">&#39;%(n)s post&#39;</span><span class="o">,</span> <span class="s1">&#39;%(n)s posts&#39;</span><span class="o">,</span> <span class="nv">count</span><span class="o">,</span> <span class="nv">n</span><span class="o">=</span><span class="nv">count</span><span class="o">)</span> <span class="cp">}}</span>
+</pre></div>
+</div>
+<p>Dans le catalogue cela produit des entrées <code class="docutils literal notranslate"><span class="pre">msgid_plural</span></code> et <code class="docutils literal notranslate"><span class="pre">msgstr[0]</span> <span class="pre">/</span> <span class="pre">msgstr[1]</span></code>.</p>
+</section>
+</section>
+<section id="translating-the-documentation-itself">
+<h1>Traduire la documentation elle-même<a class="headerlink" href="#translating-the-documentation-itself" title="Lien vers cette rubrique">#</a></h1>
+<p>La documentation RansomLook que vous lisez est elle aussi disponible en plusieurs langues. Les diagrammes utilisent des labels en anglais neutres ; seule la prose qui les entoure est traduite.</p>
+<section id="local-setup">
+<h2>Configuration locale<a class="headerlink" href="#local-setup" title="Lien vers cette rubrique">#</a></h2>
+<p>Les extensions nécessaires pour construire une documentation traduite sont listées dans <code class="docutils literal notranslate"><span class="pre">docs/requirements.txt</span></code> (<code class="docutils literal notranslate"><span class="pre">sphinx-intl</span></code>). <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> expose déjà la langue via la variable d’environnement <code class="docutils literal notranslate"><span class="pre">SPHINX_LANGUAGE</span></code> et pointe Sphinx vers <code class="docutils literal notranslate"><span class="pre">docs/locale/</span></code> pour les catalogues.</p>
+<section id="extract-and-update-catalogues">
+<h3>Extraire et mettre à jour les catalogues<a class="headerlink" href="#extract-and-update-catalogues" title="Lien vers cette rubrique">#</a></h3>
+<p>Depuis la racine du dépôt :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># extract every translatable chunk from the .rst files</span>
+sphinx-build<span class="w"> </span>-b<span class="w"> </span>gettext<span class="w"> </span>docs<span class="w"> </span>docs/_build/gettext
+
+<span class="c1"># merge the extracted template into the French catalogue (creates it on first run)</span>
+sphinx-intl<span class="w"> </span>update<span class="w"> </span>-p<span class="w"> </span>docs/_build/gettext<span class="w"> </span>-d<span class="w"> </span>docs/locale<span class="w"> </span>-l<span class="w"> </span>fr
+</pre></div>
+</div>
+<p>Éditez les fichiers <code class="docutils literal notranslate"><span class="pre">docs/locale/fr/LC_MESSAGES/*.po</span></code>. N’importe quel éditeur PO fonctionne (Poedit, VS Code gettext, …).</p>
+</section>
+<section id="build-a-localised-version">
+<h3>Builder une version localisée<a class="headerlink" href="#build-a-localised-version" title="Lien vers cette rubrique">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># French build</span>
+<span class="nv">SPHINX_LANGUAGE</span><span class="o">=</span>fr<span class="w"> </span>sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>docs<span class="w"> </span>docs/_build/html/fr
+
+<span class="c1"># English build (default)</span>
+sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>docs<span class="w"> </span>docs/_build/html/en
+</pre></div>
+</div>
+<p>Aucune étape de compilation pour <code class="docutils literal notranslate"><span class="pre">.mo</span></code> — Sphinx lit directement les <code class="docutils literal notranslate"><span class="pre">.po</span></code>.</p>
+</section>
+</section>
+<section id="wiring-it-up-on-read-the-docs">
+<h2>Câblage sur Read the Docs<a class="headerlink" href="#wiring-it-up-on-read-the-docs" title="Lien vers cette rubrique">#</a></h2>
+<p>Read the Docs prend nativement en charge les <a class="reference external" href="https://docs.readthedocs.com/platform/stable/localization.html">traductions de documentation</a>. La configuration canonique est :</p>
+<ol class="arabic simple">
+<li><p><strong>Gardez un seul dépôt Git</strong> (celui-ci) hébergeant à la fois les fichiers source et les catalogues <code class="docutils literal notranslate"><span class="pre">docs/locale/&lt;lang&gt;/</span></code>.</p></li>
+<li><p><strong>Créez un projet « translation » sur RTD</strong> pour chaque langue (ex. <code class="docutils literal notranslate"><span class="pre">ransomlook-fr</span></code>). Faites-le pointer sur le même dépôt Git et la même branche.</p></li>
+<li><p>Dans <em>Admin → Advanced settings</em> du projet, réglez <strong>Language</strong> sur la locale cible (<code class="docutils literal notranslate"><span class="pre">French</span></code>).</p></li>
+<li><p>Dans <em>Admin → Environment variables</em> du projet, ajoutez <code class="docutils literal notranslate"><span class="pre">SPHINX_LANGUAGE=fr</span></code> pour que le build utilise le catalogue français.</p></li>
+<li><p>Ouvrez le projet <strong>principal</strong> (anglais). Allez dans <em>Admin → Translations</em> et <strong>liez le projet français</strong> comme traduction. Read the Docs servira alors les docs à :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://ransomlook.readthedocs.io/en/latest/</span></code> (principal, par défaut)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">https://ransomlook.readthedocs.io/fr/latest/</span></code> (traduit)</p></li>
+</ul>
+</li>
+<li><p>Le sélecteur de langue du menu flyout RTD le détecte automatiquement.</p></li>
+</ol>
+<p>Répétez les étapes 2-5 pour chaque langue supplémentaire.</p>
+</section>
+<section id="keeping-translations-in-sync">
+<h2>Maintenir les traductions à jour<a class="headerlink" href="#keeping-translations-in-sync" title="Lien vers cette rubrique">#</a></h2>
+<p>À chaque modification d’un fichier <code class="docutils literal notranslate"><span class="pre">.rst</span></code> :</p>
+<ol class="arabic simple">
+<li><p>Relancer <code class="docutils literal notranslate"><span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">gettext</span></code>.</p></li>
+<li><p>Relancer <code class="docutils literal notranslate"><span class="pre">sphinx-intl</span> <span class="pre">update</span></code> — les paragraphes nouveaux ou modifiés apparaissent vides ou flaggés fuzzy dans les <code class="docutils literal notranslate"><span class="pre">.po</span></code>.</p></li>
+<li><p>Traduire et commiter.</p></li>
+</ol>
+<p>Les diagrammes Mermaid utilisent par convention des labels anglais, aucune traduction n’est donc requise. Si un diagramme doit porter un texte localisé, déplacez-le dans la prose environnante (qui est traduite) plutôt que dans le corps du diagramme.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="architecture.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Architecture</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="admin.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Administration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Internationalisation (i18n)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-locale-is-chosen">Comment la locale est choisie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#switching-language-on-demand">Changer de langue à la demande</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file-layout">Arborescence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-contributors">Workflow pour les contributeurs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extracting-strings">Extraire les chaînes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-existing-catalogues">Mettre à jour les catalogues existants</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-translations">Éditer les traductions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-a-new-language">Ajouter une nouvelle langue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compiling">Compiler</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#escaping-signs">Échapper les <code class="docutils literal notranslate"><span class="pre">%</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plural-forms">Formes plurielles</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#translating-the-documentation-itself">Traduire la documentation elle-même</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-setup">Configuration locale</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-and-update-catalogues">Extraire et mettre à jour les catalogues</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build-a-localised-version">Builder une version localisée</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wiring-it-up-on-read-the-docs">Câblage sur Read the Docs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keeping-translations-in-sync">Maintenir les traductions à jour</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par RansomLook Core Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright RansomLook Core Team.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../configuration.rst:3 8e58e4ef0136470db7f257a840b049ad
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../configuration.rst:5 388915dd9aa04e2090fb643aff528810
+msgid ""
+"This section covers the configuration file. We recommand to you to "
+"restart the RansomLook after any change in the configuration file."
+msgstr ""
+"Cette section couvre le fichier de configuration. Il est recommandé de "
+"redémarrer RansomLook après tout changement."
+
+#: ../../configuration.rst:8 4bd8e1a34db4472b8edec072d83c180c
+msgid "Entries details"
+msgstr "Détail des entrées"
+
+#: ../../configuration.rst:11 db4396fac7fa405e8b42c22836f34970
+msgid "alertondashboard"
+msgstr "alertondashboard"
+
+#: ../../configuration.rst:13 dde796a5bdb74202984754bd1c989414
+msgid ""
+"This entry take the value 'true' or 'false' depenfing if you want to see "
+"your alerting keywords on the main page. It's only appears for the last "
+"24 hours."
+msgstr ""
+"Prend la valeur 'true' ou 'false' selon que vous voulez voir vos mots-"
+"clés d'alerte sur la page principale. N'apparaît que pour les 24 "
+"dernières heures."
+
+#: ../../configuration.rst:16 829ece718aba402faa3df3a1a7677a4c
+msgid "darkmode"
+msgstr "darkmode"
+
+#: ../../configuration.rst:18 cd966b8fc4af4b29b7378ecef59cffd2
+msgid ""
+"This entry take the value 'true' or 'false' depending if you want to have"
+" a black or white interface."
+msgstr ""
+"Prend la valeur 'true' ou 'false' selon que vous voulez une interface "
+"sombre ou claire."
+
+#: ../../configuration.rst:21 90f3bf56eed5472f99521d9331b067dd
+msgid "email"
+msgstr "email"
+
+#: ../../configuration.rst:23 0f16e3f6bf90441aa32dae4f0fb86ad4
+msgid ""
+"This section contains all the information to send the notification to "
+"specific users."
+msgstr ""
+"Cette section contient les informations pour envoyer les notifications à "
+"des utilisateurs spécifiques."
+
+#: ../../configuration.rst:39 efd790dba1034ca7af22a193ee5f88c0
+msgid "email_smtp_auth"
+msgstr "email_smtp_auth"
+
+#: ../../configuration.rst:41 df1e60c062f7438a849631d5870a2e7c
+msgid ""
+"This section contains the information to use for an authenticated smtp "
+"relais."
+msgstr ""
+"Cette section contient les informations pour utiliser un relais SMTP "
+"authentifié."
+
+#: ../../configuration.rst:44 2110d5131b504a2a97dadd7958c258b2
+msgid "ldap"
+msgstr "ldap"
+
+#: ../../configuration.rst:45 e99abd55bfa94415bc9bfbf052f11c0d
+msgid ""
+"This section contains the information to use a LDAP authentication "
+"instead of local authentication."
+msgstr ""
+"Cette section contient les informations pour utiliser l'authentification "
+"LDAP plutôt que locale."
+
+#: ../../configuration.rst:48 ea98baf834144de396a31a1b2155b2d5
+msgid "malpedia"
+msgstr "malpedia"
+
+#: ../../configuration.rst:49 f07238f0494744699fb4cda58b5bd85f
+msgid ""
+"Set your malpedia API key in this entry in order to use the script adding"
+" description on ransomware."
+msgstr ""
+"Renseignez votre clé d'API Malpedia pour que le script d'ajout de "
+"descriptions fonctionne."
+
+#: ../../configuration.rst:52 154b8549276f449caae80cbb7e052a4a
+msgid "mastodon"
+msgstr "mastodon"
+
+#: ../../configuration.rst:53 94f541d1a4c14facb3e8f50ea84449e9
+msgid "This section contains the information to post new posts on Mastodon"
+msgstr ""
+"Cette section contient les informations pour publier les nouveaux posts "
+"sur Mastodon."
+
+#: ../../configuration.rst:56 26bd8e144afd41f0b00e1a8d714de505
+msgid "misp"
+msgstr "misp"
+
+#: ../../configuration.rst:57 1f48917554384b0b9c9a0d39eca97acc
+msgid "This section is used to transmit new posts in an event on MISP."
+msgstr "Utilisée pour transmettre les nouveaux posts dans un évènement MISP."
+
+#: ../../configuration.rst:60 4f6a5515a99c4b7895c9daa15019b922
+msgid "rf"
+msgstr "rf"
+
+#: ../../configuration.rst:61 55eeb5bb088043049df0cde29e34bc83
+msgid ""
+"This section is used to get the new dumps from Recording Future using the"
+" API Identity Module."
+msgstr ""
+"Utilisée pour récupérer les nouveaux dumps depuis Recorded Future via "
+"l'API Identity Module."
+
+#: ../../configuration.rst:64 9d74568db07b4447bedaa243561db434
+msgid "rocketchat"
+msgstr "rocketchat"
+
+#: ../../configuration.rst:65 70bf79be508a4725afe1614de7da29a7
+msgid "This section contains the information to post new posts on Rocketchat."
+msgstr ""
+"Cette section contient les informations pour publier les nouveaux posts "
+"sur RocketChat."
+
+#: ../../configuration.rst:68 a0a66fdbce54444bbefee1f1299dbc26
+msgid "siteurl"
+msgstr "siteurl"
+
+#: ../../configuration.rst:69 23e95bc1ae924e22a592ee71e71e9a10
+msgid ""
+"URL used to access to your instance. It's used by the differents modules "
+"of the instance."
+msgstr ""
+"URL utilisée pour accéder à votre instance. Utilisée par les différents "
+"modules de l'instance."
+
+#: ../../configuration.rst:72 94fa372e896846dd848d421aecb09d19
+msgid "thread"
+msgstr "thread"
+
+#: ../../configuration.rst:73 a0211a4612e84108ba6fc2e4490e0707
+msgid ""
+"Number of threads to use for scraping. You need to adjust the value with "
+"your CPU and RAM."
+msgstr ""
+"Nombre de threads utilisés pour le scraping. À ajuster selon votre CPU et"
+" votre RAM."
+
+#: ../../configuration.rst:76 b640a284525b4821ad76886df06d9296
+msgid "twitter"
+msgstr "twitter"
+
+#: ../../configuration.rst:77 7cdb7558bebe466e9aec892569532a92
+msgid ""
+"This section contains the information to post new posts on Twitter/X "
+"using its API."
+msgstr ""
+"Cette section contient les informations pour publier les nouveaux posts "
+"sur Twitter/X via son API."
+
+#: ../../configuration.rst:80 b853a4b5a5254075a1068f1d03912118
+msgid "users"
+msgstr "users"
+
+#: ../../configuration.rst:81 9f02a175095348958e253943fc896d07
+msgid ""
+"List of local users to use. Doesn't work when LDAP is activated. Password"
+" are in cleartext ;D."
+msgstr ""
+"Liste des utilisateurs locaux. Inactive quand LDAP est activé. Les mots "
+"de passe sont en clair ;D."
+
+#: ../../configuration.rst:84 3287ef7c40ac4bf489d4464c4367980b
+msgid "website_listen_ip"
+msgstr "website_listen_ip"
+
+#: ../../configuration.rst:85 09b46c2f173b4748b8ea5e07483d6878
+msgid "IP to use by gunicorn."
+msgstr "IP utilisée par gunicorn."
+
+#: ../../configuration.rst:88 bc9b24ad9a3a45778bcd88a52e2ff494
+msgid "website_listen_port"
+msgstr "website_listen_port"
+
+#: ../../configuration.rst:89 98c5a2f80e594df2b9404a3cebf3e6d4
+msgid "Port to use by gunicorn."
+msgstr "Port utilisé par gunicorn."
+
+#: ../../configuration.rst:92 1907cb136a1f4e6fa65670c678125528
+msgid "Sample of configuration file"
+msgstr "Exemple de fichier de configuration"
+

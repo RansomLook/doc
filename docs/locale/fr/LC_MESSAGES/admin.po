@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../admin.rst:2 690ae0c8fa4c40dd97e8f19cb417bedd
+msgid "Administration"
+msgstr "Administration"
+
+#: ../../admin.rst:5 9dc9e545b50e4e668260d147350ba17d
+msgid "Login"
+msgstr "Connexion"
+
+#: ../../admin.rst:7 3a5c3c9585c04d31b5fc01faf3b2027f
+msgid ""
+"Go to the page `/login` and enter your credentials. Once logged you "
+"should see the following page:"
+msgstr ""
+"Allez sur la page `/login` et saisissez vos identifiants. Une fois "
+"connecté, vous devriez voir la page suivante :"
+
+#: ../../admin.rst:10 ../../admin.rst:29 22d6d6be5ef34fe6b5b6a4d4016a4dc4
+#: b26af29259e3413890e008cf6802bf9b
+msgid "Logged-in page."
+msgstr "Page connectée."
+
+#: ../../admin.rst:14 d66bbc74d0ce42f8aba97c123898a4fe
+msgid "This unlock for sections under the ``Admin Zone`` on the left:"
+msgstr "Ceci déverrouille les sections sous ``Admin Zone`` à gauche :"
+
+#: ../../admin.rst:16 732a9d0165154d93b4342a7dd4429ac5
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../../admin.rst:17 a190389449344a899ef1929812357c79
+msgid "Edit"
+msgstr "Éditer"
+
+#: ../../admin.rst:18 5607421a91ff4e458c849794a5a4b71a
+msgid "Alerting"
+msgstr "Alerting"
+
+#: ../../admin.rst:19 c489cb32f1814e0d82ebfcb82b1c75c8
+msgid "Logs"
+msgstr "Logs"
+
+#: ../../admin.rst:22 a2fa1cd8424a48d9b2d540471eb0a76e
+msgid "Admin actions"
+msgstr "Actions admin"
+
+#: ../../admin.rst:25 9f3068a73d1a4a3081dd7d34e87321f8
+msgid "Adding a Group/Forum/Channel"
+msgstr "Ajouter un groupe / forum / chaîne"
+
+#: ../../admin.rst:27 26b7a11c4c9d4e479357f3918138f15c
+msgid "If you want to add a DLS, a forum or a channel go to ``/admin/add``."
+msgstr "Pour ajouter un DLS, un forum ou une chaîne, allez sur ``/admin/add``."
+
+#: ../../admin.rst:33 e10b5b1f7c4347529d9e441fc9b290f6
+msgid "Select the database to use:"
+msgstr "Sélectionner la base à utiliser :"
+
+#: ../../admin.rst:35 0552890373884a7bad29dc59d75ca4eb
+msgid "Group, specify the name of the DLS and the URL to monitor"
+msgstr "Groupe — indiquer le nom du DLS et l'URL à surveiller"
+
+#: ../../admin.rst:36 cf0bdc2b6e2640dd99a8ec2f8f6057c5
+msgid "Forum, specify the name of the forum and it's main URL"
+msgstr "Forum — indiquer le nom du forum et son URL principale"
+
+#: ../../admin.rst:37 5a38dd8fa61446c18041dfb715a0615a
+msgid ""
+"Telegram, specify the exact name of the channel to monitor and the url of"
+" channel (https://t.me/CHANNEL)"
+msgstr ""
+"Telegram — indiquer le nom exact de la chaîne à surveiller et son URL "
+"(https://t.me/CHANNEL)"
+

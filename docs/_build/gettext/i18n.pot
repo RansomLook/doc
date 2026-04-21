@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../i18n.rst:2
+#: c546cc5e27bd4ef2a81311ee5999d5a9
+msgid "Internationalization (i18n)"
+msgstr ""
+
+#: ../../i18n.rst:4
+#: 6d6f5a56168a4c868fa70498e6162a85
+msgid "RansomLook's web UI supports multiple languages through `Flask-Babel <https://python-babel.github.io/flask-babel/>`_. The project currently ships **English** (source language) and **French** translations."
+msgstr ""
+
+#: ../../i18n.rst:9
+#: 1d43a986d8594d4dbd1e70155bd9b056
+msgid "How the locale is chosen"
+msgstr ""
+
+#: ../../i18n.rst:11
+#: 5d9b4eb0c0e643e3ac66857518ce8742
+msgid "On every request the active locale is picked in this order:"
+msgstr ""
+
+#: ../../i18n.rst:13
+#: dda4e40f0f2245e481a82b5e7d4f20ad
+msgid "**``locale`` cookie** — set by the user when they click the ``EN / FR`` switcher in the top bar. Persisted for one year."
+msgstr ""
+
+#: ../../i18n.rst:15
+#: e1078ba49f1849ceb8574b2008bc3ae8
+msgid "**Browser ``Accept-Language``** — when no cookie is set, the best match against the list of available locales is used."
+msgstr ""
+
+#: ../../i18n.rst:17
+#: 5ad46f0f86d74070bc281695dae7d5a4
+msgid "**Fallback** — ``en``."
+msgstr ""
+
+#: ../../i18n.rst:20
+#: b7b751835b17408094ee1dc9474cd8d0
+msgid "Switching language on demand"
+msgstr ""
+
+#: ../../i18n.rst:22
+#: 1590a6b5c26f4309ad8ebaf4d4fc5f73
+msgid "Hitting ``/set-locale/<code>`` (for example ``/set-locale/fr``) sets the cookie to the requested locale and bounces back to the referrer. The top-bar switcher is just a pair of links to those endpoints."
+msgstr ""
+
+#: ../../i18n.rst:27
+#: 635de341c9b3492283475c3a7d044abf
+msgid "File layout"
+msgstr ""
+
+#: ../../i18n.rst:39
+#: 5105348b10984f0ca11dcfa9ec50b090
+msgid "Flask-Babel loads the ``.mo`` files at process start. You **must restart** the web server (gunicorn / development runner) after recompiling for changes to take effect."
+msgstr ""
+
+#: ../../i18n.rst:43
+#: ff3d98f083784cd69660a55680c483b0
+msgid "Workflow for contributors"
+msgstr ""
+
+#: ../../i18n.rst:46
+#: 58c4717f0dfd4728a2c23acd8313d2cf
+msgid "Extracting strings"
+msgstr ""
+
+#: ../../i18n.rst:48
+#: ba6280fef5614f7c970207e72afe0e06
+msgid "Whenever a template or Python file gains a new ``_('...')`` or ``gettext(...)`` call:"
+msgstr ""
+
+#: ../../i18n.rst:55
+#: 462ec16f785c43b48f1bda70ac761aad
+msgid "Updating existing catalogues"
+msgstr ""
+
+#: ../../i18n.rst:57
+#: faeeeffa39a4488b8e5537c1fb1d1577
+msgid "Merge new strings into every language catalogue while preserving existing translations (fuzzy matches are flagged, not overwritten):"
+msgstr ""
+
+#: ../../i18n.rst:65
+#: a48e9e9d49254cbd978701afad01c777
+msgid "Editing translations"
+msgstr ""
+
+#: ../../i18n.rst:67
+#: fa3ec33390bf4ce8974c71d6e0d1e0b2
+msgid "Open ``translations/<lang>/LC_MESSAGES/messages.po`` in any PO editor (Poedit, Emacs po-mode, VS Code gettext plugins, …). Fill in the empty ``msgstr \"\"`` entries and remove the ``#, fuzzy`` flag once you have reviewed the suggested translation."
+msgstr ""
+
+#: ../../i18n.rst:73
+#: 0a7ab11388ee402b8299ad63cb04a4cd
+msgid "Adding a new language"
+msgstr ""
+
+#: ../../i18n.rst:75
+#: 1263603dd48f40c1b65bea99483748c6
+msgid "Initialise a catalogue from the template:"
+msgstr ""
+
+#: ../../i18n.rst:81
+#: f822dca3ec4b4b98a4709990dab8ff7f
+msgid "Then expose the new locale in ``website/web/__init__.py``:"
+msgstr ""
+
+#: ../../i18n.rst:87
+#: 00a966acada745ed95127449f2521cea
+msgid "and add a translation for the language name in the switcher (``base.html``)."
+msgstr ""
+
+#: ../../i18n.rst:90
+#: 25e84a8be6c74709aeb2b8607ef6db8c
+msgid "Compiling"
+msgstr ""
+
+#: ../../i18n.rst:92
+#: caeadd92682549af91a73af2744ad099
+msgid "Before running the app, compile ``.po`` → ``.mo``:"
+msgstr ""
+
+#: ../../i18n.rst:99
+#: 688ece4067f54165b74eddb3a9b46b6d
+msgid "Escaping ``%`` signs"
+msgstr ""
+
+#: ../../i18n.rst:101
+#: 9ebd4adba90843e0bb91181fc972319a
+msgid "Flask-Babel / gettext uses Python's ``%``-formatting. Any literal percent sign in a translatable string must be escaped as ``%%``. This is why ``Normalize (%%)`` appears in the templates rather than ``Normalize (%)``. Failing to escape leads to ``ValueError: unsupported format character`` at render time."
+msgstr ""
+
+#: ../../i18n.rst:108
+#: 9aaf58fe92a94c7cb5c3f000ad19177b
+msgid "Plural forms"
+msgstr ""
+
+#: ../../i18n.rst:110
+#: 5600cfec928149968efbf08a5940bafa
+msgid "Use ``ngettext`` (aliased as ``_()`` won't work for plurals):"
+msgstr ""
+
+#: ../../i18n.rst:116
+#: bdbb99122a98447ab1a1a2f5808fa719
+msgid "In the catalogue this yields ``msgid_plural`` and ``msgstr[0] / msgstr[1]`` entries."
+msgstr ""
+
+#: ../../i18n.rst:119
+#: e5befb54c20b4393a655a1c96b451827
+msgid "Translating the documentation itself"
+msgstr ""
+
+#: ../../i18n.rst:121
+#: a2674d62347f496cafc31d8ff2f1ecfe
+msgid "The RansomLook documentation you are reading now is available in several languages as well. Diagrams use neutral English labels; only the surrounding prose is translated."
+msgstr ""
+
+#: ../../i18n.rst:126
+#: 118ae1fd9bb549f1875968cb729539b8
+msgid "Local setup"
+msgstr ""
+
+#: ../../i18n.rst:128
+#: 95d2657e5f804a84bb6ffb82a240d950
+msgid "The extensions required to build a translated documentation are listed in ``docs/requirements.txt`` (``sphinx-intl``). ``conf.py`` already exposes the language through the ``SPHINX_LANGUAGE`` environment variable and points Sphinx at ``docs/locale/`` for translation catalogues."
+msgstr ""
+
+#: ../../i18n.rst:134
+#: cbfa9b35748540579a41e81b193dcb75
+msgid "Extract and update catalogues"
+msgstr ""
+
+#: ../../i18n.rst:136
+#: e4a0cc8eacb94065a22696b0397d2207
+msgid "From the repository root:"
+msgstr ""
+
+#: ../../i18n.rst:146
+#: c0a2df7d90f346198785779545d55d14
+msgid "Edit the ``docs/locale/fr/LC_MESSAGES/*.po`` files. Any PO editor works (Poedit, VS Code gettext, …)."
+msgstr ""
+
+#: ../../i18n.rst:150
+#: 0c3cfc775c7e4960b6c2223d1232a810
+msgid "Build a localised version"
+msgstr ""
+
+#: ../../i18n.rst:160
+#: 3a1d4669b6814f9ba56a51043ad89001
+msgid "No compilation step is needed for ``.mo`` — Sphinx reads ``.po`` directly."
+msgstr ""
+
+#: ../../i18n.rst:163
+#: 981e78367bcf409496e53b4031a96baf
+msgid "Wiring it up on Read the Docs"
+msgstr ""
+
+#: ../../i18n.rst:165
+#: 0e13e66d9d984d179d078d5e8257be88
+msgid "Read the Docs has native support for `documentation translations <https://docs.readthedocs.com/platform/stable/localization.html>`_. The canonical setup is:"
+msgstr ""
+
+#: ../../i18n.rst:169
+#: 0e33e30aba2140e09ce6b0544d88a473
+msgid "**Keep a single Git repository** (this one) hosting both the source files and the ``docs/locale/<lang>/`` catalogues."
+msgstr ""
+
+#: ../../i18n.rst:171
+#: 22fddc63cc58447f93094c5829b493e0
+msgid "**Create a \"translation\" project on RTD** for each language (e.g. ``ransomlook-fr``). Point it at the same Git repository and branch."
+msgstr ""
+
+#: ../../i18n.rst:173
+#: 60c20cfc485b4d79a4feaa18c35e367c
+msgid "In the project's *Admin → Advanced settings*, set the **Language** to the target locale (``French``)."
+msgstr ""
+
+#: ../../i18n.rst:175
+#: 5e1b97c85922416ba8d39fdbc35bcab1
+msgid "In the project's *Admin → Environment variables*, add ``SPHINX_LANGUAGE=fr`` so the build uses the French catalogue."
+msgstr ""
+
+#: ../../i18n.rst:177
+#: 1396cc8fdc4749c99ab397c5599afbf5
+msgid "Open the **main** project (English). Go to *Admin → Translations* and **link the French project** as a translation. Read the Docs will then serve the docs at:"
+msgstr ""
+
+#: ../../i18n.rst:181
+#: 38ed7ce3d30a4900ac793bcbbadac086
+msgid "``https://ransomlook.readthedocs.io/en/latest/`` (main, default)"
+msgstr ""
+
+#: ../../i18n.rst:182
+#: 3ef413a7904c4a4a8f4dc127d582bdba
+msgid "``https://ransomlook.readthedocs.io/fr/latest/`` (translated)"
+msgstr ""
+
+#: ../../i18n.rst:184
+#: a06320c3009e4ef5b27c9c9eef709eb6
+msgid "The language switcher in the RTD flyout menu picks this up automatically."
+msgstr ""
+
+#: ../../i18n.rst:186
+#: 53360f2cdbbf466b98800a85680aadac
+msgid "Repeat steps 2–5 per additional language."
+msgstr ""
+
+#: ../../i18n.rst:189
+#: 7c421e3b0c4e433c894d0279cfa3b4d1
+msgid "Keeping translations in sync"
+msgstr ""
+
+#: ../../i18n.rst:191
+#: 147c9a356e6b4ee98c022fbbd1469347
+msgid "Whenever a ``.rst`` file is modified:"
+msgstr ""
+
+#: ../../i18n.rst:193
+#: c96a6aa08069441aaf92ccd0bca13483
+msgid "Re-run ``sphinx-build -b gettext``."
+msgstr ""
+
+#: ../../i18n.rst:194
+#: 1a444c2ec7f64afe97be9caee4dca5ac
+msgid "Re-run ``sphinx-intl update`` — new or changed paragraphs show up as empty or fuzzy entries in the ``.po`` files."
+msgstr ""
+
+#: ../../i18n.rst:196
+#: 244e436a22254201b4f3db8be27cfbea
+msgid "Translate and commit."
+msgstr ""
+
+#: ../../i18n.rst:198
+#: 10a1eac33d814d1cbe924040e74a2488
+msgid "Mermaid diagrams use English labels by convention, so they require no translation work. If a diagram ever needs to carry localised text, drop the label into the surrounding prose (which is translated) rather than inside the diagram body."
+msgstr ""

@@ -1,0 +1,360 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../index.rst:19
+msgid "Technical considerations"
+msgstr "Considérations techniques"
+
+#: ../../index.rst:31
+msgid "Web interface"
+msgstr "Interface web"
+
+#: ../../index.rst:40
+msgid "Administration"
+msgstr "Administration"
+
+#: ../../index.rst:47
+msgid "API"
+msgstr "API"
+
+#: ../../index.rst:2 935ed8d1a9274b86accb854acfbc65a5
+msgid "RansomLook"
+msgstr "RansomLook"
+
+#: ../../index.rst:7 4c4a40e8685d4003b8403dd42a217162
+msgid "Latest release"
+msgstr "Dernière version"
+
+#: ../../index.rst:10 ../../index.rst:149 1266e61db8104396a6d2d9baea449e74
+#: f76cb6592d1b48199e7ce3e313b8d243
+msgid "License"
+msgstr "Licence"
+
+#: ../../index.rst:13 58c13a1777a7404f817bef91424534d6
+msgid "Stars"
+msgstr "Stars"
+
+#: ../../index.rst:16 1c58944977cc4fcf95ef7a04e88b6add
+msgid "Documentation Status"
+msgstr "Statut de la documentation"
+
+#: ../../index.rst:56 48328cd967394d928bccdcb1c9d25284
+msgid "Presentation"
+msgstr "Présentation"
+
+#: ../../index.rst:58 df59e6b8d7db45d2b822ff9e1159c943
+msgid ""
+"RansomLook is an open-source project aimed at assisting users in tracking"
+" ransomware-related posts and activities across various sites, forums, "
+"and Telegram channels."
+msgstr ""
+"RansomLook est un projet open-source destiné à aider ses utilisateurs à "
+"suivre les publications et activités liées aux ransomwares sur divers "
+"sites, forums et chaînes Telegram."
+
+#: ../../index.rst:60 2e79012370474800825f5776d864a0e8
+msgid ""
+"A public instance operated by RansomLook Team is available at "
+"https://ransomlook.io."
+msgstr ""
+"Une instance publique opérée par l'équipe RansomLook est disponible sur "
+"https://ransomlook.io."
+
+#: ../../index.rst:63 92ee540330254a17a2d71759d35a7d64
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#: ../../index.rst:65 59c72c5a49ed401ca5b932a0bc99cee7
+msgid "Data collection:"
+msgstr "Collecte de données :"
+
+#: ../../index.rst:67 dd5eabc505ad458ab48b2b724787e333
+msgid "Blog / DLS monitoring with per-group parsers for victim extraction"
+msgstr ""
+"Surveillance des blogs / DLS avec parsers dédiés par groupe pour "
+"l'extraction des victimes"
+
+#: ../../index.rst:68 a1e2a0b07ed7440e9c6d096b098381cb
+msgid "Forum monitoring (listing only — parsing is not available)"
+msgstr "Surveillance des forums (listing seul — le parsing n'est pas disponible)"
+
+#: ../../index.rst:69 ada529c8c72342279bd0190c0c85429c
+msgid "Ransom notes indexing from ThreatLabz"
+msgstr "Indexation des notes de rançon depuis ThreatLabz"
+
+#: ../../index.rst:70 1991024fe3ed4c4c817ec9ab5866f4fd
+msgid ""
+"Public leak tracking (leak-lookup) and optional Recorded Future dumps "
+"(API key required)"
+msgstr ""
+"Suivi des leaks publics (leak-lookup) et dumps Recorded Future optionnels"
+" (clé d'API requise)"
+
+#: ../../index.rst:71 1137dde7b701423299f87fb0d572bc55
+msgid "Monitoring of known cryptocurrency wallets"
+msgstr "Surveillance des portefeuilles de cryptomonnaies connus"
+
+#: ../../index.rst:73 80eb2ea06aeb4404aef8c4c75956fd80
+msgid "Web interface (see :doc:`features` for details):"
+msgstr "Interface web (voir :doc:`features` pour les détails) :"
+
+#: ../../index.rst:75 42eab4556df642389190098a24f09254
+msgid ""
+"``/urls`` — flat inventory of every tracked mirror with status, 30-day "
+"health, CSV export"
+msgstr ""
+"``/urls`` — inventaire plat de tous les miroirs suivis avec statut, santé"
+" sur 30 jours et export CSV"
+
+#: ../../index.rst:76 708a6fc45b72428f979bbb23577a9322
+msgid ""
+"``/browse`` — card grid of groups, markets and threat actors with health "
+"and search filters"
+msgstr ""
+"``/browse`` — grille de cartes de groupes, marchés et acteurs de menace "
+"avec filtres de santé et de recherche"
+
+#: ../../index.rst:77 eff4a1a86f37455ea02b4e9d3b47877a
+msgid "``/recent`` — chronological posts over 1/3/7/30-day windows"
+msgstr "``/recent`` — publications chronologiques sur fenêtres de 1/3/7/30 jours"
+
+#: ../../index.rst:78 241a71707eae47929d9c2edd1461b34f
+msgid "``/hot`` — trending groups (Δ%, volume, new entrants) with sparklines"
+msgstr ""
+"``/hot`` — groupes en tendance (Δ%, volume, nouveaux entrants) avec "
+"sparklines"
+
+#: ../../index.rst:79 bf8a8f1c9aa04a348386f30c183800ed
+msgid ""
+"``/stats`` — interactive Plotly charts with rolling averages and Top-N "
+"filtering"
+msgstr ""
+"``/stats`` — graphiques Plotly interactifs avec moyennes glissantes et "
+"filtre Top-N"
+
+#: ../../index.rst:80 7eb8c4d9d5dc453dab5ae466ad9ab5cb
+msgid "``/compare`` — side-by-side comparison of two entities"
+msgstr "``/compare`` — comparaison côte à côte de deux entités"
+
+#: ../../index.rst:81 3ec4370be446402cb880459b67b20cea
+msgid ""
+"``/crypto`` — wallets by group with transactions and Breadcrumbs "
+"integration"
+msgstr ""
+"``/crypto`` — portefeuilles par groupe avec transactions et intégration "
+"Breadcrumbs"
+
+#: ../../index.rst:82 9b1566eba6434a1cb3428e7145dca2b9
+msgid ""
+"Entity detail pages for groups, markets and threat actors with relation "
+"graphs"
+msgstr ""
+"Pages de détail des groupes, marchés et acteurs de menace avec graphes de"
+" relations"
+
+#: ../../index.rst:84 25818f47154b40da9d6ce8e1c0ff80a0
+msgid "Automation / integration:"
+msgstr "Automatisation / intégration :"
+
+#: ../../index.rst:86 1f8714206f674d19979680b92acbdf0f
+msgid "JSON API documented via Swagger at ``/doc/``"
+msgstr "API JSON documentée via Swagger à ``/doc/``"
+
+#: ../../index.rst:87 cf1f480c15274ba0be0eb5df897ea238
+msgid "RSS feed of recent posts at ``/rss.xml``"
+msgstr "Flux RSS des publications récentes à ``/rss.xml``"
+
+#: ../../index.rst:88 72e7ea315bbd4215a562a8dbb299b7ae
+msgid "Optional notifications (RocketChat, e-mail)"
+msgstr "Notifications optionnelles (RocketChat, e-mail)"
+
+#: ../../index.rst:89 7f7dee6d07334da389ee53bd9ea334bd
+msgid "Optional Mastodon bridge"
+msgstr "Bridge Mastodon optionnel"
+
+#: ../../index.rst:91 9fa87bd04771435baab043ee5ed3a08e
+msgid "i18n:"
+msgstr "i18n :"
+
+#: ../../index.rst:93 b0a5373010c947ad92d898f37e2b73bc
+msgid ""
+"English and French UI, switchable via top-bar toggle (cookie-based); see "
+":doc:`i18n`"
+msgstr ""
+"Interface en anglais et français, basculable via le toggle de la barre du"
+" haut (cookie) ; voir :doc:`i18n`"
+
+#: ../../index.rst:97 73f794f9d91f42bd8072eb355d4e5093
+msgid "Is it free?"
+msgstr "Est-ce gratuit ?"
+
+#: ../../index.rst:99 5ea6e9f47497429887a56e51ebbac2d6
+msgid "Yes, it is free, and more importantly, it is open-source."
+msgstr "Oui, c'est gratuit — et surtout, c'est open-source."
+
+#: ../../index.rst:102 26d3c31d5f1146e59a9948d729571ad6
+msgid "How can I follow new posts?"
+msgstr "Comment suivre les nouvelles publications ?"
+
+#: ../../index.rst:104 9823501657314e329d5d8d1a57e2e89e
+msgid "There are various ways to stay updated with new posts:"
+msgstr "Plusieurs moyens permettent de suivre les nouvelles publications :"
+
+#: ../../index.rst:106 37710f4a23504342ac50b5192665b9a1
+msgid ""
+"By running your own instance and enabling RocketChat and/or email "
+"notifications"
+msgstr ""
+"En hébergeant sa propre instance et en activant les notifications "
+"RocketChat et/ou e-mail"
+
+#: ../../index.rst:107 e7d1b3e1f9f34d1a99cc592b3c9ae2cd
+msgid "By checking the public instance: https://www.ransomlook.io"
+msgstr "En consultant l'instance publique : https://www.ransomlook.io"
+
+#: ../../index.rst:108 8fb14532aa7e4569a8b0d25fae2d788a
+msgid "By accessing the API: https://www.ransomlook.io/doc"
+msgstr "En accédant à l'API : https://www.ransomlook.io/doc"
+
+#: ../../index.rst:109 ddd33b0b5cc94ad0a06149503e072490
+msgid "By subscribing to the RSS feed: https://www.ransomlook.io/rss.xml"
+msgstr "En s'abonnant au flux RSS : https://www.ransomlook.io/rss.xml"
+
+#: ../../index.rst:110 3c1e921c00bc4171a50e3c104f807fad
+msgid ""
+"By following us on Mastodon: `@Ransomlook@social.circl.lu "
+"<https://social.circl.lu/@Ransomlook>`_"
+msgstr ""
+"En nous suivant sur Mastodon : `@Ransomlook@social.circl.lu "
+"<https://social.circl.lu/@Ransomlook>`_"
+
+#: ../../index.rst:111 5c8c360e943f48fdbde557fb26b3be43
+msgid ""
+"By following us on BlueSky: `ransomlook.bsky.social "
+"<https://bsky.app/profile/ransomlook.bsky.social>`_"
+msgstr ""
+"En nous suivant sur BlueSky : `ransomlook.bsky.social "
+"<https://bsky.app/profile/ransomlook.bsky.social>`_"
+
+#: ../../index.rst:113 fd34ac6f0c13408b9ce966767b64fc36
+msgid "There is NO official Telegram Channel!"
+msgstr "Il n'existe AUCUN canal Telegram officiel !"
+
+#: ../../index.rst:116 1fae82cbde18475d9e65400d88e93cb4
+msgid "Want to Be Part of the RansomLook Community?"
+msgstr "Envie de rejoindre la communauté RansomLook ?"
+
+#: ../../index.rst:118 83efa625f11040a88d170c2cefdc25d0
+msgid "Join us in making RansomLook even better! Here's how you can contribute:"
+msgstr "Aidez-nous à améliorer RansomLook ! Voici comment contribuer :"
+
+#: ../../index.rst:120 ccd0915a93b24eba8d075c7d355f1e6b
+msgid "Create an issue on our GitHub repository."
+msgstr "Ouvrir un ticket sur notre dépôt GitHub."
+
+#: ../../index.rst:121 33de86bc1dd74edca681d1d19bfe3200
+msgid "Submit your pull requests with new features or improvements."
+msgstr ""
+"Proposer des pull requests avec de nouvelles fonctionnalités ou "
+"améliorations."
+
+#: ../../index.rst:122 57cfaff832cd48c1a313863cc64f0f2e
+msgid "Share new sources of DLS (Darknet Leak Sites) with us."
+msgstr ""
+"Partager de nouvelles sources de DLS (sites de fuite du dark web) avec "
+"nous."
+
+#: ../../index.rst:123 1129e5572882490890f9f6befd9c3d1a
+msgid "Report any bugs you come across."
+msgstr "Signaler tout bug rencontré."
+
+#: ../../index.rst:124 69cad012a0044aea82672cd8e7a8a0c3
+msgid "Suggest exciting new functionalities that could enhance RansomLook."
+msgstr "Suggérer des fonctionnalités qui pourraient enrichir RansomLook."
+
+#: ../../index.rst:127 ffe502e2fb0a43389c71e8f7f195d95a
+msgid "Credits & Thanks"
+msgstr "Crédits et remerciements"
+
+#: ../../index.rst:129 b1a24e0733e54a5c929a0d1d66b79861
+msgid ""
+"RansomLook is maintained by Alexandre Dulaunoy "
+"(https://github.com/adulau/) and Fafner [_KeyZee_] "
+"(https://github.com/fafnerkeyzee)."
+msgstr ""
+"RansomLook est maintenu par Alexandre Dulaunoy "
+"(https://github.com/adulau/) et Fafner [_KeyZee_] "
+"(https://github.com/fafnerkeyzee)."
+
+#: ../../index.rst:131 044b267ae3e84f93bf03d67192b5ed2c
+msgid ""
+"We thank Tammy Harper for her contributions to adding new groups and her "
+"regular feedback to improve the project."
+msgstr ""
+"Nous remercions Tammy Harper pour ses contributions à l'ajout de nouveaux"
+" groupes et ses retours réguliers."
+
+#: ../../index.rst:133 c462af37f4a546b99d5314aeddadc01c
+msgid "The code is based on RansomWatch."
+msgstr "Le code est basé sur RansomWatch."
+
+#: ../../index.rst:135 a20bb0464a99465da57f6ebbd9397510
+msgid "External data are from:"
+msgstr "Les données externes proviennent de :"
+
+#: ../../index.rst:137 8de8ed9d720d493fb537788938f720b2
+msgid "Malpedia for description"
+msgstr "Malpedia pour les descriptions"
+
+#: ../../index.rst:138 5b9923eebb98427da19a52d1b59a409c
+msgid "Ransomwhe.re for cryptoCurrency"
+msgstr "Ransomwhe.re pour les cryptomonnaies"
+
+#: ../../index.rst:139 677aa1a7795747b8bc97c565716df198
+msgid "threatlabz for the RansomNotes"
+msgstr "threatlabz pour les notes de rançon"
+
+#: ../../index.rst:140 c30274d921b244b98df0d2f6ca681440
+msgid "leak-lookup for the public leaks"
+msgstr "leak-lookup pour les leaks publics"
+
+#: ../../index.rst:143 9aa41cee8ebf4445adc9ff1d09d48822
+msgid "Contact"
+msgstr "Contact"
+
+#: ../../index.rst:145 7be8de989234485aaf50ffa31aa83385
+msgid ""
+"Ping us on Twitter or Mastodon, or you can directly contact us via issue "
+"on Github. You can also contact us by using: contact [at] ransomlook "
+"[dot] io"
+msgstr ""
+"Contactez-nous sur Twitter ou Mastodon, ou directement par un ticket sur "
+"GitHub. Vous pouvez aussi nous écrire à : contact [at] ransomlook [dot] "
+"io"
+
+#: ../../index.rst:151 e38dc140816447baa43b98a86a3fe7aa
+msgid ""
+"RansomLook is licensed under `GNU Affero General Public License version 3"
+" <https://www.gnu.org/licenses/agpl-3.0.html>`_."
+msgstr ""
+"RansomLook est distribué sous `licence GNU Affero General Public License "
+"version 3 <https://www.gnu.org/licenses/agpl-3.0.html>`_."
+

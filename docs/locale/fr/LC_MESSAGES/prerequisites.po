@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../prerequisites.rst:2 42649068959743d8aaf5affbc1e17fd0
+msgid "Prerequisites"
+msgstr "Prérequis"
+
+#: ../../prerequisites.rst:5 3963cf79352b410c9565d89b1c0c5fd1
+msgid "Software"
+msgstr "Logiciel"
+
+#: ../../prerequisites.rst:7 fcdf144e75394fc380fe74821da73d42
+msgid "Generally speaking, requirements are the following:"
+msgstr "De manière générale, les prérequis sont les suivants :"
+
+#: ../../prerequisites.rst:9 769f89516a8a4cd1bbe5765f188f90ef
+msgid "A GNU/Linux distribution. Tested on Ubuntu 22.04.3 LTS and Arch 6.12.4"
+msgstr "Une distribution GNU/Linux. Testé sur Ubuntu 22.04.3 LTS et Arch 6.12.4."
+
+#: ../../prerequisites.rst:10 820f75955eab4f8ba89d172106fee474
+msgid "Python version = 3.10. Didn't tested with Python 3.11 and 3.12"
+msgstr "Python version = 3.10. Non testé avec Python 3.11 et 3.12."
+
+#: ../../prerequisites.rst:11 d080cba9543448888d0c003a074ebbad
+msgid "`Valkey <https://github.com/valkey-io/valkey>`_ database"
+msgstr "Base `Valkey <https://github.com/valkey-io/valkey>`_"
+
+#: ../../prerequisites.rst:12 90121835e6634da1865efdffe1976925
+msgid "`Poetry <https://python-poetry.org>`_"
+msgstr "`Poetry <https://python-poetry.org>`_"
+
+#: ../../prerequisites.rst:13 6f4cb4d4038c4899ab3ba97067431346
+msgid "A Tor proxy"
+msgstr "Un proxy Tor"
+
+#: ../../prerequisites.rst:15 21ea77108a6349209e77240f894da18b
+msgid "Optionally:"
+msgstr "Optionnel :"
+
+#: ../../prerequisites.rst:17 a661b84f6d9b490caf664e3f9670e803
+msgid ""
+"Postfix, or an equivalent software, is required for the email "
+"notifications."
+msgstr ""
+"Postfix, ou un logiciel équivalent, est requis pour les notifications "
+"e-mail."
+
+#: ../../prerequisites.rst:19 ecc21e19751a4eac9c50520b3e6bcfea
+msgid "For the Web server you can use Apache or Nginx in front of Gunicorn"
+msgstr "Côté serveur web, vous pouvez utiliser Apache ou Nginx devant Gunicorn."
+
+#: ../../prerequisites.rst:23 985ca884b4ce4d138ce468f626d04d45
+msgid "Hardware"
+msgstr "Matériel"
+
+#: ../../prerequisites.rst:27 8d025dfddb574cc389553b43e9bcdfb3
+msgid "Network"
+msgstr "Réseau"
+
+#: ../../prerequisites.rst:29 9529684d096b420a86d9e1a2a48dbda1
+msgid ""
+"The scraping on the different DLS/Forum/Telegram etc require an Internet "
+"connection."
+msgstr ""
+"Le scraping des DLS / forums / Telegram / etc. nécessite une connexion "
+"Internet."
+

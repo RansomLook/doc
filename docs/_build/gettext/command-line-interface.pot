@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../command-line-interface.rst:2
+#: 86eef080fbcd4592af7127f2e4e6c89d
+msgid "Command Line Interface"
+msgstr ""
+
+#: ../../command-line-interface.rst:4
+#: 818c00b32923416caf51ae6450ceaf8f
+msgid "Section to explain the various commands available. We suppose that you run them in the installation directory of RansomLook"
+msgstr ""
+
+#: ../../command-line-interface.rst:7
+#: f000b2d177404013b330227d2b765a0e
+msgid "Core"
+msgstr ""
+
+#: ../../command-line-interface.rst:10
+#: fae42d34cc164eb7ad5e7b6b37f04e83
+msgid "Start the service"
+msgstr ""
+
+#: ../../command-line-interface.rst:17
+#: d94b479a296e40fe8198426c40e5593c
+msgid "Stop the service"
+msgstr ""
+
+#: ../../command-line-interface.rst:24
+#: 7c725dbb8ed145708da7c57617c97b78
+msgid "Update the instance"
+msgstr ""
+
+#: ../../command-line-interface.rst:30
+#: a8e5b17ee68c4b4398caee77b0e99de3
+msgid "Add a group to monitor"
+msgstr ""
+
+#: ../../command-line-interface.rst:32
+#: 9a476761e7364aa58957ac46067e2a94
+msgid "Select if you want to add a Group (with their DLS) or a forum. DB to use is 0 or 3."
+msgstr ""
+
+#: ../../command-line-interface.rst:39
+#: b0ce005a148e47879767c6b921d4f4b2
+msgid "Scrape all groups"
+msgstr ""
+
+#: ../../command-line-interface.rst:41
+#: 88ef6fff2a5f4a62981d38359372a79d
+msgid "Please be sure that tor service is installed and running on your instance."
+msgstr ""
+
+#: ../../command-line-interface.rst:48
+#: 7ca87145951c4a938909c227e58f246b
+msgid "Parse scraped groups"
+msgstr ""
+
+#: ../../command-line-interface.rst:55
+#: f49f25eb53d34934a53c4e5a3b72c0b2
+msgid "Get screenshots for parsed posts"
+msgstr ""
+
+#: ../../command-line-interface.rst:62
+#: b8ac0373744c45e7bb79ddb75087c682
+msgid "Retreive Telegram Channels"
+msgstr ""
+
+#: ../../command-line-interface.rst:69
+#: d1b05be8937f4e87aba0cfa10262dafd
+msgid "Retreive cryptocurrencies transactions"
+msgstr ""
+
+#: ../../command-line-interface.rst:76
+#: 7550f7af28ba4b239419976070faa1a0
+msgid "Get the known notes from RansomWare"
+msgstr ""
+
+#: ../../command-line-interface.rst:83
+#: e778df9384594195b12b61224bea2355
+msgid "Get leaks from Recorded Future"
+msgstr ""
+
+#: ../../command-line-interface.rst:90
+#: 6cbc8afa34fa4e65acbfa2076beb2e04
+msgid "Get content listing of torrent files"
+msgstr ""
+
+#: ../../command-line-interface.rst:97
+#: 54c103c71be74bba84beabfcb0d6e0ac
+msgid "Get Tweets"
+msgstr ""
+
+#: ../../command-line-interface.rst:104
+#: db62c82627ad4ef4936809a97e581c4e
+msgid "Send notification of previous day posts"
+msgstr ""
+
+#: ../../command-line-interface.rst:111
+#: 71e7440d6288445ebea8601096137141
+msgid "Send notification of previous day leaks"
+msgstr ""
+
+#: ../../command-line-interface.rst:118
+#: 0976c41af2794aaf8305c7045984d298
+msgid "Tools"
+msgstr ""
+
+#: ../../command-line-interface.rst:121
+#: 20d5272ee8794c3ba1ce2d9b85f3d2d4
+msgid "Get list of databreaches"
+msgstr ""
+
+#: ../../command-line-interface.rst:129
+#: 47f9915130d64b669273ea6c37970247
+msgid "Reparse groups"
+msgstr ""
+
+#: ../../command-line-interface.rst:131
+#: 1e676c57e4e6479a8c4062b28ce09945
+msgid "This command reparse files associated to a group and update the screen data in order to be captured during next screen session."
+msgstr ""
+
+#: ../../command-line-interface.rst:138
+#: e19615a20d764f42859d996c3cb919b1
+msgid "Import data from Malpedia"
+msgstr ""
+
+#: ../../command-line-interface.rst:145
+#: 92efe91680ca4f288912b01b808440d2
+msgid "Import data from the public instance"
+msgstr ""
+
+#: ../../command-line-interface.rst:147
+#: 30f3944bc346496db513ef18d9d26f8d
+msgid "Redownload data from public instance, should be used only for the first populating."
+msgstr ""
+
+#: ../../command-line-interface.rst:155
+#: da58d4a717fc4cf386b28dffc0a91d03
+msgid "Generate a csv stats file"
+msgstr ""
+
+#: ../../command-line-interface.rst:162
+#: e281402bea944d3085760635a79a4017
+msgid "Generate screenshot thumbnails"
+msgstr ""
+
+#: ../../command-line-interface.rst:164
+#: 5020be3c978c4aa99ff53ee00985c4a3
+msgid "Pre-generates the JPEG thumbnails served on group/market detail pages. On first run this can take a while (hundreds of thousands of screenshots); subsequent runs are incremental and only touch screenshots that are newer than their thumbnail."
+msgstr ""
+
+#: ../../command-line-interface.rst:175
+#: a0c798d39ea449e9b5b93e44dfe168b0
+msgid "The script skips ``source/screenshots/old`` and ``source/screenshots/logo``, and mirrors the source directory tree under ``source/screenshots/thumbs/``."
+msgstr ""
+
+#: ../../command-line-interface.rst:179
+#: 0e991259a2894bbfb4f3809767e99d98
+msgid "Regenerate Subresource Integrity (SRI) hashes"
+msgstr ""
+
+#: ../../command-line-interface.rst:181
+#: 8d523e7b25c14763b0fd52f6d3f7048e
+msgid "Every static JS/CSS asset is referenced in templates with an ``integrity=\"sha512-...\"`` attribute read from ``website/web/sri.txt``. After modifying any static file you must regenerate this file:"
+msgstr ""
+
+#: ../../command-line-interface.rst:189
+#: 62c0721729ad4abda94d4e5b49849db6
+msgid "Failing to do so results in ``KeyError`` 500 errors when Flask-Jinja tries to look up the hash of an asset that was added but not yet indexed."
+msgstr ""
+
+#: ../../command-line-interface.rst:193
+#: b0ffe8e97be047cca66d72ada1db100e
+msgid "Translation catalogues"
+msgstr ""
+
+#: ../../command-line-interface.rst:195
+#: 6e720016ef074206ba0fc6a6bff2ba5c
+msgid "See :doc:`i18n` for the full workflow. Quick reference:"
+msgstr ""

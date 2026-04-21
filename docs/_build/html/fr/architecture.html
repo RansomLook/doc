@@ -1,0 +1,1242 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Architecture &#8212; RansomLook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=8e3b808b"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.12.1/dist/mermaid.esm.min.mjs";
+
+
+
+
+
+const initStyles = () => {
+    const defaultStyle = document.createElement('style');
+    defaultStyle.textContent = `pre.mermaid {
+    /* Same as .mermaid-container > pre */
+    display: block;
+    width: 100%;
+}
+
+pre.mermaid > svg {
+    /* Same as .mermaid-container > pre > svg */
+    height: 500px;
+    width: 100%;
+    max-width: 100% !important;
+}`;
+    document.head.appendChild(defaultStyle);
+
+    const fullscreenStyle = document.createElement('style');
+    fullscreenStyle.textContent = `.mermaid-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.mermaid-container > pre {
+    display: block;
+    width: 100%;
+}
+
+.mermaid-container > pre > svg {
+    height: 500px;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.mermaid-fullscreen-btn {
+    width: 28px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    color: #333;
+}
+
+.mermaid-fullscreen-btn:hover {
+    opacity: 100% !important;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.mermaid-fullscreen-btn.dark-theme {
+    background: rgba(50, 50, 50, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #e0e0e0;
+}
+
+.mermaid-fullscreen-btn.dark-theme:hover {
+    background: rgba(60, 60, 60, 1);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
+}
+
+.mermaid-fullscreen-modal {
+    display: none;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 95vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.98);
+    z-index: 9999;
+    padding: 20px;
+    overflow: auto;
+}
+
+.mermaid-fullscreen-modal.dark-theme {
+    background: rgba(0, 0, 0, 0.98);
+}
+
+.mermaid-fullscreen-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mermaid-container-fullscreen {
+    position: relative;
+    width: 95vw;
+    height: 90vh;
+    max-width: 95vw;
+    max-height: 90vh;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mermaid-container-fullscreen.dark-theme {
+    background: #1a1a1a;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+.mermaid-container-fullscreen pre.mermaid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mermaid-container-fullscreen .mermaid svg {
+    height: 100% !important;
+    width: 100% !important;
+    cursor: grab;
+}
+
+.mermaid-fullscreen-close {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+    font-size: 24px;
+    line-height: 1;
+    color: #333;
+}
+
+.mermaid-fullscreen-close:hover {
+    background: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+.mermaid-fullscreen-close.dark-theme {
+    background: rgba(50, 50, 50, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e0e0e0;
+}
+
+.mermaid-fullscreen-close.dark-theme:hover {
+    background: rgba(60, 60, 60, 1);
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+}
+
+.mermaid-fullscreen-modal .mermaid-fullscreen-btn {
+    display: none !important;
+}`;
+    document.head.appendChild(fullscreenStyle);
+}
+
+// Detect if page has dark background
+const isDarkTheme = () => {
+    // We use a set of heuristics:
+    // 1. Check for common dark mode classes or attributes
+    // 2. Check computed background color brightness
+    if (document.documentElement.classList.contains('dark') ||
+        document.documentElement.getAttribute('data-theme') === 'dark' ||
+        document.body.classList.contains('dark') ||
+        document.body.getAttribute('data-theme') === 'dark') {
+        // console.log("Dark theme detected via class/attribute");
+        return true;
+    }
+    if (document.documentElement.classList.contains('light') ||
+        document.documentElement.getAttribute('data-theme') === 'light' ||
+        document.body.classList.contains('light') ||
+        document.body.getAttribute('data-theme') === 'light') {
+        // console.log("Light theme detected via class/attribute");
+        return false;
+    }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // console.log("Dark theme detected via prefers-color-scheme");
+        return true;
+    }
+    const bgColor = window.getComputedStyle(document.body).backgroundColor;
+    const match = bgColor.match(/rgb\((\d+),\s*(\d+),\s*(\d+)/);
+    if (match) {
+        const r = parseInt(match[1]);
+        const g = parseInt(match[2]);
+        const b = parseInt(match[3]);
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        // console.log("Background color brightness:", brightness);
+        return brightness < 128;
+    }
+    // console.log("No dark or light theme detected, defaulting to light theme");
+    return false;
+};
+
+let darkTheme = isDarkTheme();
+let modal = null;
+let modalContent = null;
+let previousScrollOffset = [window.scrollX, window.scrollY];
+
+const runMermaid = async (rerun) => {
+    console.log("Running mermaid diagrams, rerun =", rerun);
+    // clear all existing mermaid charts
+    let all_mermaids = document.querySelectorAll(".mermaid");
+
+    if (rerun) {
+        all_mermaids.forEach((el) => {
+            if(!el.hasAttribute("data-original-code")) {
+                // store original code
+                // console.log(`Storing original code for first run: `, el.innerHTML);
+                el.setAttribute('data-original-code', el.innerHTML);
+            }
+            if(el.getAttribute("data-processed") === "true") {
+                // remove and restore original
+                el.removeAttribute("data-processed");
+                // console.log(`Restoring original code for re-run: `, el.getAttribute('data-original-code'));
+                el.innerHTML = el.getAttribute('data-original-code');
+            } else {
+                // store original code
+                // console.log(`Storing original code for re-run: `, el.innerHTML);
+                el.setAttribute('data-original-code', el.innerHTML);
+            }
+        });
+        await mermaid.run();
+    }
+
+    all_mermaids = document.querySelectorAll(".mermaid");
+    const mermaids_processed = document.querySelectorAll(".mermaid[data-processed='true']");
+
+    if ("False" === "True") {
+        const mermaids_to_add_zoom = -1 === -1 ? all_mermaids.length : -1;
+        if(mermaids_to_add_zoom > 0) {
+            var svgs = d3.selectAll("");
+            if(all_mermaids.length !== mermaids_processed.length) {
+                setTimeout(() => runMermaid(false), 200);
+                return;
+            } else if(svgs.size() !== mermaids_to_add_zoom) {
+                setTimeout(() => runMermaid(false), 200);
+                return;
+            } else {
+                svgs.each(function() {
+                    var svg = d3.select(this);
+                    svg.html("<g class='wrapper'>" + svg.html() + "</g>");
+                    var inner = svg.select("g");
+                    var zoom = d3.zoom().on("zoom", function(event) {
+                        inner.attr("transform", event.transform);
+                    });
+                    svg.call(zoom);
+                });
+            }
+        }
+    } else if(all_mermaids.length !== mermaids_processed.length) {
+        // Wait for mermaid to process all diagrams
+        setTimeout(() => runMermaid(false), 200);
+        return;
+    }
+
+    // Stop here if not adding fullscreen capability
+    if ("True" !== "True") return;
+
+    if (modal !== null ) {
+        // Destroy existing modal
+        modal.remove();
+        modal = null;
+        modalContent = null;
+    }
+
+    modal = document.createElement('div');
+    modal.className = 'mermaid-fullscreen-modal' + (darkTheme ? ' dark-theme' : '');
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-label', 'Fullscreen diagram viewer');
+    modal.innerHTML = `
+        <button class="mermaid-fullscreen-close${darkTheme ? ' dark-theme' : ''}" aria-label="Close fullscreen">✕</button>
+        <div class="mermaid-container-fullscreen${darkTheme ? ' dark-theme' : ''}"></div>
+    `;
+    document.body.appendChild(modal);
+
+    modalContent = modal.querySelector('.mermaid-container-fullscreen');
+    const closeBtn = modal.querySelector('.mermaid-fullscreen-close');
+
+    const closeModal = () => {
+        modal.classList.remove('active');
+        modalContent.innerHTML = '';
+        document.body.style.overflow = ''
+        window.scrollTo({left: previousScrollOffset[0], top: previousScrollOffset[1], behavior: 'instant'});
+    };
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+
+    document.querySelectorAll('.mermaid').forEach((mermaidDiv) => {
+        if (mermaidDiv.parentNode.classList.contains('mermaid-container') ||
+            mermaidDiv.closest('.mermaid-fullscreen-modal')) {
+            // Already processed, adjust button class if needed
+            const existingBtn = mermaidDiv.parentNode.querySelector('.mermaid-fullscreen-btn');
+            if (existingBtn) {
+                existingBtn.className = 'mermaid-fullscreen-btn' + (darkTheme ? ' dark-theme' : '');
+            }
+            return;
+        }
+
+        const container = document.createElement('div');
+        container.className = 'mermaid-container';
+        mermaidDiv.parentNode.insertBefore(container, mermaidDiv);
+        container.appendChild(mermaidDiv);
+
+        const fullscreenBtn = document.createElement('button');
+        fullscreenBtn.className = 'mermaid-fullscreen-btn' + (darkTheme ? ' dark-theme' : '');
+        fullscreenBtn.setAttribute('aria-label', 'View diagram in fullscreen');
+        fullscreenBtn.textContent = '⛶';
+        fullscreenBtn.style.opacity = '50%';
+
+        // Calculate dynamic position based on diagram's margin and padding
+        const diagramStyle = window.getComputedStyle(mermaidDiv);
+        const marginTop = parseFloat(diagramStyle.marginTop) || 0;
+        const marginRight = parseFloat(diagramStyle.marginRight) || 0;
+        const paddingTop = parseFloat(diagramStyle.paddingTop) || 0;
+        const paddingRight = parseFloat(diagramStyle.paddingRight) || 0;
+        fullscreenBtn.style.top = `${marginTop + paddingTop + 4}px`;
+        fullscreenBtn.style.right = `${marginRight + paddingRight + 4}px`;
+
+        fullscreenBtn.addEventListener('click', () => {
+            previousScrollOffset = [window.scroll, window.scrollY];
+            const clone = mermaidDiv.cloneNode(true);
+            modalContent.innerHTML = '';
+            modalContent.appendChild(clone);
+
+            const svg = clone.querySelector('svg');
+            if (svg) {
+                svg.removeAttribute('width');
+                svg.removeAttribute('height');
+                svg.style.width = '100%';
+                svg.style.height = 'auto';
+                svg.style.maxWidth = '100%';
+                svg.style.sdisplay = 'block';
+
+                if ("False" === "True") {
+                    setTimeout(() => {
+                        const g = svg.querySelector('g');
+                        if (g) {
+                            var svgD3 = d3.select(svg);
+                            svgD3.html("<g class='wrapper'>" + svgD3.html() + "</g>");
+                            var inner = svgD3.select("g");
+                            var zoom = d3.zoom().on("zoom", function(event) {
+                                inner.attr("transform", event.transform);
+                            });
+                            svgD3.call(zoom);
+                        }
+                    }, 100);
+                }
+            }
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        container.appendChild(fullscreenBtn);
+    });
+};
+
+const load = async () => {
+    initStyles();
+
+    await runMermaid(true);
+
+    const reRunIfThemeChanges = async () => {
+        const newDarkTheme = isDarkTheme();
+        if (newDarkTheme !== darkTheme) {
+            darkTheme = newDarkTheme;
+            console.log("Theme change detected, re-running mermaid with", darkTheme ? "dark" : "default", "theme");
+            await mermaid.initialize(
+                {...JSON.parse(
+                    `{"startOnLoad": false}`
+                ),
+                ...{ darkMode: darkTheme, theme: darkTheme ? 'dark' : 'default' },
+                }
+            );
+            await runMermaid(true);
+        }
+    };
+
+    // Update theme classes when theme changes
+    const themeObserver = new MutationObserver(reRunIfThemeChanges);
+    themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class', 'style', 'data-theme']
+    });
+    themeObserver.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class', 'style', 'data-theme']
+    });
+};
+
+
+
+
+
+console.log("Initializing mermaid with", darkTheme ? "dark" : "default", "theme");
+mermaid.initialize(
+    {...JSON.parse(
+        `{"startOnLoad": false}`
+    ),
+    ...{ darkMode: darkTheme, theme: darkTheme ? 'dark' : 'default' },
+    }
+);
+
+window.addEventListener("load", load);
+window.runMermaid = runMermaid;</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'architecture';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Internationalisation (i18n)" href="i18n.html" />
+    <link rel="prev" title="Interface web" href="features.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">RansomLook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Recherche</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    RansomLook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Considérations techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">Prérequis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Mettre à jour l’application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Interface en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">Utilisation en production</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interface web</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="features.html">Interface web</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalisation (i18n)</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="admin.html">Administration</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/edit/main/docs/architecture.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/issues/new?title=Issue%20on%20page%20%2Farchitecture.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/architecture.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Architecture</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functional-view">Vue fonctionnelle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-view-high-level">Vue architecturale — haut niveau</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-view-ultra-detailed">Vue architecturale — ultra détaillée</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-view-five-journeys">Vue utilisateur — cinq parcours</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soc-ir-match-an-observed-url">SOC / IR — identifier une URL observée</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cti-analyst-weekly-trend-report">Analyste CTI — rapport de tendance hebdomadaire</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#csirt-national-cert-constituency-triage">CSIRT / CERT national — triage de la constituence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-researcher-actor-investigation">Chercheur en sécurité — investigation sur un acteur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrator-automation-dashboards">Intégrateur — automatisation et dashboards</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-diagrams">Éditer les diagrammes</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="architecture">
+<h1>Architecture<a class="headerlink" href="#architecture" title="Lien vers cette rubrique">#</a></h1>
+<p>Cette page décrit RansomLook sous trois angles complémentaires :</p>
+<ul class="simple">
+<li><p>une <strong>vue fonctionnelle</strong> — ce que fait le projet, indépendamment de la technologie ;</p></li>
+<li><p>une <strong>vue architecturale</strong> — les composants techniques, à deux niveaux de zoom (haut niveau et ultra détaillée) ;</p></li>
+<li><p>une <strong>vue utilisateur</strong> — cinq parcours typiques du point de vue des principaux personas.</p></li>
+</ul>
+<nav class="contents local" id="sommaire">
+<ul class="simple">
+<li><p><a class="reference internal" href="#functional-view" id="id1">Vue fonctionnelle</a></p></li>
+<li><p><a class="reference internal" href="#architectural-view-high-level" id="id2">Vue architecturale — haut niveau</a></p></li>
+<li><p><a class="reference internal" href="#architectural-view-ultra-detailed" id="id3">Vue architecturale — ultra détaillée</a></p></li>
+<li><p><a class="reference internal" href="#user-view-five-journeys" id="id4">Vue utilisateur — cinq parcours</a></p>
+<ul>
+<li><p><a class="reference internal" href="#soc-ir-match-an-observed-url" id="id5">SOC / IR — identifier une URL observée</a></p></li>
+<li><p><a class="reference internal" href="#cti-analyst-weekly-trend-report" id="id6">Analyste CTI — rapport de tendance hebdomadaire</a></p></li>
+<li><p><a class="reference internal" href="#csirt-national-cert-constituency-triage" id="id7">CSIRT / CERT national — triage de la constituence</a></p></li>
+<li><p><a class="reference internal" href="#security-researcher-actor-investigation" id="id8">Chercheur en sécurité — investigation sur un acteur</a></p></li>
+<li><p><a class="reference internal" href="#integrator-automation-dashboards" id="id9">Intégrateur — automatisation et dashboards</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#editing-the-diagrams" id="id10">Éditer les diagrammes</a></p></li>
+</ul>
+</nav>
+<section id="functional-view">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Vue fonctionnelle</a><a class="headerlink" href="#functional-view" title="Lien vers cette rubrique">#</a></h2>
+<p>Des sources en amont (leak sites, bases de leaks publiques, corpus de notes de rançon, trackers crypto) jusqu’aux livrables exposés aux opérateurs, en passant par le pipeline de traitement.</p>
+<pre  class="mermaid">
+        flowchart LR
+    %% Sources
+    subgraph Sources
+        direction TB
+        DLS[DLS &amp; forums&lt;br/&gt;via Tor]
+        LeakLookup[leak-lookup]
+        RF[Recorded Future]
+        RansomwhereAPI[Ransomwhe.re]
+        TL[ThreatLabz]
+        Malpedia[Malpedia]
+    end
+
+    %% Pipeline
+    subgraph Pipeline [Processing]
+        direction TB
+        Scrape[Scraping]
+        Parse[Parsing &amp;&lt;br/&gt;normalisation]
+        Enrich[Enrichment&lt;br/&gt;crypto · leaks · notes&lt;br/&gt;screenshots · aliases]
+    end
+
+    %% Deliverables
+    subgraph Deliverables
+        direction TB
+        WebUI[Web UI]
+        API[JSON API]
+        RSS[RSS feed]
+        Notif[Notifications&lt;br/&gt;email · RocketChat · Mastodon]
+    end
+
+    DLS &amp; LeakLookup &amp; RF &amp; RansomwhereAPI &amp; TL &amp; Malpedia --&gt; Scrape
+    Scrape --&gt; Parse --&gt; Enrich
+    Enrich --&gt; WebUI &amp; API &amp; RSS &amp; Notif
+
+    classDef src fill:#1e293b,stroke:#60a5fa,color:#e5e7eb
+    classDef proc fill:#164e63,stroke:#22d3ee,color:#e5e7eb
+    classDef deliv fill:#14532d,stroke:#10b981,color:#e5e7eb
+    class DLS,LeakLookup,RF,RansomwhereAPI,TL,Malpedia src
+    class Scrape,Parse,Enrich proc
+    class WebUI,API,RSS,Notif deliv
+    </pre><p>Points clés :</p>
+<ul class="simple">
+<li><p>Chaque source est tirée (pas poussée) — RansomLook est un agrégateur en lecture seule.</p></li>
+<li><p>Le pipeline est <strong>idempotent</strong> : relancer scrape/parse sur les mêmes entrées converge vers le même état.</p></li>
+<li><p>Les quatre livrables partagent un seul data store — l’UI web et l’API exposent les mêmes faits.</p></li>
+</ul>
+</section>
+<section id="architectural-view-high-level">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Vue architecturale — haut niveau</a><a class="headerlink" href="#architectural-view-high-level" title="Lien vers cette rubrique">#</a></h2>
+<p>Les limites techniques en un coup d’œil.</p>
+<pre  class="mermaid">
+        flowchart TB
+    User[User / Browser]
+    Web[Flask app&lt;br/&gt;gunicorn]
+    Workers[Background CLI workers&lt;br/&gt;scrape · parse · screen · notify · ...]
+    Storage[(Valkey&lt;br/&gt;multi-DB)]
+    FS[(Filesystem&lt;br/&gt;screenshots · thumbs · logos)]
+    Tor{{Tor SOCKS proxy}}
+    External[External sources&lt;br/&gt;DLS · forums · leak APIs]
+
+    User --&gt;|HTTPS| Web
+    Web --&gt; Storage
+    Web --&gt; FS
+
+    Workers --&gt; Storage
+    Workers --&gt; FS
+    Workers --&gt; Tor --&gt; External
+
+    classDef ui fill:#14532d,stroke:#10b981,color:#e5e7eb
+    classDef core fill:#1e3a8a,stroke:#60a5fa,color:#e5e7eb
+    classDef store fill:#7c2d12,stroke:#f97316,color:#e5e7eb
+    classDef ext fill:#374151,stroke:#9ca3af,color:#e5e7eb
+    class User ui
+    class Web,Workers core
+    class Storage,FS store
+    class Tor,External ext
+    </pre></section>
+<section id="architectural-view-ultra-detailed">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Vue architecturale — ultra détaillée</a><a class="headerlink" href="#architectural-view-ultra-detailed" title="Lien vers cette rubrique">#</a></h2>
+<p>Chaque processus, data store et dépendance externe effectivement présents dans une instance en marche.</p>
+<pre  class="mermaid">
+        flowchart TB
+    subgraph ClientSide [Client]
+        Browser[Browser&lt;br/&gt;EN / FR locale cookie]
+    end
+
+    subgraph WebTier [Web tier]
+        direction TB
+        Proxy[Reverse proxy&lt;br/&gt;nginx - optional]
+        Gunicorn[gunicorn]
+        Flask[Flask app]
+        Babel[Flask-Babel&lt;br/&gt;i18n]
+        Login[Flask-Login]
+        RestX[Flask-RESTX&lt;br/&gt;/doc Swagger]
+        Jinja[Jinja2 + SRI]
+    end
+
+    subgraph CLI [Background CLI workers]
+        direction TB
+        Scrape[poetry run scrape]
+        Parse[poetry run parse]
+        Screen[poetry run screen]
+        NotesW[poetry run notes]
+        CryptoW[poetry run cryptocur]
+        RFW[poetry run rf]
+        NotifyW[poetry run notify /&lt;br/&gt;notifyleak]
+        Torrent[poetry run torrent]
+        Thumbs[tools/&lt;br/&gt;generate_thumbs.py]
+    end
+
+    subgraph ScrapeStack [Scraping stack]
+        Lacus[Lacus&lt;br/&gt;capture orchestrator]
+        Playwright[Playwright-stealth]
+        TorSvc{{Tor daemon}}
+    end
+
+    subgraph Valkey [(Valkey — multi-DB)]
+        direction LR
+        DB0[DB 0&lt;br/&gt;groups]
+        DB3[DB 3&lt;br/&gt;markets]
+        DB4[DB 4&lt;br/&gt;posts]
+        DB5[DB 5&lt;br/&gt;actors]
+        DB6[DB 6&lt;br/&gt;health]
+        DB7[DB 7&lt;br/&gt;crypto addrs]
+        DBEtc[DB N&lt;br/&gt;alerts · tasks&lt;br/&gt;leaks · RF · notes · sessions]
+    end
+
+    subgraph FS [(Filesystem - source/)]
+        Screens[screenshots/]
+        ThumbsFS[screenshots/thumbs/]
+        Logos[logo/group · market · actor]
+        NotesFS[notes dumps]
+        RFFS[RF dumps]
+    end
+
+    subgraph External [External]
+        DLS[DLS / forums&lt;br/&gt;.onion]
+        LeakLookup[leak-lookup API]
+        RFAPI[RF Identity API]
+        RW[Ransomwhe.re]
+        TL[ThreatLabz repo]
+        Malp[Malpedia]
+        SMTP{{SMTP}}
+        RCChat{{RocketChat}}
+        MastAPI{{Mastodon API}}
+    end
+
+    Browser --&gt;|HTTPS| Proxy --&gt; Gunicorn --&gt; Flask
+    Flask --&gt; Babel
+    Flask --&gt; Login
+    Flask --&gt; RestX
+    Flask --&gt; Jinja
+    Flask --&gt; Valkey
+    Flask --&gt; FS
+
+    Scrape --&gt; Lacus --&gt; Playwright --&gt; TorSvc --&gt; DLS
+    Scrape --&gt; Valkey
+    Parse --&gt; Valkey
+    Screen --&gt; FS
+    Screen --&gt; Lacus
+    NotesW --&gt; TL
+    NotesW --&gt; Valkey
+    CryptoW --&gt; RW
+    CryptoW --&gt; Valkey
+    RFW --&gt; RFAPI
+    RFW --&gt; FS
+    Torrent --&gt; Valkey
+    NotifyW --&gt; SMTP
+    NotifyW --&gt; RCChat
+    NotifyW --&gt; MastAPI
+    NotifyW --&gt; Valkey
+    Thumbs --&gt; FS
+
+    classDef ui fill:#14532d,stroke:#10b981,color:#e5e7eb
+    classDef web fill:#1e3a8a,stroke:#60a5fa,color:#e5e7eb
+    classDef worker fill:#4c1d95,stroke:#a855f7,color:#e5e7eb
+    classDef store fill:#7c2d12,stroke:#f97316,color:#e5e7eb
+    classDef ext fill:#374151,stroke:#9ca3af,color:#e5e7eb
+    class Browser ui
+    class Proxy,Gunicorn,Flask,Babel,Login,RestX,Jinja web
+    class Scrape,Parse,Screen,NotesW,CryptoW,RFW,NotifyW,Torrent,Thumbs,Lacus,Playwright,TorSvc worker
+    class DB0,DB3,DB4,DB5,DB6,DB7,DBEtc,Screens,ThumbsFS,Logos,NotesFS,RFFS store
+    class DLS,LeakLookup,RFAPI,RW,TL,Malp,SMTP,RCChat,MastAPI ext
+    </pre><p>Les workers tournent en cron ou timers systemd. Ils partagent l’instance Valkey et le système de fichiers mais ne se parlent jamais directement — la coordination est implicite via les données dans Valkey.</p>
+</section>
+<section id="user-view-five-journeys">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Vue utilisateur — cinq parcours</a><a class="headerlink" href="#user-view-five-journeys" title="Lien vers cette rubrique">#</a></h2>
+<p>Parcours typiques pour les cinq personas documentés sur <a class="reference internal" href="features.html"><span class="doc">about</span></a>.</p>
+<section id="soc-ir-match-an-observed-url">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">SOC / IR — identifier une URL observée</a><a class="headerlink" href="#soc-ir-match-an-observed-url" title="Lien vers cette rubrique">#</a></h3>
+<p>À partir d’une URL suspecte repérée sur un endpoint, confirmer s’il s’agit d’un miroir ransomware connu et prendre des mesures de blocage.</p>
+<pre  class="mermaid">
+        flowchart LR
+    S[Suspicious URL&lt;br/&gt;on endpoint] --&gt; A[/urls]
+    A --&gt;|match| B[/group/&amp;lt;name&amp;gt;]
+    A --&gt;|no match| Z[End]
+    B --&gt; C{Mirror status&lt;br/&gt;alive?}
+    C --&gt;|yes| D[Export URLs CSV&lt;br/&gt;block at proxy/DNS]
+    C --&gt;|no| E[Record in incident]
+    </pre></section>
+<section id="cti-analyst-weekly-trend-report">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Analyste CTI — rapport de tendance hebdomadaire</a><a class="headerlink" href="#cti-analyst-weekly-trend-report" title="Lien vers cette rubrique">#</a></h3>
+<p>Construire un briefing hebdomadaire « état du ransomware ».</p>
+<pre  class="mermaid">
+        flowchart LR
+    S[Weekly report] --&gt; A[/stats]
+    A --&gt; B[/hot]
+    B --&gt; C[Pick top&lt;br/&gt;2 trending groups]
+    C --&gt; D[/compare]
+    D --&gt; E[Export CSV + PNG]
+    E --&gt; F[Briefing doc]
+    </pre></section>
+<section id="csirt-national-cert-constituency-triage">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">CSIRT / CERT national — triage de la constituence</a><a class="headerlink" href="#csirt-national-cert-constituency-triage" title="Lien vers cette rubrique">#</a></h3>
+<p>Balayage matinal à la recherche de nouvelles victimes dans la constituence.</p>
+<pre  class="mermaid">
+        flowchart LR
+    S[Morning triage] --&gt; A[/recent?window=1]
+    A --&gt; B{Victim in&lt;br/&gt;constituency?}
+    B --&gt;|yes| C[/group/&amp;lt;name&amp;gt;]
+    B --&gt;|no| Z[End]
+    C --&gt; D[/notes/&amp;lt;group&amp;gt;&lt;br/&gt;evidence for notification]
+    C --&gt; E[Subscribe /rss.xml&lt;br/&gt;for future mentions]
+    </pre></section>
+<section id="security-researcher-actor-investigation">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Chercheur en sécurité — investigation sur un acteur</a><a class="headerlink" href="#security-researcher-actor-investigation" title="Lien vers cette rubrique">#</a></h3>
+<p>Enquêter sur un acteur nommé, tracer ses relations.</p>
+<pre  class="mermaid">
+        flowchart LR
+    S[Study actor X] --&gt; A[/browse?tab=actor]
+    A --&gt; B[/actor/&amp;lt;name&amp;gt;]
+    B --&gt; C[Relation graph]
+    C --&gt; D[Follow peer]
+    D --&gt; E[/actor/&amp;lt;peer&amp;gt;]
+    D --&gt; F[/group/&amp;lt;related&amp;gt;]
+    </pre></section>
+<section id="integrator-automation-dashboards">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Intégrateur — automatisation et dashboards</a><a class="headerlink" href="#integrator-automation-dashboards" title="Lien vers cette rubrique">#</a></h3>
+<p>Construire un dashboard en direct ou alimenter un SIEM.</p>
+<pre  class="mermaid">
+        flowchart LR
+    S[Build dashboard] --&gt; A[/doc&lt;br/&gt;Swagger]
+    A --&gt; B[Programmatic API calls]
+    B --&gt; C[Scheduled pull]
+    B --&gt; D[/rss.xml subscription]
+    C --&gt; E[Ingest into&lt;br/&gt;SIEM / dashboard]
+    D --&gt; E
+    </pre></section>
+</section>
+<section id="editing-the-diagrams">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Éditer les diagrammes</a><a class="headerlink" href="#editing-the-diagrams" title="Lien vers cette rubrique">#</a></h2>
+<p>Chaque diagramme est défini en ligne dans ce fichier <code class="docutils literal notranslate"><span class="pre">.rst</span></code> avec la syntaxe <a class="reference external" href="https://mermaid.js.org/">Mermaid</a> (directive <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">mermaid::</span></code> fournie par <code class="docutils literal notranslate"><span class="pre">sphinxcontrib-mermaid</span></code>). Pousser <code class="docutils literal notranslate"><span class="pre">docs/architecture.rst</span></code> suffit — ReadTheDocs rebuild automatiquement.</p>
+<p>Pour prévisualiser localement :</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>docs/requirements.txt
+sphinx-build<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>docs<span class="w"> </span>docs/_build/html
+xdg-open<span class="w"> </span>docs/_build/html/architecture.html
+</pre></div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="features.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Interface web</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="i18n.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Internationalisation (i18n)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functional-view">Vue fonctionnelle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-view-high-level">Vue architecturale — haut niveau</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-view-ultra-detailed">Vue architecturale — ultra détaillée</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-view-five-journeys">Vue utilisateur — cinq parcours</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soc-ir-match-an-observed-url">SOC / IR — identifier une URL observée</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cti-analyst-weekly-trend-report">Analyste CTI — rapport de tendance hebdomadaire</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#csirt-national-cert-constituency-triage">CSIRT / CERT national — triage de la constituence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-researcher-actor-investigation">Chercheur en sécurité — investigation sur un acteur</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrator-automation-dashboards">Intégrateur — automatisation et dashboards</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-diagrams">Éditer les diagrammes</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par RansomLook Core Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright RansomLook Core Team.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

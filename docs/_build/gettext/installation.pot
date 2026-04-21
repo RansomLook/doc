@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../installation.rst:2
+#: ../../installation.rst:64
+#: 46432a53ce374801a0f8df195dc79307
+#: a9ac38b736464063944840d192f61684
+msgid "Installation"
+msgstr ""
+
+#: ../../installation.rst:4
+#: 5cd0b47e6f0c4101890e916a0ef83895
+msgid "This section covers the installation steps of the sofware."
+msgstr ""
+
+#: ../../installation.rst:7
+#: 0d218edca54e4c89847358af8faa1b13
+msgid "System dependencies"
+msgstr ""
+
+#: ../../installation.rst:9
+#: d4ee02e710af4d008ea1e664a0b678bb
+msgid "You need poetry 1.8.4 installed. ```bash curl -sSL https://install.python-poetry.org | python3 - --version 1.8.4 ``` Prerequisites -------------"
+msgstr ""
+
+#: ../../installation.rst:16
+#: b73884081c3548be9166e461d3c64c9a
+msgid "You need to have Valkey cloned and installed in the same directory you clone this template in: this repository and and `valkey` must be in the same directory, and **not** `valkey` cloned in this directory."
+msgstr ""
+
+#: ../../installation.rst:21
+#: 0fd43eb0db474d42a10453974fb504b9
+msgid "Valkey"
+msgstr ""
+
+#: ../../installation.rst:23
+#: 876b57e7a7d14f7c9490fd8864d0e011
+msgid "`Valkey <https://valkey.io/>`_: Valkey is an open source (BSD) high-performance key/value datastore that supports a variety of workloads such as caching, message queues, and can act as a primary database. Valkey can run as either a standalone daemon or in a cluster, with options for replication and high availability."
+msgstr ""
+
+#: ../../installation.rst:30
+#: af4759b03ae141f8aa4ad22ac8dce923
+msgid "Valkey should be installed from the source, and the repository must be in one directory up as the one you will be cloning RansomLook into."
+msgstr ""
+
+#: ../../installation.rst:33
+#: c397a6626eae4da9a9a5bd480bc1dd3e
+msgid "In order to compile and test valkey, you will need a few packages:"
+msgstr ""
+
+#: ../../installation.rst:55
+#: 5bf91684c58d4640ae783df26c05535e
+msgid "Clone the source code"
+msgstr ""
+
+#: ../../installation.rst:57
+#: 299c504025674ba1b22325cb64a314fb
+msgid "Clone RansomLook."
+msgstr ""
+
+#: ../../installation.rst:66
+#: ae3fa75713b9440eac5b09c338c81da8
+msgid "Install system dependencies (requires root)"
+msgstr ""
+
+#: ../../installation.rst:81
+#: 5e1591fa26334f358381654763230412
+msgid "From the directory you just cloned, run:"
+msgstr ""
+
+#: ../../installation.rst:87
+#: 1b8480c0a2a342b6a36edecb71cfbe6f
+msgid "Initialize the `.env` file:"
+msgstr ""
+
+#: ../../installation.rst:93
+#: 9d21bfc089f2469693a014d972435735
+msgid "Copy the config file:"
+msgstr ""
+
+#: ../../installation.rst:99
+#: 6f1601b1e8a645a7ae55cd44adf21899
+msgid "And configure it accordingly to your needs (check configuration page for more details)."
+msgstr ""
+
+#: ../../installation.rst:104
+#: 4943c79fea8e42fd88965400492cb451
+msgid "The ``.mo`` translation files are shipped in the repository, but if you ever pull changes to the ``.po`` source files (or add a new language) you must recompile them:"
+msgstr ""
+
+#: ../../installation.rst:111
+#: 46a08302b9294ccd8186a903dddad9f9
+msgid "See :doc:`i18n` for the full translation workflow."
+msgstr ""
+
+#: ../../installation.rst:116
+#: 87d7a171eec4422f9391886c3007f83b
+msgid "Run the following command to fetch the required javascript deps and run RansomLook."
+msgstr ""
+
+#: ../../installation.rst:122
+#: a93ea1dd70004f93bc28e95a3f874cbd
+msgid "With the default configuration, you can access the web interface on `http://127.0.0.1:8000`."
+msgstr ""
+
+#: ../../installation.rst:127
+#: 2f4ee52cb8a04631bc737c135dc97a51
+msgid "The currently activated Python version 3.13.1 is not supported by the project (^3.10,<3.11). Trying to find and use a compatible version."
+msgstr ""
+
+#: ../../installation.rst:130
+#: 8ac3567cef834646a5394b49f22b874c
+msgid "Poetry was unable to find a compatible version."
+msgstr ""

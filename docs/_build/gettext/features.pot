@@ -1,0 +1,517 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../features.rst:2
+#: aa77df725a8748cfa49dd74f43735684
+msgid "Web interface"
+msgstr ""
+
+#: ../../features.rst:4
+#: 88a6f6f5224a4b8a8fcb8ad488d56566
+msgid "This page gives an overview of every public-facing page of a RansomLook instance. All pages are available on the official public instance at https://www.ransomlook.io."
+msgstr ""
+
+#: ../../features.rst:7
+#: a55af542b6a94d098610183aabfd4972
+msgid "Navigation is organised in three groups in the sidebar:"
+msgstr ""
+
+#: ../../features.rst:9
+#: d369702ad6ef44aaa38bd8046ccbbb27
+msgid "**Data** — Recent, Browse, Trending, Stats"
+msgstr ""
+
+#: ../../features.rst:10
+#: 8cff6dc5a7964af4a74ecf2086e955ba
+msgid "**Intel** — URLs, Crypto, Leaks, Notes, RF Dumps"
+msgstr ""
+
+#: ../../features.rst:11
+#: 48571afb3a8e4318b8d1eafa7e076b36
+msgid "**Info** — API, Glossary, About"
+msgstr ""
+
+#: ../../features.rst:14
+#: 2a37002eaf7b4d609380d511140b1335
+msgid "Homepage (``/``)"
+msgstr ""
+
+#: ../../features.rst:16
+#: edd4823033f442feb3b37c096230ed39
+msgid "RansomLook homepage"
+msgstr ""
+
+#: ../../features.rst:20
+#: 08c80c0230714fbe949c0ff1e8f9939b
+msgid "The landing page summarises live activity:"
+msgstr ""
+
+#: ../../features.rst:22
+#: 33aa564bd82143f790470741e00b395f
+msgid "total ransomware posts tracked,"
+msgstr ""
+
+#: ../../features.rst:23
+#: f06b701536fd48a8b9246e87cae4462f
+msgid "last 7-day headline metrics with delta vs the previous week,"
+msgstr ""
+
+#: ../../features.rst:24
+#: 19f769927c3f4fe083cb679f817aa5ba
+msgid "*Top movers* (groups with the biggest weekly swing) and *Latest posts*,"
+msgstr ""
+
+#: ../../features.rst:25
+#: d18fd843cf99422d95c458450b685dc8
+msgid "a 30-day sparkline of the overall posting activity,"
+msgstr ""
+
+#: ../../features.rst:26
+#: 5a5a8255fd2541f68dd461887d7b0964
+msgid "CTAs towards :ref:`/recent <page-recent>`, :ref:`/stats <page-stats>` and the API docs."
+msgstr ""
+
+#: ../../features.rst:31
+#: a8685feed6294984ade5ae1dcb8c9e31
+msgid "Recent posts (``/recent``)"
+msgstr ""
+
+#: ../../features.rst:33
+#: cf002951be754400b1b4cce8d8e43632
+msgid "Recent posts page"
+msgstr ""
+
+#: ../../features.rst:37
+#: 4c326d7884874e56a247c0d5f79f9713
+msgid "Flat chronological listing of victim posts across every tracked group."
+msgstr ""
+
+#: ../../features.rst:39
+#: 9381c739e4c1459d813adba2f4a48bed
+msgid "**Time window selector** — ``1 / 3 / 7 / 30 days``. Default window: 3 days."
+msgstr ""
+
+#: ../../features.rst:40
+#: 9786f37c54f24f2c9857b26922a40f70
+msgid "Hard cap at 2000 rows per window. When exceeded, a notice shows how many rows were trimmed."
+msgstr ""
+
+#: ../../features.rst:41
+#: 06bcb13fc6ca4710842bfa6e23cbf2cc
+msgid "Live filters: free-text search (title + group name) and a per-group dropdown."
+msgstr ""
+
+#: ../../features.rst:42
+#: 892e7e01cadb406699b8f28a80f3f61e
+msgid "24-hour sparkline of posting activity in the hero."
+msgstr ""
+
+#: ../../features.rst:47
+#: 29dcf080df8e42e98f7282d0c8592e8c
+msgid "Browse (``/browse``)"
+msgstr ""
+
+#: ../../features.rst:49
+#: 22a76cbeedc8454683cc2956c58c7302
+msgid "Browse entities page"
+msgstr ""
+
+#: ../../features.rst:53
+#: 757164588a944849b040c6716a42ff6c
+msgid "Card grid of every tracked entity — ransomware groups, markets/forums and threat actors."
+msgstr ""
+
+#: ../../features.rst:55
+#: b835eec0511d4dc5b4b7301badd4cc3a
+msgid "Tabs to switch between *All / Groups / Markets / Actors*."
+msgstr ""
+
+#: ../../features.rst:56
+#: a06156eee5a94c458410f1a9a3cc754a
+msgid "Health chips (*Healthy / Degraded / Offline*) filter entities by mirror availability."
+msgstr ""
+
+#: ../../features.rst:57
+#: 7ba242307e484efca6d76f803c9a513a
+msgid "Alphabet bar (A-Z / 0-9 / #) and live name/alias search."
+msgstr ""
+
+#: ../../features.rst:58
+#: aff15a0c164545c6ba60cd94ea981066
+msgid "Each card exposes parser status, private flag, wanted-listing flag, alias count."
+msgstr ""
+
+#: ../../features.rst:63
+#: 743e1744b1574b258ca97c7ec1203a86
+msgid "URLs (``/urls``)"
+msgstr ""
+
+#: ../../features.rst:65
+#: 3ff2d49743e14e1797cb8d96197ff0b3
+msgid "URL inventory page"
+msgstr ""
+
+#: ../../features.rst:69
+#: 99148295327143f892efb747fc97d794
+msgid "Flat view of every tracked mirror URL for groups and markets. Useful for IR teams checking if an observed URL matches a tracked mirror."
+msgstr ""
+
+#: ../../features.rst:72
+#: 0ec0e106228440748e3f53b209a5817a
+msgid "Filters: entity type (*All / Groups / Markets*), availability (*All / Online / Offline*), live text search matching both entity name and URL substring."
+msgstr ""
+
+#: ../../features.rst:74
+#: 3a0e79035dc14bf5a4ebdf259b7b9f35
+msgid "One row per mirror — shows the entity, the full URL, live status, last scrape date, 30-day uptime and a 30-day health sparkline."
+msgstr ""
+
+#: ../../features.rst:76
+#: 809fd518c4164590ad07506f5caa33df
+msgid "**CSV export** (``/urls.csv``) respects the active filters."
+msgstr ""
+
+#: ../../features.rst:77
+#: 0cad2596feda4c49a437f681e648d53a
+msgid "Respects privacy: private entities and private URLs are hidden to anonymous visitors."
+msgstr ""
+
+#: ../../features.rst:82
+#: 7e2ddb7af3b6429e9a2440c2b2fd7cad
+msgid "Trending (``/hot``)"
+msgstr ""
+
+#: ../../features.rst:84
+#: ed5103d4e5f345a98a093b19b8927588
+msgid "Trending groups page"
+msgstr ""
+
+#: ../../features.rst:88
+#: 2a486df946ed465fa60c423b057a7268
+msgid "Ranks groups by posting activity over a configurable window (1/3/7/14/30/90 days)."
+msgstr ""
+
+#: ../../features.rst:90
+#: 86cd7d1cacb840b791dafb7e7d858f6a
+msgid "Sort modes: *Trending (Δ%)*, *Volume*, *New entrants*."
+msgstr ""
+
+#: ../../features.rst:91
+#: 915a8ba9669a4ba7a5d3507fcc47c8de
+msgid "CSV export of the ranked list."
+msgstr ""
+
+#: ../../features.rst:92
+#: 76b5a54debf445d19fc1fdcd63f8a1ea
+msgid "Per-row sparkline showing the daily post distribution inside the window."
+msgstr ""
+
+#: ../../features.rst:97
+#: f5233a8c4f2c4cc0b7f25d9380d4af2b
+msgid "Stats (``/stats``)"
+msgstr ""
+
+#: ../../features.rst:99
+#: 4a7fa8f0ae3d4cdaa1921a2a909ad873
+msgid "Interactive statistics page"
+msgstr ""
+
+#: ../../features.rst:103
+#: e5304af7d78c46e191a5e330b867659a
+msgid "Interactive charts (Plotly) covering posts across time."
+msgstr ""
+
+#: ../../features.rst:105
+#: ac5a48e1646449178cc71d774297cb32
+msgid "Controls: time period (7/14/30/90 days or custom range), hourly/daily/weekly aggregation, optional rolling average (3/7/14), Top-N group filter (5/10/20/all), percentage normalisation."
+msgstr ""
+
+#: ../../features.rst:107
+#: dd5fdcc7df9546d0a2bfa214c70c5890
+msgid "Three charts: Top-N bar, stacked area, timeline scatter. PNG export available on each."
+msgstr ""
+
+#: ../../features.rst:108
+#: 3ca32faa05384fc0b6ffa6ac4f1586e6
+msgid "CSV export of the filtered dataset, share URL to reproduce a given view."
+msgstr ""
+
+#: ../../features.rst:113
+#: b62cc86ccb884b14a448123d5895f301
+msgid "Compare (``/compare``)"
+msgstr ""
+
+#: ../../features.rst:115
+#: dbd34698aedc4a2f864502c9c20c75b7
+msgid "Compare two entities"
+msgstr ""
+
+#: ../../features.rst:119
+#: 57205a5ad0474b8c8b7e740974117b83
+msgid "Side-by-side comparison of two entities (groups or markets/forums)."
+msgstr ""
+
+#: ../../features.rst:121
+#: bf3f08ec2cbe4131ac5af8cedd3547e4
+msgid "Posts over 7d/30d/365d, mirrors up, 30-day uptime, Captcha and RaaS flags."
+msgstr ""
+
+#: ../../features.rst:122
+#: fbc6554820f3478ab055fe7f397303ae
+msgid "Live charts: post volume bars + mirror availability gauges."
+msgstr ""
+
+#: ../../features.rst:127
+#: fbe8a7e6fa22427daaa0f02370917f54
+msgid "Crypto (``/crypto``)"
+msgstr ""
+
+#: ../../features.rst:129
+#: 3419b9dcbdf84dcba32ccf5606ffe4a4
+msgid "Cryptocurrencies by group"
+msgstr ""
+
+#: ../../features.rst:133
+#: 78f470bb9ac643bea534f959b1669bac
+msgid "Cryptocurrency wallets grouped by actor."
+msgstr ""
+
+#: ../../features.rst:135
+#: 77a8fc57cc5e482587f0ce736eb40471
+msgid "Chip grid with live filter by name / alias."
+msgstr ""
+
+#: ../../features.rst:136
+#: 4a719dd5221a4da5bdd58787514f40b9
+msgid "Per-group detail page (``/crypto/<name>``) lists observed wallets by blockchain, each with their transactions, filter controls (date range, min/max amount, direction) and Breadcrumbs integration for supported chains."
+msgstr ""
+
+#: ../../features.rst:139
+#: ff5cbb070f864672851654eb75e8e6f3
+msgid "CSV export per wallet and per group."
+msgstr ""
+
+#: ../../features.rst:144
+#: 8768b61c59cc4dd98dc23298457fa9a8
+msgid "Leaks (``/leaks``)"
+msgstr ""
+
+#: ../../features.rst:146
+#: f6eca878fc2b4df580387c3081a857af
+msgid "Leaks listing page"
+msgstr ""
+
+#: ../../features.rst:150
+#: 41a1f80877154adc96e7b73e4d3cd1c7
+msgid "Public leak databases tracked for enrichment. Search by name/description/URL/title. Each entry opens a modal with size, record count, indexing date and schema columns."
+msgstr ""
+
+#: ../../features.rst:156
+#: dd2b71b8c61c441d83aad7f53a5a50e1
+msgid "Notes (``/notes``)"
+msgstr ""
+
+#: ../../features.rst:158
+#: 1139471618814fabbaa1c7472ebabb06
+msgid "Ransomware notes by group"
+msgstr ""
+
+#: ../../features.rst:162
+#: 7fdfc1b03b4d48f9ae819d5f4c36c80b
+msgid "Ransom note samples grouped by actor. Detail page (``/notes/<group>``) lists every note with content and a *Copy* action."
+msgstr ""
+
+#: ../../features.rst:168
+#: 2d44533ce02b4a43aef88b9946fd061b
+msgid "RF Dumps (``/RF``)"
+msgstr ""
+
+#: ../../features.rst:170
+#: 644340adf09e4e099400d16b73193944
+msgid "Optional Recorded Future integration. Available when an API key is configured in ``config/generic.json``. Lists retrieved dumps with description and download date; modal view shows breach metadata."
+msgstr ""
+
+#: ../../features.rst:175
+#: 08a49d9c2e5e4f21b54ed079f8a367c5
+msgid "Entity detail pages"
+msgstr ""
+
+#: ../../features.rst:178
+#: 97d77aa452af48e9ba7edc7b32164113
+msgid "Group (``/group/<name>``)"
+msgstr ""
+
+#: ../../features.rst:180
+#: 14ccb89546bf4cfab8d77651da7c159d
+msgid "Hero with logo, quick stats (total posts, posts over 7d/30d, 30-day uptime average)."
+msgstr ""
+
+#: ../../features.rst:181
+#: 37e11756b0424230a0b949ea5b1f6326
+msgid "Activity sparkline (30 days), Plotly time chart."
+msgstr ""
+
+#: ../../features.rst:182
+#: 0c4814047e064119a532fb4f9e5934f6
+msgid "Contact details (PGP, Matrix, Telegram, Tox, Session, Simplex, Max, Sonar, mail, Jabber)."
+msgstr ""
+
+#: ../../features.rst:183
+#: 4c4be1c79b3f4ae4821313bba4d9b3f8
+msgid "Mirror listings split by role (URLs / File servers / Chat / Admin) each showing status, screenshot thumb, 30-day uptime and a health sparkline."
+msgstr ""
+
+#: ../../features.rst:185
+#: 822dbff325384e1dae5a40eed3ae1e5c
+msgid "Affiliates list (linked to actor pages when known)."
+msgstr ""
+
+#: ../../features.rst:186
+#: 52881b877db04d6c991ed36b26304a6c
+msgid "CSV export for URLs and posts."
+msgstr ""
+
+#: ../../features.rst:189
+#: 340773346ac04c69839a9a89e1ed5237
+msgid "Market / Forum (``/market/<name>``)"
+msgstr ""
+
+#: ../../features.rst:191
+#: 1d1cbc32624c4843835a9d177cc62abc
+msgid "Same layout as group pages but sourced from the market database."
+msgstr ""
+
+#: ../../features.rst:194
+#: d7c7b36cbe2c4ba49dabadee56ccfeac
+msgid "Actor (``/actor/<name>``)"
+msgstr ""
+
+#: ../../features.rst:196
+#: c31f9294a510475a9e03aa29b7ec813c
+msgid "Hero with aliases, *WANTED* banner linking to FBI / Europol / INTERPOL notices when applicable."
+msgstr ""
+
+#: ../../features.rst:197
+#: e55720fe0ead44238151f3a4ff91c843
+msgid "Relation graph (cytoscape) showing linked groups, markets and peer actors."
+msgstr ""
+
+#: ../../features.rst:198
+#: 77d4fc69d2cc4909a29165987bd6fdbf
+msgid "Personal information, contacts, sources and image gallery with lightbox."
+msgstr ""
+
+#: ../../features.rst:201
+#: 4de40b24c83d44b88be78bbe501f92b8
+msgid "Glossary (``/glossary``)"
+msgstr ""
+
+#: ../../features.rst:203
+#: 3bcd705eaf77427d8ec97bb198f1414d
+msgid "Glossary page"
+msgstr ""
+
+#: ../../features.rst:207
+#: fbe5e9041a2a4d9f8814731d87ad983d
+msgid "Reference page defining terminology used throughout RansomLook: groups, actors, infrastructure types (DLS, FS, Chat, Admin, Relay), data metrics, ecosystem and relationships."
+msgstr ""
+
+#: ../../features.rst:211
+#: 295b410d2b6447c0986fe3278667fb61
+msgid "About (``/about``)"
+msgstr ""
+
+#: ../../features.rst:213
+#: e23d7b21374d4a9196311fb42b22442b
+msgid "About page"
+msgstr ""
+
+#: ../../features.rst:217
+#: cdd16b13470844aa9a52c7289a755bf9
+msgid "Project overview with sections:"
+msgstr ""
+
+#: ../../features.rst:219
+#: c9d3e18052f541069abc95bb75f9a8b2
+msgid "What is RansomLook / main components"
+msgstr ""
+
+#: ../../features.rst:220
+#: 27b42b7a6d02490da2811f9219ebf014
+msgid "Who uses RansomLook (SOC, CTI, CSIRT, research, journalism)"
+msgstr ""
+
+#: ../../features.rst:221
+#: 9b503bff70894a48b93ba2cc38c4701b
+msgid "Getting started (entry-point per use case)"
+msgstr ""
+
+#: ../../features.rst:222
+#: 5f4d24b321c6471d9361a7963bed0740
+msgid "Data freshness policy"
+msgstr ""
+
+#: ../../features.rst:223
+#: 0c9c405bf770411abc87b8fa61cfd691
+msgid "License (AGPL v3), API license (CC BY 4.0)"
+msgstr ""
+
+#: ../../features.rst:224
+#: 806a8fd9711a4a8583f0cd0786b7dd58
+msgid "Credits and external data sources"
+msgstr ""
+
+#: ../../features.rst:227
+#: f850f030e76443cbb025a520c7f461d2
+msgid "Feeds and automation"
+msgstr ""
+
+#: ../../features.rst:230
+#: 45401fd536f14d1fbd913908257e8be4
+msgid "RSS feed"
+msgstr ""
+
+#: ../../features.rst:232
+#: e2bcb2cd6f5a4c97860b4f3c070d6b3e
+msgid "A ``/rss.xml`` feed exposes the most recent posts. The sidebar footer exposes a direct link next to the social icons."
+msgstr ""
+
+#: ../../features.rst:236
+#: bf33074b4b0b457687d44d95804f15d0
+msgid "API"
+msgstr ""
+
+#: ../../features.rst:238
+#: 0bf469b5baff44e29551e7c1b6961ae8
+msgid "Swagger documentation is served at ``/doc/``. See :doc:`api` for details."
+msgstr ""
+
+#: ../../features.rst:241
+#: a7ddb2cb98f743d7b5386beabd948ef2
+msgid "Language switcher"
+msgstr ""
+
+#: ../../features.rst:243
+#: 156e0d01978449f494e3c84f9b84fe01
+msgid "Every page can be rendered in English or French. The switcher lives in the top bar (``EN / FR``). The active locale is persisted in a cookie (``locale``) for one year. When no cookie is set, the locale is picked from the browser's ``Accept-Language`` header, defaulting to English."
+msgstr ""
+
+#: ../../features.rst:248
+#: e23a047afc1944ea8c583ffd21d2ee36
+msgid "See :doc:`i18n` for contributing new translations."
+msgstr ""

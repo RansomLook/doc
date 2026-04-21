@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Interface web &#8212; RansomLook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=8e3b808b"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'features';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Architecture" href="architecture.html" />
+    <link rel="prev" title="Utilisation en production" href="production.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">RansomLook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Recherche</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    RansomLook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Considérations techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">Prérequis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Mettre à jour l’application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Interface en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">Utilisation en production</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interface web</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Interface web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalisation (i18n)</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="admin.html">Administration</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/edit/main/docs/features.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/issues/new?title=Issue%20on%20page%20%2Ffeatures.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/features.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Interface web</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homepage">Page d’accueil (<code class="docutils literal notranslate"><span class="pre">/</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recent-posts-recent">Publications récentes (<code class="docutils literal notranslate"><span class="pre">/recent</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#browse-browse">Parcourir (<code class="docutils literal notranslate"><span class="pre">/browse</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urls-urls">URLs (<code class="docutils literal notranslate"><span class="pre">/urls</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trending-hot">Tendances (<code class="docutils literal notranslate"><span class="pre">/hot</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stats-stats">Statistiques (<code class="docutils literal notranslate"><span class="pre">/stats</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-compare">Comparer (<code class="docutils literal notranslate"><span class="pre">/compare</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crypto-crypto">Crypto (<code class="docutils literal notranslate"><span class="pre">/crypto</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leaks-leaks">Leaks (<code class="docutils literal notranslate"><span class="pre">/leaks</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-notes">Notes (<code class="docutils literal notranslate"><span class="pre">/notes</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-dumps-rf">RF Dumps (<code class="docutils literal notranslate"><span class="pre">/RF</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entity-detail-pages">Pages de détail d’entité</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-group-name">Groupe (<code class="docutils literal notranslate"><span class="pre">/group/&lt;name&gt;</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#market-forum-market-name">Marché / Forum (<code class="docutils literal notranslate"><span class="pre">/market/&lt;name&gt;</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actor-actor-name">Acteur (<code class="docutils literal notranslate"><span class="pre">/actor/&lt;name&gt;</span></code>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-glossary">Glossaire (<code class="docutils literal notranslate"><span class="pre">/glossary</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-about">À propos (<code class="docutils literal notranslate"><span class="pre">/about</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feeds-and-automation">Flux et automatisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rss-feed">Flux RSS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#language-switcher">Sélecteur de langue</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="web-interface">
+<h1>Interface web<a class="headerlink" href="#web-interface" title="Lien vers cette rubrique">#</a></h1>
+<p>Cette page présente toutes les pages publiques d’une instance RansomLook. Elles sont disponibles sur l’instance publique officielle à <a class="reference external" href="https://www.ransomlook.io">https://www.ransomlook.io</a>.</p>
+<p>La navigation est organisée en trois groupes dans la barre latérale :</p>
+<ul class="simple">
+<li><p><strong>Data</strong> — Recent, Browse, Trending, Stats</p></li>
+<li><p><strong>Intel</strong> — URLs, Crypto, Leaks, Notes, RF Dumps</p></li>
+<li><p><strong>Info</strong> — API, Glossary, About</p></li>
+</ul>
+<section id="homepage">
+<h2>Page d’accueil (<code class="docutils literal notranslate"><span class="pre">/</span></code>)<a class="headerlink" href="#homepage" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/home.png"><img alt="Page d'accueil RansomLook" src="_images/home.png" style="width: 100%;" />
+</a>
+<p>La page d’accueil résume l’activité en direct :</p>
+<ul class="simple">
+<li><p>total des publications ransomware suivies,</p></li>
+<li><p>indicateurs clés des 7 derniers jours avec delta vs la semaine précédente,</p></li>
+<li><p><em>Top movers</em> (groupes aux plus fortes variations hebdomadaires) et <em>Dernières publications</em>,</p></li>
+<li><p>une sparkline 30 jours de l’activité de publication globale,</p></li>
+<li><p>CTA vers <a class="reference internal" href="#page-recent"><span class="std std-ref">/recent</span></a>, <a class="reference internal" href="#page-stats"><span class="std std-ref">/stats</span></a> et la documentation API.</p></li>
+</ul>
+</section>
+<section id="recent-posts-recent">
+<span id="page-recent"></span><h2>Publications récentes (<code class="docutils literal notranslate"><span class="pre">/recent</span></code>)<a class="headerlink" href="#recent-posts-recent" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/recent.png"><img alt="Page des publications récentes" src="_images/recent.png" style="width: 100%;" />
+</a>
+<p>Liste chronologique plate des publications de victimes pour tous les groupes suivis.</p>
+<ul class="simple">
+<li><p><strong>Sélecteur de fenêtre temporelle</strong> — <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">3</span> <span class="pre">/</span> <span class="pre">7</span> <span class="pre">/</span> <span class="pre">30</span> <span class="pre">jours</span></code>. Fenêtre par défaut : 3 jours.</p></li>
+<li><p>Plafond dur à 2000 lignes par fenêtre. S’il est dépassé, un message indique combien de lignes ont été coupées.</p></li>
+<li><p>Filtres live : recherche libre (titre + nom du groupe) et liste déroulante par groupe.</p></li>
+<li><p>Sparkline 24 heures de l’activité dans le hero.</p></li>
+</ul>
+</section>
+<section id="browse-browse">
+<span id="page-browse"></span><h2>Parcourir (<code class="docutils literal notranslate"><span class="pre">/browse</span></code>)<a class="headerlink" href="#browse-browse" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/browse.png"><img alt="Page de navigation" src="_images/browse.png" style="width: 100%;" />
+</a>
+<p>Grille de cartes de toutes les entités suivies — groupes de ransomware, marchés/forums et acteurs de menace.</p>
+<ul class="simple">
+<li><p>Onglets pour basculer entre <em>Tous / Groupes / Marchés / Acteurs</em>.</p></li>
+<li><p>Chips de santé (<em>Healthy / Degraded / Offline</em>) filtrent les entités par disponibilité de miroir.</p></li>
+<li><p>Barre alphabétique (A-Z / 0-9 / #) et recherche live par nom/alias.</p></li>
+<li><p>Chaque carte expose le statut du parser, le flag privé, le flag wanted et le nombre d’alias.</p></li>
+</ul>
+</section>
+<section id="urls-urls">
+<span id="page-urls"></span><h2>URLs (<code class="docutils literal notranslate"><span class="pre">/urls</span></code>)<a class="headerlink" href="#urls-urls" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/urls.png"><img alt="Page d'inventaire d'URLs" src="_images/urls.png" style="width: 100%;" />
+</a>
+<p>Vue plate de chaque URL de miroir suivie pour les groupes et marchés. Utile aux équipes IR pour vérifier si une URL observée correspond à un miroir connu.</p>
+<ul class="simple">
+<li><p>Filtres : type d’entité (<em>Tous / Groupes / Marchés</em>), disponibilité (<em>Tous / En ligne / Hors ligne</em>), recherche live sur le nom d’entité et la portion d’URL.</p></li>
+<li><p>Une ligne par miroir — affiche l’entité, l’URL complète, le statut en direct, la date de dernier scrape, l’uptime sur 30 jours et une sparkline de santé sur 30 jours.</p></li>
+<li><p><strong>Export CSV</strong> (<code class="docutils literal notranslate"><span class="pre">/urls.csv</span></code>) respecte les filtres actifs.</p></li>
+<li><p>Respect de la confidentialité : les entités et URLs privées sont masquées aux visiteurs anonymes.</p></li>
+</ul>
+</section>
+<section id="trending-hot">
+<span id="page-hot"></span><h2>Tendances (<code class="docutils literal notranslate"><span class="pre">/hot</span></code>)<a class="headerlink" href="#trending-hot" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/hot.png"><img alt="Page des groupes en tendance" src="_images/hot.png" style="width: 100%;" />
+</a>
+<p>Classe les groupes par activité de publication sur une fenêtre configurable (1/3/7/14/30/90 jours).</p>
+<ul class="simple">
+<li><p>Modes de tri : <em>Tendance (Δ%)</em>, <em>Volume</em>, <em>Nouveaux entrants</em>.</p></li>
+<li><p>Export CSV du classement.</p></li>
+<li><p>Sparkline par ligne montrant la distribution quotidienne des publications sur la fenêtre.</p></li>
+</ul>
+</section>
+<section id="stats-stats">
+<span id="page-stats"></span><h2>Statistiques (<code class="docutils literal notranslate"><span class="pre">/stats</span></code>)<a class="headerlink" href="#stats-stats" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/stats.png"><img alt="Page de statistiques interactives" src="_images/stats.png" style="width: 100%;" />
+</a>
+<p>Graphiques interactifs (Plotly) couvrant les publications dans le temps.</p>
+<ul class="simple">
+<li><p>Contrôles : période (7/14/30/90 jours ou plage personnalisée), agrégation horaire/quotidienne/hebdomadaire, moyenne glissante optionnelle (3/7/14), filtre Top-N groupes (5/10/20/tous), normalisation en pourcentage.</p></li>
+<li><p>Trois graphiques : barres Top-N, aires empilées, nuage chronologique. Export PNG sur chacun.</p></li>
+<li><p>Export CSV du jeu de données filtré, URL partageable pour reproduire une vue.</p></li>
+</ul>
+</section>
+<section id="compare-compare">
+<span id="page-compare"></span><h2>Comparer (<code class="docutils literal notranslate"><span class="pre">/compare</span></code>)<a class="headerlink" href="#compare-compare" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/compare.png"><img alt="Comparer deux entités" src="_images/compare.png" style="width: 100%;" />
+</a>
+<p>Comparaison côte à côte de deux entités (groupes ou marchés/forums).</p>
+<ul class="simple">
+<li><p>Publications sur 7j/30j/365j, miroirs en ligne, uptime 30j, flags Captcha et RaaS.</p></li>
+<li><p>Graphiques en direct : barres de volume de publications + jauges de disponibilité des miroirs.</p></li>
+</ul>
+</section>
+<section id="crypto-crypto">
+<span id="page-crypto"></span><h2>Crypto (<code class="docutils literal notranslate"><span class="pre">/crypto</span></code>)<a class="headerlink" href="#crypto-crypto" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/crypto.png"><img alt="Cryptomonnaies par groupe" src="_images/crypto.png" style="width: 100%;" />
+</a>
+<p>Portefeuilles de cryptomonnaies groupés par acteur.</p>
+<ul class="simple">
+<li><p>Grille de chips avec filtre live par nom / alias.</p></li>
+<li><p>La page de détail par groupe (<code class="docutils literal notranslate"><span class="pre">/crypto/&lt;name&gt;</span></code>) liste les portefeuilles observés par blockchain, avec leurs transactions, des filtres (plage de dates, montant min/max, direction) et l’intégration Breadcrumbs pour les blockchains supportées.</p></li>
+<li><p>Export CSV par portefeuille et par groupe.</p></li>
+</ul>
+</section>
+<section id="leaks-leaks">
+<span id="page-leaks"></span><h2>Leaks (<code class="docutils literal notranslate"><span class="pre">/leaks</span></code>)<a class="headerlink" href="#leaks-leaks" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/leaks.png"><img alt="Page de liste des leaks" src="_images/leaks.png" style="width: 100%;" />
+</a>
+<p>Bases de leaks publiques suivies pour enrichissement. Recherche par nom/description/URL/titre. Chaque entrée ouvre une fenêtre modale avec taille, nombre d’enregistrements, date d’indexation et colonnes du schéma.</p>
+</section>
+<section id="notes-notes">
+<span id="page-notes"></span><h2>Notes (<code class="docutils literal notranslate"><span class="pre">/notes</span></code>)<a class="headerlink" href="#notes-notes" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/notes.png"><img alt="Notes de rançon par groupe" src="_images/notes.png" style="width: 100%;" />
+</a>
+<p>Échantillons de notes de rançon groupés par acteur. La page de détail (<code class="docutils literal notranslate"><span class="pre">/notes/&lt;group&gt;</span></code>) liste chaque note avec son contenu et une action <em>Copier</em>.</p>
+</section>
+<section id="rf-dumps-rf">
+<span id="page-rf"></span><h2>RF Dumps (<code class="docutils literal notranslate"><span class="pre">/RF</span></code>)<a class="headerlink" href="#rf-dumps-rf" title="Lien vers cette rubrique">#</a></h2>
+<p>Intégration Recorded Future optionnelle. Disponible quand une clé d’API est configurée dans <code class="docutils literal notranslate"><span class="pre">config/generic.json</span></code>. Liste les dumps récupérés avec description et date de téléchargement ; la vue modale affiche les métadonnées de la brèche.</p>
+</section>
+<section id="entity-detail-pages">
+<h2>Pages de détail d’entité<a class="headerlink" href="#entity-detail-pages" title="Lien vers cette rubrique">#</a></h2>
+<section id="group-group-name">
+<h3>Groupe (<code class="docutils literal notranslate"><span class="pre">/group/&lt;name&gt;</span></code>)<a class="headerlink" href="#group-group-name" title="Lien vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p>Hero avec logo, stats rapides (total publications, publications sur 7j/30j, uptime moyen sur 30j).</p></li>
+<li><p>Sparkline d’activité (30 jours), graphique temporel Plotly.</p></li>
+<li><p>Coordonnées (PGP, Matrix, Telegram, Tox, Session, Simplex, Max, Sonar, e-mail, Jabber).</p></li>
+<li><p>Listes de miroirs séparées par rôle (URLs / Serveurs de fichiers / Chat / Admin) chacune affichant statut, miniature de capture, uptime 30j et sparkline de santé.</p></li>
+<li><p>Liste des affiliés (liés aux pages d’acteur quand connus).</p></li>
+<li><p>Export CSV pour les URLs et les publications.</p></li>
+</ul>
+</section>
+<section id="market-forum-market-name">
+<h3>Marché / Forum (<code class="docutils literal notranslate"><span class="pre">/market/&lt;name&gt;</span></code>)<a class="headerlink" href="#market-forum-market-name" title="Lien vers cette rubrique">#</a></h3>
+<p>Même disposition que les pages de groupe mais données issues de la base des marchés.</p>
+</section>
+<section id="actor-actor-name">
+<h3>Acteur (<code class="docutils literal notranslate"><span class="pre">/actor/&lt;name&gt;</span></code>)<a class="headerlink" href="#actor-actor-name" title="Lien vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><p>Hero avec alias, bandeau <em>WANTED</em> liant aux fiches FBI / Europol / INTERPOL si applicable.</p></li>
+<li><p>Graphe de relations (cytoscape) montrant les groupes, marchés et acteurs pairs liés.</p></li>
+<li><p>Informations personnelles, contacts, sources et galerie d’images avec lightbox.</p></li>
+</ul>
+</section>
+</section>
+<section id="glossary-glossary">
+<h2>Glossaire (<code class="docutils literal notranslate"><span class="pre">/glossary</span></code>)<a class="headerlink" href="#glossary-glossary" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/glossary.png"><img alt="Page glossaire" src="_images/glossary.png" style="width: 100%;" />
+</a>
+<p>Page de référence définissant la terminologie utilisée dans RansomLook : groupes, acteurs, types d’infrastructure (DLS, FS, Chat, Admin, Relay), métriques de données, écosystème et relations.</p>
+</section>
+<section id="about-about">
+<h2>À propos (<code class="docutils literal notranslate"><span class="pre">/about</span></code>)<a class="headerlink" href="#about-about" title="Lien vers cette rubrique">#</a></h2>
+<a class="reference internal image-reference" href="_images/about.png"><img alt="Page À propos" src="_images/about.png" style="width: 100%;" />
+</a>
+<p>Présentation du projet avec les sections :</p>
+<ul class="simple">
+<li><p>Qu’est-ce que RansomLook / composants principaux</p></li>
+<li><p>Qui utilise RansomLook (SOC, CTI, CSIRT, recherche, journalisme)</p></li>
+<li><p>Premiers pas (point d’entrée par cas d’usage)</p></li>
+<li><p>Politique de fraîcheur des données</p></li>
+<li><p>Licence (AGPL v3), licence API (CC BY 4.0)</p></li>
+<li><p>Crédits et sources de données externes</p></li>
+</ul>
+</section>
+<section id="feeds-and-automation">
+<h2>Flux et automatisation<a class="headerlink" href="#feeds-and-automation" title="Lien vers cette rubrique">#</a></h2>
+<section id="rss-feed">
+<h3>Flux RSS<a class="headerlink" href="#rss-feed" title="Lien vers cette rubrique">#</a></h3>
+<p>Un flux <code class="docutils literal notranslate"><span class="pre">/rss.xml</span></code> expose les publications les plus récentes. Le bas de la barre latérale contient un lien direct à côté des icônes sociales.</p>
+</section>
+<section id="api">
+<h3>API<a class="headerlink" href="#api" title="Lien vers cette rubrique">#</a></h3>
+<p>La documentation Swagger est servie à <code class="docutils literal notranslate"><span class="pre">/doc/</span></code>. Voir <a class="reference internal" href="api.html"><span class="doc">API</span></a> pour les détails.</p>
+</section>
+</section>
+<section id="language-switcher">
+<h2>Sélecteur de langue<a class="headerlink" href="#language-switcher" title="Lien vers cette rubrique">#</a></h2>
+<p>Chaque page peut être rendue en anglais ou en français. Le sélecteur se trouve dans la barre du haut (<code class="docutils literal notranslate"><span class="pre">EN</span> <span class="pre">/</span> <span class="pre">FR</span></code>). La locale active est persistée dans un cookie (<code class="docutils literal notranslate"><span class="pre">locale</span></code>) pour un an. Sans cookie, la locale est déduite de l’en-tête <code class="docutils literal notranslate"><span class="pre">Accept-Language</span></code> du navigateur, avec l’anglais par défaut.</p>
+<p>Voir <a class="reference internal" href="i18n.html"><span class="doc">Internationalisation (i18n)</span></a> pour contribuer de nouvelles traductions.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="production.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Utilisation en production</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="architecture.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Architecture</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homepage">Page d’accueil (<code class="docutils literal notranslate"><span class="pre">/</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recent-posts-recent">Publications récentes (<code class="docutils literal notranslate"><span class="pre">/recent</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#browse-browse">Parcourir (<code class="docutils literal notranslate"><span class="pre">/browse</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urls-urls">URLs (<code class="docutils literal notranslate"><span class="pre">/urls</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trending-hot">Tendances (<code class="docutils literal notranslate"><span class="pre">/hot</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stats-stats">Statistiques (<code class="docutils literal notranslate"><span class="pre">/stats</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-compare">Comparer (<code class="docutils literal notranslate"><span class="pre">/compare</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crypto-crypto">Crypto (<code class="docutils literal notranslate"><span class="pre">/crypto</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leaks-leaks">Leaks (<code class="docutils literal notranslate"><span class="pre">/leaks</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-notes">Notes (<code class="docutils literal notranslate"><span class="pre">/notes</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-dumps-rf">RF Dumps (<code class="docutils literal notranslate"><span class="pre">/RF</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entity-detail-pages">Pages de détail d’entité</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-group-name">Groupe (<code class="docutils literal notranslate"><span class="pre">/group/&lt;name&gt;</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#market-forum-market-name">Marché / Forum (<code class="docutils literal notranslate"><span class="pre">/market/&lt;name&gt;</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actor-actor-name">Acteur (<code class="docutils literal notranslate"><span class="pre">/actor/&lt;name&gt;</span></code>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-glossary">Glossaire (<code class="docutils literal notranslate"><span class="pre">/glossary</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-about">À propos (<code class="docutils literal notranslate"><span class="pre">/about</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feeds-and-automation">Flux et automatisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rss-feed">Flux RSS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#language-switcher">Sélecteur de langue</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par RansomLook Core Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright RansomLook Core Team.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

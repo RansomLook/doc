@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>RansomLook &#8212; RansomLook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=8e3b808b"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Prérequis" href="prerequisites.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Alerte de version"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">RansomLook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Recherche</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    RansomLook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Considérations techniques</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">Prérequis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Mettre à jour l’application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Interface en ligne de commande</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">Utilisation en production</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interface web</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="features.html">Interface web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalisation (i18n)</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="admin.html">Administration</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/edit/main/docs/index.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Thème" data-bs-title="Thème"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Clair"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Sombre"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Paramètres système"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>RansomLook</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation">Présentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Fonctionnalités</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#is-it-free">Est-ce gratuit ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-i-follow-new-posts">Comment suivre les nouvelles publications ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#want-to-be-part-of-the-ransomlook-community">Envie de rejoindre la communauté RansomLook ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#credits-thanks">Crédits et remerciements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">Contact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">Licence</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="ransomlook">
+<h1>RansomLook<a class="headerlink" href="#ransomlook" title="Lien vers cette rubrique">#</a></h1>
+<img alt="Dernière version" src="https://img.shields.io/github/v/release/RansomLook/RansomLook.svg?style=flat-square" />
+<img alt="Licence" src="https://img.shields.io/github/license/RansomLook/RansomLook.svg?style=flat-square" />
+<img alt="Stars" src="https://img.shields.io/github/stars/RansomLook/RansomLook.svg?style=flat-square" />
+<img alt="Statut de la documentation" src="https://readthedocs.org/projects/ransomlook/badge/?version=latest" />
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<section id="presentation">
+<h2>Présentation<a class="headerlink" href="#presentation" title="Lien vers cette rubrique">#</a></h2>
+<p>RansomLook est un projet open-source destiné à aider ses utilisateurs à suivre les publications et activités liées aux ransomwares sur divers sites, forums et chaînes Telegram.</p>
+<p>Une instance publique opérée par l’équipe RansomLook est disponible sur <a class="reference external" href="https://ransomlook.io">https://ransomlook.io</a>.</p>
+<section id="features">
+<h3>Fonctionnalités<a class="headerlink" href="#features" title="Lien vers cette rubrique">#</a></h3>
+<p>Collecte de données :</p>
+<ul class="simple">
+<li><p>Surveillance des blogs / DLS avec parsers dédiés par groupe pour l’extraction des victimes</p></li>
+<li><p>Surveillance des forums (listing seul — le parsing n’est pas disponible)</p></li>
+<li><p>Indexation des notes de rançon depuis ThreatLabz</p></li>
+<li><p>Suivi des leaks publics (leak-lookup) et dumps Recorded Future optionnels (clé d’API requise)</p></li>
+<li><p>Surveillance des portefeuilles de cryptomonnaies connus</p></li>
+</ul>
+<p>Interface web (voir <a class="reference internal" href="features.html"><span class="doc">Interface web</span></a> pour les détails) :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/urls</span></code> — inventaire plat de tous les miroirs suivis avec statut, santé sur 30 jours et export CSV</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/browse</span></code> — grille de cartes de groupes, marchés et acteurs de menace avec filtres de santé et de recherche</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/recent</span></code> — publications chronologiques sur fenêtres de 1/3/7/30 jours</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/hot</span></code> — groupes en tendance (Δ%, volume, nouveaux entrants) avec sparklines</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/stats</span></code> — graphiques Plotly interactifs avec moyennes glissantes et filtre Top-N</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/compare</span></code> — comparaison côte à côte de deux entités</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/crypto</span></code> — portefeuilles par groupe avec transactions et intégration Breadcrumbs</p></li>
+<li><p>Pages de détail des groupes, marchés et acteurs de menace avec graphes de relations</p></li>
+</ul>
+<p>Automatisation / intégration :</p>
+<ul class="simple">
+<li><p>API JSON documentée via Swagger à <code class="docutils literal notranslate"><span class="pre">/doc/</span></code></p></li>
+<li><p>Flux RSS des publications récentes à <code class="docutils literal notranslate"><span class="pre">/rss.xml</span></code></p></li>
+<li><p>Notifications optionnelles (RocketChat, e-mail)</p></li>
+<li><p>Bridge Mastodon optionnel</p></li>
+</ul>
+<p>i18n :</p>
+<ul class="simple">
+<li><p>Interface en anglais et français, basculable via le toggle de la barre du haut (cookie) ; voir <a class="reference internal" href="i18n.html"><span class="doc">Internationalisation (i18n)</span></a></p></li>
+</ul>
+</section>
+<section id="is-it-free">
+<h3>Est-ce gratuit ?<a class="headerlink" href="#is-it-free" title="Lien vers cette rubrique">#</a></h3>
+<p>Oui, c’est gratuit — et surtout, c’est open-source.</p>
+</section>
+<section id="how-can-i-follow-new-posts">
+<h3>Comment suivre les nouvelles publications ?<a class="headerlink" href="#how-can-i-follow-new-posts" title="Lien vers cette rubrique">#</a></h3>
+<p>Plusieurs moyens permettent de suivre les nouvelles publications :</p>
+<ul class="simple">
+<li><p>En hébergeant sa propre instance et en activant les notifications RocketChat et/ou e-mail</p></li>
+<li><p>En consultant l’instance publique : <a class="reference external" href="https://www.ransomlook.io">https://www.ransomlook.io</a></p></li>
+<li><p>En accédant à l’API : <a class="reference external" href="https://www.ransomlook.io/doc">https://www.ransomlook.io/doc</a></p></li>
+<li><p>En s’abonnant au flux RSS : <a class="reference external" href="https://www.ransomlook.io/rss.xml">https://www.ransomlook.io/rss.xml</a></p></li>
+<li><p>En nous suivant sur Mastodon : <a class="reference external" href="https://social.circl.lu/&#64;Ransomlook">&#64;Ransomlook&#64;social.circl.lu</a></p></li>
+<li><p>En nous suivant sur BlueSky : <a class="reference external" href="https://bsky.app/profile/ransomlook.bsky.social">ransomlook.bsky.social</a></p></li>
+</ul>
+<p>Il n’existe AUCUN canal Telegram officiel !</p>
+</section>
+<section id="want-to-be-part-of-the-ransomlook-community">
+<h3>Envie de rejoindre la communauté RansomLook ?<a class="headerlink" href="#want-to-be-part-of-the-ransomlook-community" title="Lien vers cette rubrique">#</a></h3>
+<p>Aidez-nous à améliorer RansomLook ! Voici comment contribuer :</p>
+<ul class="simple">
+<li><p>Ouvrir un ticket sur notre dépôt GitHub.</p></li>
+<li><p>Proposer des pull requests avec de nouvelles fonctionnalités ou améliorations.</p></li>
+<li><p>Partager de nouvelles sources de DLS (sites de fuite du dark web) avec nous.</p></li>
+<li><p>Signaler tout bug rencontré.</p></li>
+<li><p>Suggérer des fonctionnalités qui pourraient enrichir RansomLook.</p></li>
+</ul>
+</section>
+<section id="credits-thanks">
+<h3>Crédits et remerciements<a class="headerlink" href="#credits-thanks" title="Lien vers cette rubrique">#</a></h3>
+<p>RansomLook est maintenu par Alexandre Dulaunoy (<a class="github reference external" href="https://github.com/adulau/">adulau/</a>) et Fafner [_KeyZee_] (<a class="github reference external" href="https://github.com/fafnerkeyzee">fafnerkeyzee</a>).</p>
+<p>Nous remercions Tammy Harper pour ses contributions à l’ajout de nouveaux groupes et ses retours réguliers.</p>
+<p>Le code est basé sur RansomWatch.</p>
+<p>Les données externes proviennent de :</p>
+<ul class="simple">
+<li><p>Malpedia pour les descriptions</p></li>
+<li><p>Ransomwhe.re pour les cryptomonnaies</p></li>
+<li><p>threatlabz pour les notes de rançon</p></li>
+<li><p>leak-lookup pour les leaks publics</p></li>
+</ul>
+</section>
+</section>
+<section id="contact">
+<h2>Contact<a class="headerlink" href="#contact" title="Lien vers cette rubrique">#</a></h2>
+<p>Contactez-nous sur Twitter ou Mastodon, ou directement par un ticket sur GitHub. Vous pouvez aussi nous écrire à : contact [at] ransomlook [dot] io</p>
+</section>
+<section id="license">
+<h2>Licence<a class="headerlink" href="#license" title="Lien vers cette rubrique">#</a></h2>
+<p>RansomLook est distribué sous <a class="reference external" href="https://www.gnu.org/licenses/agpl-3.0.html">licence GNU Affero General Public License version 3</a>.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="prerequisites.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Prérequis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation">Présentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Fonctionnalités</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#is-it-free">Est-ce gratuit ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-i-follow-new-posts">Comment suivre les nouvelles publications ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#want-to-be-part-of-the-ransomlook-community">Envie de rejoindre la communauté RansomLook ?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#credits-thanks">Crédits et remerciements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">Contact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">Licence</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par RansomLook Core Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright RansomLook Core Team.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

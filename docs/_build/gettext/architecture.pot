@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../architecture.rst:2
+#: 0ae637f1477f4d00a635434f66ca27e1
+msgid "Architecture"
+msgstr ""
+
+#: ../../architecture.rst:4
+#: d2722d52fe7943d78f3113833ec69db8
+msgid "This page describes RansomLook from three complementary angles:"
+msgstr ""
+
+#: ../../architecture.rst:6
+#: b8c8563f19f24056b5efbff368c20416
+msgid "a **functional view** — what the project does, independent of any technology;"
+msgstr ""
+
+#: ../../architecture.rst:7
+#: 6dc0a295f157421da2fdc3bb08a2b9f0
+msgid "an **architectural view** — the technical components, available at two zoom levels (high-level and ultra-detailed);"
+msgstr ""
+
+#: ../../architecture.rst:9
+#: 70abb163eb924217ac3d5be9d451f955
+msgid "a **user view** — five typical journeys from the perspective of the main personas."
+msgstr ""
+
+#: ../../architecture.rst:16
+#: 39709f2d26c84732aa7ec09f0c90df9b
+msgid "Functional view"
+msgstr ""
+
+#: ../../architecture.rst:18
+#: 02a9d2e5f8a94afa9d92ce28c55293be
+msgid "From upstream sources (leak sites, public leak databases, ransom-notes corpora, crypto trackers) through the processing pipeline, to the deliverables exposed to operators."
+msgstr ""
+
+#: ../../architecture.rst:63
+#: 49d403b4af63446aa5633fafa8b6d87f
+msgid "Key points:"
+msgstr ""
+
+#: ../../architecture.rst:65
+#: ce389712f822474d9ae3ac8f43a3363b
+msgid "Every source is pulled (not pushed) — RansomLook is a read-only aggregator."
+msgstr ""
+
+#: ../../architecture.rst:66
+#: cc134b08d6f04898aa198a80435ab911
+msgid "The pipeline is **idempotent**: re-running scrape/parse on the same input converges to the same state."
+msgstr ""
+
+#: ../../architecture.rst:68
+#: 59a3c46a7ce1459a8a52a5719e7fcfd0
+msgid "The four deliverables share a single data store — the web UI and the API expose identical facts."
+msgstr ""
+
+#: ../../architecture.rst:72
+#: ffc6d62f5b6d4f5bb2671ff61fafd15e
+msgid "Architectural view — high-level"
+msgstr ""
+
+#: ../../architecture.rst:74
+#: e6b2b349c8c34deda4fdd322e491f16e
+msgid "The technical boundaries at a glance."
+msgstr ""
+
+#: ../../architecture.rst:105
+#: cd2492d3d1f04714983c9df370d38e4c
+msgid "Architectural view — ultra-detailed"
+msgstr ""
+
+#: ../../architecture.rst:107
+#: 9df8154d1bf9403f956cd5c98078b006
+msgid "Every process, data store and external dependency actually present in a running RansomLook instance."
+msgstr ""
+
+#: ../../architecture.rst:215
+#: 28d05447f1154b2c9413b0bdb2871cf0
+msgid "Workers run as cron-driven or systemd-timed jobs. They share the Valkey instance and filesystem but never talk to each other directly — coordination is implicit through data in Valkey."
+msgstr ""
+
+#: ../../architecture.rst:220
+#: 3020aee519af4421a3e326796bcbb86f
+msgid "User view — five journeys"
+msgstr ""
+
+#: ../../architecture.rst:222
+#: 54a376980d5d45a68785c011c169ab15
+msgid "Typical flows for the five personas documented on :doc:`about <features>`."
+msgstr ""
+
+#: ../../architecture.rst:225
+#: 6a89b1da282c43418d9a05a92f87aed7
+msgid "SOC / IR — match an observed URL"
+msgstr ""
+
+#: ../../architecture.rst:227
+#: 92926d60dc5b4a1cb9adc1924c420cff
+msgid "Starting from a suspicious URL spotted on an endpoint, confirm whether it is a known ransomware mirror and take blocking action."
+msgstr ""
+
+#: ../../architecture.rst:241
+#: c2ea47fed2d64e0aa1757eaa633e2bcd
+msgid "CTI analyst — weekly trend report"
+msgstr ""
+
+#: ../../architecture.rst:243
+#: e0f64db0d6254cdeab9bb4cdd0741daf
+msgid "Build a weekly \"state of ransomware\" briefing."
+msgstr ""
+
+#: ../../architecture.rst:256
+#: 7a188c5199ec4e29a103857bdb1abf8a
+msgid "CSIRT / national CERT — constituency triage"
+msgstr ""
+
+#: ../../architecture.rst:258
+#: f80ab75310784e8e95d12841006cd94e
+msgid "Morning scan for new victims inside the constituency."
+msgstr ""
+
+#: ../../architecture.rst:271
+#: a32d97e1531145c78ea20f78ba4da0ca
+msgid "Security researcher — actor investigation"
+msgstr ""
+
+#: ../../architecture.rst:273
+#: adb7479e84fc44b9b4463236cc5efa86
+msgid "Investigate a named actor, trace their relations."
+msgstr ""
+
+#: ../../architecture.rst:286
+#: df389bd44d1e458eb4f0127c337708a8
+msgid "Integrator — automation & dashboards"
+msgstr ""
+
+#: ../../architecture.rst:288
+#: c71841224089424ab0c3ab7448653e26
+msgid "Build a live dashboard or feed data into a SIEM."
+msgstr ""
+
+#: ../../architecture.rst:301
+#: 0e6ce57eeeaa4e97ac90f44eaf5ab087
+msgid "Editing the diagrams"
+msgstr ""
+
+#: ../../architecture.rst:303
+#: 1396843ebd0c4a78a3ec85881f7f9b1d
+msgid "Every diagram is defined inline in this ``.rst`` file using `Mermaid <https://mermaid.js.org/>`_ syntax (``.. mermaid::`` directive provided by ``sphinxcontrib-mermaid``). Pushing changes to ``docs/architecture.rst`` is enough — ReadTheDocs rebuilds automatically."
+msgstr ""
+
+#: ../../architecture.rst:308
+#: ad2aa604fc374cad9bad696a86d69ded
+msgid "To preview locally:"
+msgstr ""

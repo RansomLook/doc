@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) RansomLook Core Team
+# This file is distributed under the same license as the RansomLook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: RansomLook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../production.rst:2 8897259217c2488cb2ced15102932134
+msgid "Use in production"
+msgstr "Utilisation en production"
+
+#: ../../production.rst:4 e853b26be9ba4e938a8ba60a1f102813
+msgid ""
+"If you plan to use in production, we recommand to you to use the "
+"following configuration"
+msgstr "Pour un usage en production, la configuration suivante est recommandée."
+
+#: ../../production.rst:7 0cf55913ba17463e935b910d5ea8882e
+msgid "RansomLook Service"
+msgstr "Service RansomLook"
+
+#: ../../production.rst:9 c6a262c50072454f83b79b15a8cf5342
+msgid "Edit and copy the service file into system service directory"
+msgstr ""
+"Éditez et copiez le fichier de service dans le répertoire système des "
+"services."
+
+#: ../../production.rst:16 68d5b5e36abc4967a2a4eed27c367166
+msgid ""
+"Reload the deamon and try to start the service, if all is ok, you can "
+"enable it for next reboot"
+msgstr ""
+"Rechargez le daemon et tentez de démarrer le service ; si tout est OK, "
+"activez-le pour le prochain reboot."
+
+#: ../../production.rst:25 2430823c1da048ff9586838b4af653d0
+msgid "Nginx proxy"
+msgstr "Proxy Nginx"
+
+#: ../../production.rst:27 a655cd1312024282941bedaebd17243c
+msgid "Edit and copy the configuration file for nginx"
+msgstr "Éditez et copiez le fichier de configuration pour Nginx."
+
+#: ../../production.rst:34 8f677fbc95184e9e81b6f7c35350201c
+msgid "Test your config and then reload nginx"
+msgstr "Testez la configuration puis rechargez Nginx."
+
+#: ../../production.rst:42 fc7e92659e03486e89a3be6178b63721
+msgid "Doing the stuff"
+msgstr "Mise en place"
+
+#: ../../production.rst:44 23d555698719456eaf9a64d5ae9be8c5
+msgid ""
+"In order to automatize the scraping and parsing, we recommand to you to "
+"use cron"
+msgstr "Pour automatiser le scraping et le parsing, utiliser cron est recommandé."
+
+#: ../../production.rst:50 53c1542c8509488f86b439005bcc9103
+msgid ""
+"You can use the following template for grab the data. Recommand to you to"
+" adjust the differents tasks. Scraping can get many time, so be sure "
+"current scraping is over before starting a new scraping task."
+msgstr ""
+"Vous pouvez utiliser le template suivant pour récupérer les données. "
+"Ajustez les différentes tâches. Le scraping peut être long : assurez-vous"
+" qu'un scraping en cours est terminé avant d'en lancer un nouveau."
+
+#: ../../production.rst:64 4653f669e32747b8b95fd72747c14c69
+msgid "In this exemple :"
+msgstr "Dans cet exemple :"
+
+#: ../../production.rst:66 d12b896526d5443ab426d6c046f8f8d6
+msgid ""
+"Scraping is done very hours following by parsing, screenshots of post and"
+" then torrent"
+msgstr ""
+"Scraping toutes les heures, suivi du parsing, des captures d'écran des "
+"publications puis des torrents."
+
+#: ../../production.rst:67 e5f939b575414cf88c52c405761ad44b
+msgid "Half past every hours breach and telegram account are scraped"
+msgstr ""
+"À la demi-heure chaque heure : scraping des breaches et des comptes "
+"Telegram."
+
+#: ../../production.rst:68 52c8979772834ee29c52aa19903008de
+msgid "Every days at 1 a.m. cryptocurrencies are updated"
+msgstr "Chaque jour à 1h du matin : mise à jour des cryptomonnaies."
+
+#: ../../production.rst:69 b22c19da90424949827b3a6aa0697b59
+msgid "Every days at 2 a.m. ransom notes are updated"
+msgstr "Chaque jour à 2h du matin : mise à jour des notes de rançon."
+
