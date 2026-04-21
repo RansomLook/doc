@@ -1,0 +1,740 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Web interface &#8212; RansomLook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=62544db9"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'features';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Architecture" href="architecture.html" />
+    <link rel="prev" title="Use in production" href="production.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">RansomLook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    RansomLook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Technical considerations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Updating the application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">Use in production</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Web interface</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Web interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization (i18n)</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="admin.html">Administration</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/edit/main/docs/features.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/issues/new?title=Issue%20on%20page%20%2Ffeatures.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/features.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Web interface</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homepage">Homepage (<code class="docutils literal notranslate"><span class="pre">/</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recent-posts-recent">Recent posts (<code class="docutils literal notranslate"><span class="pre">/recent</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#browse-browse">Browse (<code class="docutils literal notranslate"><span class="pre">/browse</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urls-urls">URLs (<code class="docutils literal notranslate"><span class="pre">/urls</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trending-hot">Trending (<code class="docutils literal notranslate"><span class="pre">/hot</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stats-stats">Stats (<code class="docutils literal notranslate"><span class="pre">/stats</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-compare">Compare (<code class="docutils literal notranslate"><span class="pre">/compare</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crypto-crypto">Crypto (<code class="docutils literal notranslate"><span class="pre">/crypto</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leaks-leaks">Leaks (<code class="docutils literal notranslate"><span class="pre">/leaks</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-notes">Notes (<code class="docutils literal notranslate"><span class="pre">/notes</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-dumps-rf">RF Dumps (<code class="docutils literal notranslate"><span class="pre">/RF</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entity-detail-pages">Entity detail pages</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-group-name">Group (<code class="docutils literal notranslate"><span class="pre">/group/&lt;name&gt;</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#market-forum-market-name">Market / Forum (<code class="docutils literal notranslate"><span class="pre">/market/&lt;name&gt;</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actor-actor-name">Actor (<code class="docutils literal notranslate"><span class="pre">/actor/&lt;name&gt;</span></code>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-glossary">Glossary (<code class="docutils literal notranslate"><span class="pre">/glossary</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-about">About (<code class="docutils literal notranslate"><span class="pre">/about</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feeds-and-automation">Feeds and automation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rss-feed">RSS feed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#language-switcher">Language switcher</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="web-interface">
+<h1>Web interface<a class="headerlink" href="#web-interface" title="Link to this heading">#</a></h1>
+<p>This page gives an overview of every public-facing page of a RansomLook instance.
+All pages are available on the official public instance at <a class="reference external" href="https://www.ransomlook.io">https://www.ransomlook.io</a>.</p>
+<p>Navigation is organised in three groups in the sidebar:</p>
+<ul class="simple">
+<li><p><strong>Data</strong> — Recent, Browse, Trending, Stats</p></li>
+<li><p><strong>Intel</strong> — URLs, Crypto, Leaks, Notes, RF Dumps</p></li>
+<li><p><strong>Info</strong> — API, Glossary, About</p></li>
+</ul>
+<section id="homepage">
+<h2>Homepage (<code class="docutils literal notranslate"><span class="pre">/</span></code>)<a class="headerlink" href="#homepage" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/home.png"><img alt="RansomLook homepage" src="_images/home.png" style="width: 100%;" />
+</a>
+<p>The landing page summarises live activity:</p>
+<ul class="simple">
+<li><p>total ransomware posts tracked,</p></li>
+<li><p>last 7-day headline metrics with delta vs the previous week,</p></li>
+<li><p><em>Top movers</em> (groups with the biggest weekly swing) and <em>Latest posts</em>,</p></li>
+<li><p>a 30-day sparkline of the overall posting activity,</p></li>
+<li><p>CTAs towards <a class="reference internal" href="#page-recent"><span class="std std-ref">/recent</span></a>, <a class="reference internal" href="#page-stats"><span class="std std-ref">/stats</span></a> and the API docs.</p></li>
+</ul>
+</section>
+<section id="recent-posts-recent">
+<span id="page-recent"></span><h2>Recent posts (<code class="docutils literal notranslate"><span class="pre">/recent</span></code>)<a class="headerlink" href="#recent-posts-recent" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/recent.png"><img alt="Recent posts page" src="_images/recent.png" style="width: 100%;" />
+</a>
+<p>Flat chronological listing of victim posts across every tracked group.</p>
+<ul class="simple">
+<li><p><strong>Time window selector</strong> — <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">3</span> <span class="pre">/</span> <span class="pre">7</span> <span class="pre">/</span> <span class="pre">30</span> <span class="pre">days</span></code>. Default window: 3 days.</p></li>
+<li><p>Hard cap at 2000 rows per window. When exceeded, a notice shows how many rows were trimmed.</p></li>
+<li><p>Live filters: free-text search (title + group name) and a per-group dropdown.</p></li>
+<li><p>24-hour sparkline of posting activity in the hero.</p></li>
+</ul>
+</section>
+<section id="browse-browse">
+<span id="page-browse"></span><h2>Browse (<code class="docutils literal notranslate"><span class="pre">/browse</span></code>)<a class="headerlink" href="#browse-browse" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/browse.png"><img alt="Browse entities page" src="_images/browse.png" style="width: 100%;" />
+</a>
+<p>Card grid of every tracked entity — ransomware groups, markets/forums and threat actors.</p>
+<ul class="simple">
+<li><p>Tabs to switch between <em>All / Groups / Markets / Actors</em>.</p></li>
+<li><p>Health chips (<em>Healthy / Degraded / Offline</em>) filter entities by mirror availability.</p></li>
+<li><p>Alphabet bar (A-Z / 0-9 / #) and live name/alias search.</p></li>
+<li><p>Each card exposes parser status, private flag, wanted-listing flag, alias count.</p></li>
+</ul>
+</section>
+<section id="urls-urls">
+<span id="page-urls"></span><h2>URLs (<code class="docutils literal notranslate"><span class="pre">/urls</span></code>)<a class="headerlink" href="#urls-urls" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/urls.png"><img alt="URL inventory page" src="_images/urls.png" style="width: 100%;" />
+</a>
+<p>Flat view of every tracked mirror URL for groups and markets. Useful for IR teams
+checking if an observed URL matches a tracked mirror.</p>
+<ul class="simple">
+<li><p>Filters: entity type (<em>All / Groups / Markets</em>), availability (<em>All / Online / Offline</em>),
+live text search matching both entity name and URL substring.</p></li>
+<li><p>One row per mirror — shows the entity, the full URL, live status, last scrape date,
+30-day uptime and a 30-day health sparkline.</p></li>
+<li><p><strong>CSV export</strong> (<code class="docutils literal notranslate"><span class="pre">/urls.csv</span></code>) respects the active filters.</p></li>
+<li><p>Respects privacy: private entities and private URLs are hidden to anonymous visitors.</p></li>
+</ul>
+</section>
+<section id="trending-hot">
+<span id="page-hot"></span><h2>Trending (<code class="docutils literal notranslate"><span class="pre">/hot</span></code>)<a class="headerlink" href="#trending-hot" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/hot.png"><img alt="Trending groups page" src="_images/hot.png" style="width: 100%;" />
+</a>
+<p>Ranks groups by posting activity over a configurable window (1/3/7/14/30/90 days).</p>
+<ul class="simple">
+<li><p>Sort modes: <em>Trending (Δ%)</em>, <em>Volume</em>, <em>New entrants</em>.</p></li>
+<li><p>CSV export of the ranked list.</p></li>
+<li><p>Per-row sparkline showing the daily post distribution inside the window.</p></li>
+</ul>
+</section>
+<section id="stats-stats">
+<span id="page-stats"></span><h2>Stats (<code class="docutils literal notranslate"><span class="pre">/stats</span></code>)<a class="headerlink" href="#stats-stats" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/stats.png"><img alt="Interactive statistics page" src="_images/stats.png" style="width: 100%;" />
+</a>
+<p>Interactive charts (Plotly) covering posts across time.</p>
+<ul class="simple">
+<li><p>Controls: time period (7/14/30/90 days or custom range), hourly/daily/weekly aggregation,
+optional rolling average (3/7/14), Top-N group filter (5/10/20/all), percentage normalisation.</p></li>
+<li><p>Three charts: Top-N bar, stacked area, timeline scatter. PNG export available on each.</p></li>
+<li><p>CSV export of the filtered dataset, share URL to reproduce a given view.</p></li>
+</ul>
+</section>
+<section id="compare-compare">
+<span id="page-compare"></span><h2>Compare (<code class="docutils literal notranslate"><span class="pre">/compare</span></code>)<a class="headerlink" href="#compare-compare" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/compare.png"><img alt="Compare two entities" src="_images/compare.png" style="width: 100%;" />
+</a>
+<p>Side-by-side comparison of two entities (groups or markets/forums).</p>
+<ul class="simple">
+<li><p>Posts over 7d/30d/365d, mirrors up, 30-day uptime, Captcha and RaaS flags.</p></li>
+<li><p>Live charts: post volume bars + mirror availability gauges.</p></li>
+</ul>
+</section>
+<section id="crypto-crypto">
+<span id="page-crypto"></span><h2>Crypto (<code class="docutils literal notranslate"><span class="pre">/crypto</span></code>)<a class="headerlink" href="#crypto-crypto" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/crypto.png"><img alt="Cryptocurrencies by group" src="_images/crypto.png" style="width: 100%;" />
+</a>
+<p>Cryptocurrency wallets grouped by actor.</p>
+<ul class="simple">
+<li><p>Chip grid with live filter by name / alias.</p></li>
+<li><p>Per-group detail page (<code class="docutils literal notranslate"><span class="pre">/crypto/&lt;name&gt;</span></code>) lists observed wallets by blockchain, each with
+their transactions, filter controls (date range, min/max amount, direction) and Breadcrumbs
+integration for supported chains.</p></li>
+<li><p>CSV export per wallet and per group.</p></li>
+</ul>
+</section>
+<section id="leaks-leaks">
+<span id="page-leaks"></span><h2>Leaks (<code class="docutils literal notranslate"><span class="pre">/leaks</span></code>)<a class="headerlink" href="#leaks-leaks" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/leaks.png"><img alt="Leaks listing page" src="_images/leaks.png" style="width: 100%;" />
+</a>
+<p>Public leak databases tracked for enrichment. Search by name/description/URL/title.
+Each entry opens a modal with size, record count, indexing date and schema columns.</p>
+</section>
+<section id="notes-notes">
+<span id="page-notes"></span><h2>Notes (<code class="docutils literal notranslate"><span class="pre">/notes</span></code>)<a class="headerlink" href="#notes-notes" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/notes.png"><img alt="Ransomware notes by group" src="_images/notes.png" style="width: 100%;" />
+</a>
+<p>Ransom note samples grouped by actor. Detail page (<code class="docutils literal notranslate"><span class="pre">/notes/&lt;group&gt;</span></code>) lists every note
+with content and a <em>Copy</em> action.</p>
+</section>
+<section id="rf-dumps-rf">
+<span id="page-rf"></span><h2>RF Dumps (<code class="docutils literal notranslate"><span class="pre">/RF</span></code>)<a class="headerlink" href="#rf-dumps-rf" title="Link to this heading">#</a></h2>
+<p>Optional Recorded Future integration. Available when an API key is configured in
+<code class="docutils literal notranslate"><span class="pre">config/generic.json</span></code>. Lists retrieved dumps with description and download date; modal
+view shows breach metadata.</p>
+</section>
+<section id="entity-detail-pages">
+<h2>Entity detail pages<a class="headerlink" href="#entity-detail-pages" title="Link to this heading">#</a></h2>
+<section id="group-group-name">
+<h3>Group (<code class="docutils literal notranslate"><span class="pre">/group/&lt;name&gt;</span></code>)<a class="headerlink" href="#group-group-name" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Hero with logo, quick stats (total posts, posts over 7d/30d, 30-day uptime average).</p></li>
+<li><p>Activity sparkline (30 days), Plotly time chart.</p></li>
+<li><p>Contact details (PGP, Matrix, Telegram, Tox, Session, Simplex, Max, Sonar, mail, Jabber).</p></li>
+<li><p>Mirror listings split by role (URLs / File servers / Chat / Admin) each showing status,
+screenshot thumb, 30-day uptime and a health sparkline.</p></li>
+<li><p>Affiliates list (linked to actor pages when known).</p></li>
+<li><p>CSV export for URLs and posts.</p></li>
+</ul>
+</section>
+<section id="market-forum-market-name">
+<h3>Market / Forum (<code class="docutils literal notranslate"><span class="pre">/market/&lt;name&gt;</span></code>)<a class="headerlink" href="#market-forum-market-name" title="Link to this heading">#</a></h3>
+<p>Same layout as group pages but sourced from the market database.</p>
+</section>
+<section id="actor-actor-name">
+<h3>Actor (<code class="docutils literal notranslate"><span class="pre">/actor/&lt;name&gt;</span></code>)<a class="headerlink" href="#actor-actor-name" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Hero with aliases, <em>WANTED</em> banner linking to FBI / Europol / INTERPOL notices when applicable.</p></li>
+<li><p>Relation graph (cytoscape) showing linked groups, markets and peer actors.</p></li>
+<li><p>Personal information, contacts, sources and image gallery with lightbox.</p></li>
+</ul>
+</section>
+</section>
+<section id="glossary-glossary">
+<h2>Glossary (<code class="docutils literal notranslate"><span class="pre">/glossary</span></code>)<a class="headerlink" href="#glossary-glossary" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/glossary.png"><img alt="Glossary page" src="_images/glossary.png" style="width: 100%;" />
+</a>
+<p>Reference page defining terminology used throughout RansomLook: groups, actors,
+infrastructure types (DLS, FS, Chat, Admin, Relay), data metrics, ecosystem and relationships.</p>
+</section>
+<section id="about-about">
+<h2>About (<code class="docutils literal notranslate"><span class="pre">/about</span></code>)<a class="headerlink" href="#about-about" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="_images/about.png"><img alt="About page" src="_images/about.png" style="width: 100%;" />
+</a>
+<p>Project overview with sections:</p>
+<ul class="simple">
+<li><p>What is RansomLook / main components</p></li>
+<li><p>Who uses RansomLook (SOC, CTI, CSIRT, research, journalism)</p></li>
+<li><p>Getting started (entry-point per use case)</p></li>
+<li><p>Data freshness policy</p></li>
+<li><p>License (AGPL v3), API license (CC BY 4.0)</p></li>
+<li><p>Credits and external data sources</p></li>
+</ul>
+</section>
+<section id="feeds-and-automation">
+<h2>Feeds and automation<a class="headerlink" href="#feeds-and-automation" title="Link to this heading">#</a></h2>
+<section id="rss-feed">
+<h3>RSS feed<a class="headerlink" href="#rss-feed" title="Link to this heading">#</a></h3>
+<p>A <code class="docutils literal notranslate"><span class="pre">/rss.xml</span></code> feed exposes the most recent posts. The sidebar footer exposes a
+direct link next to the social icons.</p>
+</section>
+<section id="api">
+<h3>API<a class="headerlink" href="#api" title="Link to this heading">#</a></h3>
+<p>Swagger documentation is served at <code class="docutils literal notranslate"><span class="pre">/doc/</span></code>. See <a class="reference internal" href="api.html"><span class="doc">API</span></a> for details.</p>
+</section>
+</section>
+<section id="language-switcher">
+<h2>Language switcher<a class="headerlink" href="#language-switcher" title="Link to this heading">#</a></h2>
+<p>Every page can be rendered in English or French. The switcher lives in the top bar
+(<code class="docutils literal notranslate"><span class="pre">EN</span> <span class="pre">/</span> <span class="pre">FR</span></code>). The active locale is persisted in a cookie (<code class="docutils literal notranslate"><span class="pre">locale</span></code>) for one year.
+When no cookie is set, the locale is picked from the browser’s <code class="docutils literal notranslate"><span class="pre">Accept-Language</span></code> header,
+defaulting to English.</p>
+<p>See <a class="reference internal" href="i18n.html"><span class="doc">Internationalization (i18n)</span></a> for contributing new translations.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="production.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Use in production</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="architecture.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Architecture</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homepage">Homepage (<code class="docutils literal notranslate"><span class="pre">/</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recent-posts-recent">Recent posts (<code class="docutils literal notranslate"><span class="pre">/recent</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#browse-browse">Browse (<code class="docutils literal notranslate"><span class="pre">/browse</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urls-urls">URLs (<code class="docutils literal notranslate"><span class="pre">/urls</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trending-hot">Trending (<code class="docutils literal notranslate"><span class="pre">/hot</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stats-stats">Stats (<code class="docutils literal notranslate"><span class="pre">/stats</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compare-compare">Compare (<code class="docutils literal notranslate"><span class="pre">/compare</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crypto-crypto">Crypto (<code class="docutils literal notranslate"><span class="pre">/crypto</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leaks-leaks">Leaks (<code class="docutils literal notranslate"><span class="pre">/leaks</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-notes">Notes (<code class="docutils literal notranslate"><span class="pre">/notes</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rf-dumps-rf">RF Dumps (<code class="docutils literal notranslate"><span class="pre">/RF</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entity-detail-pages">Entity detail pages</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-group-name">Group (<code class="docutils literal notranslate"><span class="pre">/group/&lt;name&gt;</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#market-forum-market-name">Market / Forum (<code class="docutils literal notranslate"><span class="pre">/market/&lt;name&gt;</span></code>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actor-actor-name">Actor (<code class="docutils literal notranslate"><span class="pre">/actor/&lt;name&gt;</span></code>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary-glossary">Glossary (<code class="docutils literal notranslate"><span class="pre">/glossary</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-about">About (<code class="docutils literal notranslate"><span class="pre">/about</span></code>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feeds-and-automation">Feeds and automation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rss-feed">RSS feed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#language-switcher">Language switcher</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By RansomLook Core Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright RansomLook Core Team.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

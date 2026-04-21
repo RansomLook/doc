@@ -1,0 +1,201 @@
+Internationalization (i18n)
+===========================
+
+RansomLook's web UI supports multiple languages through
+`Flask-Babel <https://python-babel.github.io/flask-babel/>`_. The project currently
+ships **English** (source language) and **French** translations.
+
+How the locale is chosen
+------------------------
+
+On every request the active locale is picked in this order:
+
+1. **``locale`` cookie** — set by the user when they click the ``EN / FR`` switcher
+   in the top bar. Persisted for one year.
+2. **Browser ``Accept-Language``** — when no cookie is set, the best match against
+   the list of available locales is used.
+3. **Fallback** — ``en``.
+
+Switching language on demand
+----------------------------
+
+Hitting ``/set-locale/<code>`` (for example ``/set-locale/fr``) sets the cookie
+to the requested locale and bounces back to the referrer. The top-bar switcher
+is just a pair of links to those endpoints.
+
+File layout
+-----------
+
+::
+
+    babel.cfg                                   # extraction config (Python + Jinja2)
+    messages.pot                                # extracted template catalogue
+    translations/
+        en/LC_MESSAGES/messages.po              # English source strings
+        en/LC_MESSAGES/messages.mo              # compiled (binary)
+        fr/LC_MESSAGES/messages.po              # French translations
+        fr/LC_MESSAGES/messages.mo              # compiled (binary)
+
+Flask-Babel loads the ``.mo`` files at process start. You **must restart** the
+web server (gunicorn / development runner) after recompiling for changes to take effect.
+
+Workflow for contributors
+-------------------------
+
+Extracting strings
+~~~~~~~~~~~~~~~~~~
+
+Whenever a template or Python file gains a new ``_('...')`` or ``gettext(...)`` call:
+
+.. code-block:: bash
+
+    poetry run pybabel extract -F babel.cfg -o messages.pot .
+
+Updating existing catalogues
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Merge new strings into every language catalogue while preserving existing
+translations (fuzzy matches are flagged, not overwritten):
+
+.. code-block:: bash
+
+    poetry run pybabel update -i messages.pot -d translations
+
+Editing translations
+~~~~~~~~~~~~~~~~~~~~
+
+Open ``translations/<lang>/LC_MESSAGES/messages.po`` in any PO editor
+(Poedit, Emacs po-mode, VS Code gettext plugins, …). Fill in the empty
+``msgstr ""`` entries and remove the ``#, fuzzy`` flag once you have reviewed
+the suggested translation.
+
+Adding a new language
+~~~~~~~~~~~~~~~~~~~~~
+
+Initialise a catalogue from the template:
+
+.. code-block:: bash
+
+    poetry run pybabel init -i messages.pot -d translations -l de
+
+Then expose the new locale in ``website/web/__init__.py``:
+
+.. code-block:: python
+
+    AVAILABLE_LOCALES = ("en", "fr", "de")
+
+and add a translation for the language name in the switcher (``base.html``).
+
+Compiling
+~~~~~~~~~
+
+Before running the app, compile ``.po`` → ``.mo``:
+
+.. code-block:: bash
+
+    poetry run pybabel compile -d translations
+
+Escaping ``%`` signs
+--------------------
+
+Flask-Babel / gettext uses Python's ``%``-formatting. Any literal percent sign
+in a translatable string must be escaped as ``%%``. This is why
+``Normalize (%%)`` appears in the templates rather than ``Normalize (%)``.
+Failing to escape leads to ``ValueError: unsupported format character`` at
+render time.
+
+Plural forms
+------------
+
+Use ``ngettext`` (aliased as ``_()`` won't work for plurals):
+
+.. code-block:: jinja
+
+    {{ ngettext('%(n)s post', '%(n)s posts', count, n=count) }}
+
+In the catalogue this yields ``msgid_plural`` and ``msgstr[0] / msgstr[1]`` entries.
+
+Translating the documentation itself
+====================================
+
+The RansomLook documentation you are reading now is available in several
+languages as well. Diagrams use neutral English labels; only the surrounding
+prose is translated.
+
+Local setup
+-----------
+
+The extensions required to build a translated documentation are listed in
+``docs/requirements.txt`` (``sphinx-intl``). ``conf.py`` already exposes the
+language through the ``SPHINX_LANGUAGE`` environment variable and points
+Sphinx at ``docs/locale/`` for translation catalogues.
+
+Extract and update catalogues
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From the repository root:
+
+.. code-block:: bash
+
+    # extract every translatable chunk from the .rst files
+    sphinx-build -b gettext docs docs/_build/gettext
+
+    # merge the extracted template into the French catalogue (creates it on first run)
+    sphinx-intl update -p docs/_build/gettext -d docs/locale -l fr
+
+Edit the ``docs/locale/fr/LC_MESSAGES/*.po`` files. Any PO editor works
+(Poedit, VS Code gettext, …).
+
+Build a localised version
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+    # French build
+    SPHINX_LANGUAGE=fr sphinx-build -b html docs docs/_build/html/fr
+
+    # English build (default)
+    sphinx-build -b html docs docs/_build/html/en
+
+No compilation step is needed for ``.mo`` — Sphinx reads ``.po`` directly.
+
+Wiring it up on Read the Docs
+-----------------------------
+
+Read the Docs has native support for `documentation translations
+<https://docs.readthedocs.com/platform/stable/localization.html>`_. The
+canonical setup is:
+
+1. **Keep a single Git repository** (this one) hosting both the source files
+   and the ``docs/locale/<lang>/`` catalogues.
+2. **Create a "translation" project on RTD** for each language
+   (e.g. ``ransomlook-fr``). Point it at the same Git repository and branch.
+3. In the project's *Admin → Advanced settings*, set the **Language** to the
+   target locale (``French``).
+4. In the project's *Admin → Environment variables*, add
+   ``SPHINX_LANGUAGE=fr`` so the build uses the French catalogue.
+5. Open the **main** project (English). Go to *Admin → Translations* and
+   **link the French project** as a translation. Read the Docs will then
+   serve the docs at:
+
+   - ``https://ransomlook.readthedocs.io/en/latest/`` (main, default)
+   - ``https://ransomlook.readthedocs.io/fr/latest/`` (translated)
+
+6. The language switcher in the RTD flyout menu picks this up automatically.
+
+Repeat steps 2–5 per additional language.
+
+Keeping translations in sync
+----------------------------
+
+Whenever a ``.rst`` file is modified:
+
+1. Re-run ``sphinx-build -b gettext``.
+2. Re-run ``sphinx-intl update`` — new or changed paragraphs show up as empty
+   or fuzzy entries in the ``.po`` files.
+3. Translate and commit.
+
+Mermaid diagrams use English labels by convention, so they require no
+translation work. If a diagram ever needs to carry localised text, drop
+the label into the surrounding prose (which is translated) rather than
+inside the diagram body.

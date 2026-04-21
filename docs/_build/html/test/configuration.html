@@ -1,0 +1,690 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Configuration &#8212; RansomLook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=62544db9"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'configuration';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Updating the application" href="update.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">RansomLook</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    RansomLook
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Technical considerations</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prerequisites.html">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Updating the application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command-line-interface.html">Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="production.html">Use in production</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Web interface</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="features.html">Web interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization (i18n)</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="admin.html">Administration</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/edit/main/docs/configuration.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/RansomLook/doc.git/issues/new?title=Issue%20on%20page%20%2Fconfiguration.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/configuration.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Configuration</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entries-details">Entries details</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alertondashboard">alertondashboard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#darkmode">darkmode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#email">email</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#email-smtp-auth">email_smtp_auth</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ldap">ldap</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#malpedia">malpedia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mastodon">mastodon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misp">misp</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rf">rf</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rocketchat">rocketchat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#siteurl">siteurl</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thread">thread</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#twitter">twitter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#users">users</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-listen-ip">website_listen_ip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-listen-port">website_listen_port</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-of-configuration-file">Sample of configuration file</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">#</a></h1>
+<p>This section covers the configuration file. We recommand to you to restart the RansomLook after any change in the configuration file.</p>
+<section id="entries-details">
+<h2>Entries details<a class="headerlink" href="#entries-details" title="Link to this heading">#</a></h2>
+<section id="alertondashboard">
+<h3>alertondashboard<a class="headerlink" href="#alertondashboard" title="Link to this heading">#</a></h3>
+<p>This entry take the value ‘true’ or ‘false’ depenfing if you want to see your alerting keywords on the main page. It’s only appears for the last 24 hours.</p>
+</section>
+<section id="darkmode">
+<h3>darkmode<a class="headerlink" href="#darkmode" title="Link to this heading">#</a></h3>
+<p>This entry take the value ‘true’ or ‘false’ depending if you want to have a black or white interface.</p>
+</section>
+<section id="email">
+<h3>email<a class="headerlink" href="#email" title="Link to this heading">#</a></h3>
+<p>This section contains all the information to send the notification to specific users.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;smtp_server&quot;</span><span class="p">:</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span> <span class="c1"># Address for the SMTP server</span>
+    <span class="s2">&quot;smtp_port&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="c1"># Port to use</span>
+    <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;RansomLook &lt;ransomlook@myorg.local&gt;&quot;</span><span class="p">,</span> <span class="c1"># Email to use</span>
+    <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Team &lt;team@myorg.local&gt;&quot;</span><span class="p">],</span> <span class="c1"># Recipients for the mail</span>
+    <span class="s2">&quot;to_bcc&quot;</span><span class="p">:</span> <span class="p">[],</span> <span class="c1"># Hidden recipients for the mail</span>
+    <span class="s2">&quot;subject&quot;</span><span class="p">:</span> <span class="s2">&quot;New Notification from RansomLook&quot;</span><span class="p">,</span> <span class="c1"># subject to use</span>
+    <span class="s2">&quot;message_head&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello,</span><span class="se">\n\n</span><span class="s2">Please check the new entries in RansomLook:&quot;</span><span class="p">,</span> <span class="c1"># Header for your mail</span>
+    <span class="s2">&quot;message_foot&quot;</span><span class="p">:</span> <span class="s2">&quot;Best regards,</span><span class="se">\n\n</span><span class="s2">Ransomlook Team&quot;</span> <span class="c1"># Footer for your mail</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="email-smtp-auth">
+<h3>email_smtp_auth<a class="headerlink" href="#email-smtp-auth" title="Link to this heading">#</a></h3>
+<p>This section contains the information to use for an authenticated smtp relais.</p>
+</section>
+<section id="ldap">
+<h3>ldap<a class="headerlink" href="#ldap" title="Link to this heading">#</a></h3>
+<p>This section contains the information to use a LDAP authentication instead of local authentication.</p>
+</section>
+<section id="malpedia">
+<h3>malpedia<a class="headerlink" href="#malpedia" title="Link to this heading">#</a></h3>
+<p>Set your malpedia API key in this entry in order to use the script adding description on ransomware.</p>
+</section>
+<section id="mastodon">
+<h3>mastodon<a class="headerlink" href="#mastodon" title="Link to this heading">#</a></h3>
+<p>This section contains the information to post new posts on Mastodon</p>
+</section>
+<section id="misp">
+<h3>misp<a class="headerlink" href="#misp" title="Link to this heading">#</a></h3>
+<p>This section is used to transmit new posts in an event on MISP.</p>
+</section>
+<section id="rf">
+<h3>rf<a class="headerlink" href="#rf" title="Link to this heading">#</a></h3>
+<p>This section is used to get the new dumps from Recording Future using the API Identity Module.</p>
+</section>
+<section id="rocketchat">
+<h3>rocketchat<a class="headerlink" href="#rocketchat" title="Link to this heading">#</a></h3>
+<p>This section contains the information to post new posts on Rocketchat.</p>
+</section>
+<section id="siteurl">
+<h3>siteurl<a class="headerlink" href="#siteurl" title="Link to this heading">#</a></h3>
+<p>URL used to access to your instance. It’s used by the differents modules of the instance.</p>
+</section>
+<section id="thread">
+<h3>thread<a class="headerlink" href="#thread" title="Link to this heading">#</a></h3>
+<p>Number of threads to use for scraping. You need to adjust the value with your CPU and RAM.</p>
+</section>
+<section id="twitter">
+<h3>twitter<a class="headerlink" href="#twitter" title="Link to this heading">#</a></h3>
+<p>This section contains the information to post new posts on Twitter/X using its API.</p>
+</section>
+<section id="users">
+<h3>users<a class="headerlink" href="#users" title="Link to this heading">#</a></h3>
+<p>List of local users to use. Doesn’t work when LDAP is activated. Password are in cleartext ;D.</p>
+</section>
+<section id="website-listen-ip">
+<h3>website_listen_ip<a class="headerlink" href="#website-listen-ip" title="Link to this heading">#</a></h3>
+<p>IP to use by gunicorn.</p>
+</section>
+<section id="website-listen-port">
+<h3>website_listen_port<a class="headerlink" href="#website-listen-port" title="Link to this heading">#</a></h3>
+<p>Port to use by gunicorn.</p>
+</section>
+</section>
+<section id="sample-of-configuration-file">
+<h2>Sample of configuration file<a class="headerlink" href="#sample-of-configuration-file" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;smtp_server&quot;</span><span class="p">:</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;smtp_port&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Team &lt;team@myinstance.local&gt;&quot;</span><span class="p">],</span>                                                                                                                        <span class="p">[</span><span class="mi">42</span><span class="o">/</span><span class="mi">314</span><span class="p">]</span>
+        <span class="s2">&quot;to_bcc&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="s2">&quot;subject&quot;</span><span class="p">:</span> <span class="s2">&quot;New Notification from RansomLook&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;message_head&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello,</span><span class="se">\n\n</span><span class="s2">Please check the new entries in RansomLook:&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;message_foot&quot;</span><span class="p">:</span> <span class="s2">&quot;Best regards,</span><span class="se">\n\n</span><span class="s2">Ransomlook Team&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;email_smtp_auth&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;auth&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+        <span class="s2">&quot;smtp_user&quot;</span><span class="p">:</span><span class="s2">&quot;johndoe@myinstance.local&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;smtp_pass&quot;</span><span class="p">:</span><span class="s2">&quot;password&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;smtp_use_starttls&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+        <span class="s2">&quot;verify_certificate&quot;</span><span class="p">:</span> <span class="n">false</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;rocketchat&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;enable&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+        <span class="s2">&quot;server&quot;</span><span class="p">:</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ssl_verify&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+        <span class="s2">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;auth_token&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;channel_name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;ldap&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;enable&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+        <span class="s2">&quot;server&quot;</span><span class="p">:</span> <span class="s2">&quot;ldpas://localhost&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;root_dn&quot;</span><span class="p">:</span> <span class="s2">&quot;ou=Users,dc=my,dc=domain,dc=tld&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;base_dn&quot;</span><span class="p">:</span> <span class="s2">&quot;uid&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ssl&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+        <span class="s2">&quot;verify&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+        <span class="s2">&quot;cert&quot;</span><span class="p">:</span> <span class="s2">&quot;/path/to/cert.ext&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;twitter&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;enable&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+        <span class="s2">&quot;consumer_key&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;consumer_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;access_token_secret&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;mastodon&quot;</span><span class="p">:{</span>
+        <span class="s2">&quot;enable&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;bluesky&quot;</span><span class="p">:{</span>
+        <span class="s2">&quot;enable&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;BLUESKY_HANDLE&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;BLUESKY_APP_PASSWORD&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;misp&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;enable&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;apikey&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tls_verify&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+        <span class="s2">&quot;publish&quot;</span><span class="p">:</span> <span class="n">true</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;users&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;fkz&quot;</span><span class="p">:</span><span class="s2">&quot;fkz&quot;</span><span class="p">,</span><span class="s2">&quot;admin&quot;</span><span class="p">:</span><span class="s2">&quot;mypassword&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;malpedia&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;rf&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;thread&quot;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span>
+    <span class="s2">&quot;website_listen_ip&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;website_listen_port&quot;</span><span class="p">:</span> <span class="mi">8000</span><span class="p">,</span>
+    <span class="s2">&quot;alertondashboard&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+    <span class="s2">&quot;darkmode&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+    <span class="s2">&quot;siteurl&quot;</span><span class="p">:</span> <span class="s2">&quot;http://myinstance.local&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="installation.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Installation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="update.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Updating the application</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entries-details">Entries details</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alertondashboard">alertondashboard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#darkmode">darkmode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#email">email</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#email-smtp-auth">email_smtp_auth</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ldap">ldap</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#malpedia">malpedia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mastodon">mastodon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misp">misp</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rf">rf</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rocketchat">rocketchat</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#siteurl">siteurl</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thread">thread</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#twitter">twitter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#users">users</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-listen-ip">website_listen_ip</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-listen-port">website_listen_port</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-of-configuration-file">Sample of configuration file</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By RansomLook Core Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright RansomLook Core Team.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
