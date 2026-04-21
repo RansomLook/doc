@@ -29,7 +29,16 @@ RansomLook
     production
 
 .. toctree::
-    :caption: Adminstration
+    :caption: Web interface
+    :maxdepth: 3
+    :hidden:
+
+    features
+    architecture
+    i18n
+
+.. toctree::
+    :caption: Administration
     :maxdepth: 3
     :hidden:
 
@@ -51,17 +60,37 @@ RansomLook is an open-source project aimed at assisting users in tracking ransom
 A public instance operated by RansomLook Team is available at https://ransomlook.io.
 
 Features
-~~~~~~~
+~~~~~~~~
 
-* Blog monitoring and victim extraction
-* Forum monitoring (parsing is not available)
-* Overview of Ransomware Notes
-* Tracking leaks from public sources
-* Leak tracking from RecordedFuture provider (private API required)
-* Monitoring of public Telegram channels
-* Twitter account monitoring (Not working anymore since new policies)
-* Monitoring of various known Bitcoin wallets
-* RecordedFuture detection leaks (Requiered an API key for the Identity Module from RF)
+Data collection:
+
+* Blog / DLS monitoring with per-group parsers for victim extraction
+* Forum monitoring (listing only — parsing is not available)
+* Ransom notes indexing from ThreatLabz
+* Public leak tracking (leak-lookup) and optional Recorded Future dumps (API key required)
+* Monitoring of known cryptocurrency wallets
+
+Web interface (see :doc:`features` for details):
+
+* ``/urls`` — flat inventory of every tracked mirror with status, 30-day health, CSV export
+* ``/browse`` — card grid of groups, markets and threat actors with health and search filters
+* ``/recent`` — chronological posts over 1/3/7/30-day windows
+* ``/hot`` — trending groups (Δ%, volume, new entrants) with sparklines
+* ``/stats`` — interactive Plotly charts with rolling averages and Top-N filtering
+* ``/compare`` — side-by-side comparison of two entities
+* ``/crypto`` — wallets by group with transactions and Breadcrumbs integration
+* Entity detail pages for groups, markets and threat actors with relation graphs
+
+Automation / integration:
+
+* JSON API documented via Swagger at ``/doc/``
+* RSS feed of recent posts at ``/rss.xml``
+* Optional notifications (RocketChat, e-mail)
+* Optional Mastodon bridge
+
+i18n:
+
+* English and French UI, switchable via top-bar toggle (cookie-based); see :doc:`i18n`
 
 
 Is it free?
@@ -77,8 +106,9 @@ There are various ways to stay updated with new posts:
 * By running your own instance and enabling RocketChat and/or email notifications
 * By checking the public instance: https://www.ransomlook.io
 * By accessing the API: https://www.ransomlook.io/doc
+* By subscribing to the RSS feed: https://www.ransomlook.io/rss.xml
 * By following us on Mastodon: `@Ransomlook@social.circl.lu <https://social.circl.lu/@Ransomlook>`_
-* By following us on BlueSkye: `ransomlook.bsky.social <https://bsky.app/profile/ransomlook.bsky.social>`_
+* By following us on BlueSky: `ransomlook.bsky.social <https://bsky.app/profile/ransomlook.bsky.social>`_
 
 There is NO official Telegram Channel!
 

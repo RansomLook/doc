@@ -26,7 +26,17 @@ release = "1.7.0"
 extensions = [
     "sphinx.ext.autodoc",
     "sphinxcontrib.openapi",
+    "sphinxcontrib.mermaid",
 ]
+
+# -- i18n -------------------------------------------------------------------
+# Translations live under docs/locale/<lang>/LC_MESSAGES/*.po
+# Build a localised version with:
+#   sphinx-build -D language=fr -b html docs docs/_build/html/fr
+language = os.environ.get("SPHINX_LANGUAGE", "en")
+locale_dirs = ["locale/"]
+gettext_compact = False
+gettext_uuid = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]

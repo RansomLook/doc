@@ -157,3 +157,45 @@ Generate a csv stats file
 .. code-block:: bash
 
     $ poetry run tools/stats.py
+
+Generate screenshot thumbnails
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Pre-generates the JPEG thumbnails served on group/market detail pages. On first
+run this can take a while (hundreds of thousands of screenshots); subsequent runs
+are incremental and only touch screenshots that are newer than their thumbnail.
+
+.. code-block:: bash
+
+    $ poetry run tools/generate_thumbs.py              # incremental, N-1 CPU workers
+    $ poetry run tools/generate_thumbs.py --force      # rebuild every thumb
+    $ poetry run tools/generate_thumbs.py --jobs 2     # limit parallelism
+    $ poetry run tools/generate_thumbs.py --dry-run    # report only
+
+The script skips ``source/screenshots/old`` and ``source/screenshots/logo``, and
+mirrors the source directory tree under ``source/screenshots/thumbs/``.
+
+Regenerate Subresource Integrity (SRI) hashes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Every static JS/CSS asset is referenced in templates with an ``integrity="sha512-..."``
+attribute read from ``website/web/sri.txt``. After modifying any static file you must
+regenerate this file:
+
+.. code-block:: bash
+
+    $ poetry run tools/generate_sri.py
+
+Failing to do so results in ``KeyError`` 500 errors when Flask-Jinja tries to look up
+the hash of an asset that was added but not yet indexed.
+
+Translation catalogues
+^^^^^^^^^^^^^^^^^^^^^^
+
+See :doc:`i18n` for the full workflow. Quick reference:
+
+.. code-block:: bash
+
+    $ poetry run pybabel extract -F babel.cfg -o messages.pot .
+    $ poetry run pybabel update -i messages.pot -d translations
+    $ poetry run pybabel compile -d translations

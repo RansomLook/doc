@@ -98,6 +98,18 @@ Copy the config file:
 
 And configure it accordingly to your needs (check configuration page for more details).
 
+Compile translations
+~~~~~~~~~~~~~~~~~~~~
+
+The ``.mo`` translation files are shipped in the repository, but if you ever pull
+changes to the ``.po`` source files (or add a new language) you must recompile them:
+
+.. code-block:: bash
+
+    poetry run pybabel compile -d translations
+
+See :doc:`i18n` for the full translation workflow.
+
 Update and launch
 ~~~~~~~~~~~~~~~~~
 
