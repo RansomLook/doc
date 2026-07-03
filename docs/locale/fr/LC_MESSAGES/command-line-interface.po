@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RansomLook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"POT-Creation-Date: 2026-04-23 20:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: ../../command-line-interface.rst:2 86eef080fbcd4592af7127f2e4e6c89d
+#: ../../command-line-interface.rst:2 1e4ffc0c95d14a168ba2fed368892a63
 msgid "Command Line Interface"
 msgstr "Interface en ligne de commande"
 
-#: ../../command-line-interface.rst:4 818c00b32923416caf51ae6450ceaf8f
+#: ../../command-line-interface.rst:4 4ab938ec1cee44768981f00a83df6ce4
 msgid ""
 "Section to explain the various commands available. We suppose that you "
 "run them in the installation directory of RansomLook"
@@ -31,27 +31,27 @@ msgstr ""
 "Section expliquant les différentes commandes disponibles. On suppose "
 "qu'elles sont lancées depuis le répertoire d'installation de RansomLook."
 
-#: ../../command-line-interface.rst:7 f000b2d177404013b330227d2b765a0e
+#: ../../command-line-interface.rst:7 5ff57e78472b4046b9220603a2116ddc
 msgid "Core"
 msgstr "Core"
 
-#: ../../command-line-interface.rst:10 fae42d34cc164eb7ad5e7b6b37f04e83
+#: ../../command-line-interface.rst:10 7d69c63e4a934048aa566eb34d32f5a9
 msgid "Start the service"
 msgstr "Démarrer le service"
 
-#: ../../command-line-interface.rst:17 d94b479a296e40fe8198426c40e5593c
+#: ../../command-line-interface.rst:17 e2a19c67c0a04e14a3f357b85135377b
 msgid "Stop the service"
 msgstr "Arrêter le service"
 
-#: ../../command-line-interface.rst:24 7c725dbb8ed145708da7c57617c97b78
+#: ../../command-line-interface.rst:24 0836dcf88a234257bfd860e02c2d8b32
 msgid "Update the instance"
 msgstr "Mettre à jour l'instance"
 
-#: ../../command-line-interface.rst:30 a8e5b17ee68c4b4398caee77b0e99de3
+#: ../../command-line-interface.rst:30 313f69d169184280b697fa4653596d58
 msgid "Add a group to monitor"
 msgstr "Ajouter un groupe à surveiller"
 
-#: ../../command-line-interface.rst:32 9a476761e7364aa58957ac46067e2a94
+#: ../../command-line-interface.rst:32 2f1de99fc1b74315ae1400a64a3c454e
 msgid ""
 "Select if you want to add a Group (with their DLS) or a forum. DB to use "
 "is 0 or 3."
@@ -59,67 +59,373 @@ msgstr ""
 "Choisissez d'ajouter un groupe (avec ses DLS) ou un forum. La DB à "
 "utiliser est 0 ou 3."
 
-#: ../../command-line-interface.rst:39 b0ce005a148e47879767c6b921d4f4b2
+#: ../../command-line-interface.rst:39 d8904df16a674ab7bf8fe14a7af1bbd9
 msgid "Scrape all groups"
 msgstr "Scraper tous les groupes"
 
-#: ../../command-line-interface.rst:41 88ef6fff2a5f4a62981d38359372a79d
+#: ../../command-line-interface.rst:41 24c4c44f85e7476ca753672144c1553d
 msgid "Please be sure that tor service is installed and running on your instance."
 msgstr "Assurez-vous que le service tor est installé et lancé sur votre instance."
 
-#: ../../command-line-interface.rst:48 7ca87145951c4a938909c227e58f246b
+#: ../../command-line-interface.rst:48 b5dca6288dfa4f70acce85b8fa1b91b8
 msgid "Parse scraped groups"
 msgstr "Parser les groupes scrapés"
 
-#: ../../command-line-interface.rst:55 f49f25eb53d34934a53c4e5a3b72c0b2
+#: ../../command-line-interface.rst:55 ccb417b4713e4abfb64cf92d17960bad
 msgid "Get screenshots for parsed posts"
 msgstr "Obtenir les captures des publications parsées"
 
-#: ../../command-line-interface.rst:62 b8ac0373744c45e7bb79ddb75087c682
+#: ../../command-line-interface.rst:62 71c2e0717dfc490b9ccc88cde517bdab
 msgid "Retreive Telegram Channels"
 msgstr "Récupérer les chaînes Telegram"
 
-#: ../../command-line-interface.rst:69 d1b05be8937f4e87aba0cfa10262dafd
+#: ../../command-line-interface.rst:69 f2bbdd74e03e475daf53c7a6fa6ec2b0
 msgid "Retreive cryptocurrencies transactions"
 msgstr "Récupérer les transactions de cryptomonnaies"
 
-#: ../../command-line-interface.rst:76 7550f7af28ba4b239419976070faa1a0
+#: ../../command-line-interface.rst:76 fe073d795c2a4dfc9f01404baffcf1c8
 msgid "Get the known notes from RansomWare"
 msgstr "Récupérer les notes de rançon connues"
 
-#: ../../command-line-interface.rst:83 e778df9384594195b12b61224bea2355
+#: ../../command-line-interface.rst:83 a4aa788561294a4ab3eb6b94dce185f4
 msgid "Get leaks from Recorded Future"
 msgstr "Récupérer les leaks depuis Recorded Future"
 
-#: ../../command-line-interface.rst:90 6cbc8afa34fa4e65acbfa2076beb2e04
+#: ../../command-line-interface.rst:90 aff2a955e4a346d4b2923a35dc3f17e6
 msgid "Get content listing of torrent files"
 msgstr "Obtenir la liste du contenu des fichiers torrent"
 
-#: ../../command-line-interface.rst:97 54c103c71be74bba84beabfcb0d6e0ac
+#: ../../command-line-interface.rst:97 762cc2be2ec141688b6333db00dce188
+msgid "Track torrent swarm health"
+msgstr "Suivre la santé des swarms torrent"
+
+#: ../../command-line-interface.rst:99 8a0132b70a7f49299a6ecead285ccb06
+msgid ""
+"Scans every magnet referenced by a tracked post **or manually attached to"
+" a group** (see :ref:`cli-add-group-torrent` below) and records swarm "
+"metrics (seeders, leechers, peer samples) in ``DB_TORRENT_HEALTH``. The "
+"scanner joins each swarm passively for a few seconds, snapshots connected"
+" peers, then leaves. Peer samples are kept 30 days (TTL), metadata "
+"entries are purged after 90 days of inactivity. IPs listed in "
+"``torrent_health.ignored_ips`` are never recorded."
+msgstr ""
+"Scanne chaque magnet référencé par un post suivi **ou rattaché "
+"manuellement à un groupe** (voir :ref:`cli-add-group-torrent` ci-dessous)"
+" et enregistre les métriques de swarm (seeders, leechers, échantillons de"
+" pairs) dans ``DB_TORRENT_HEALTH``. Le scanner rejoint chaque swarm "
+"passivement quelques secondes, prend un instantané des pairs connectés, "
+"puis quitte. Les échantillons de pairs sont conservés 30 jours (TTL), les"
+" métadonnées sont purgées après 90 jours d'inactivité. Les IPs listées "
+"dans ``torrent_health.ignored_ips`` ne sont jamais enregistrées."
+
+#: ../../command-line-interface.rst:107 be4ed6b0039a4c1aa24490b7d02c7b2f
+msgid "Intended to run from cron every 6 hours:"
+msgstr "Destiné à être lancé via cron toutes les 6 heures :"
+
+#: ../../command-line-interface.rst:113 8d9a07ce675b4d09af7d6306f0eb3bc0
+msgid "Ad-hoc invocation and flags:"
+msgstr "Invocation manuelle et options :"
+
+#: ../../command-line-interface.rst:126 f2b08b054e5a4f3ebdf646135fc8a7c0
+msgid ""
+"``--only`` and ``--group`` both bypass the adaptive interval check and "
+"scan their targets immediately. Without any flag, the scanner uses "
+"adaptive scheduling per infohash: alive swarms are rescanned every 6 "
+"hours, recently-dead swarms every 24 hours, swarms dead for more than a "
+"week once a week. The cron entry above is safe to leave running on 6-hour"
+" ticks — work is skipped automatically when not needed."
+msgstr ""
+"``--only`` et ``--group`` bypassent tous deux la vérification "
+"d'intervalle adaptatif et scannent leurs cibles immédiatement. Sans "
+"argument, le scanner utilise un ordonnancement adaptatif par infohash : "
+"les swarms vivants sont rescannés toutes les 6 heures, ceux récemment "
+"morts toutes les 24 heures, et ceux morts depuis plus d'une semaine une "
+"fois par semaine. L'entrée cron ci-dessus peut tourner toutes les 6 "
+"heures sans risque — le travail est sauté automatiquement quand ce n'est "
+"pas nécessaire."
+
+#: ../../command-line-interface.rst:133 ca9ab3fc73ac47c3a1b1b95bc88d1550
+msgid ""
+"All the intervals, retention windows and scan parameters are driven by "
+"the ``torrent_health`` section of ``config/generic.json`` — see "
+":doc:`configuration` for the list of keys."
+msgstr ""
+"Tous les intervalles, fenêtres de rétention et paramètres de scan sont "
+"pilotés depuis la section ``torrent_health`` de ``config/generic.json`` —"
+" voir :doc:`configuration` pour la liste des clés."
+
+#: ../../command-line-interface.rst:140 728e385c073740b7824dd8121e0b0da6
+msgid "Attach a torrent to a group without a post"
+msgstr "Rattacher un torrent à un groupe sans post associé"
+
+#: ../../command-line-interface.rst:142 3b2cb8ccfc454588a0204b7c102f2434
+msgid ""
+"When a ransomware group publishes a leak outside the regular DLS pipeline"
+" (Telegram drops, forum posts, private mirrors), you can attach the "
+"magnet or ``.torrent`` file manually. Manually-attached torrents are "
+"merged with post-linked ones by ``collect_magnets()`` and scanned by the "
+"next cron run of ``torrent-health``."
+msgstr ""
+"Quand un groupe ransomware publie un leak hors du pipeline DLS classique "
+"(drops Telegram, posts forum, miroirs privés), vous pouvez rattacher le "
+"magnet ou le fichier ``.torrent`` manuellement. Les torrents rattachés "
+"manuellement sont fusionnés avec ceux issus des posts par "
+"``collect_magnets()`` et scannés au prochain run cron de ``torrent-"
+"health``."
+
+#: ../../command-line-interface.rst:155 c0b96b8a216a43cf9af37023dee8903a
+msgid ""
+"``--magnet`` and ``--torrent`` can be repeated; all are attached to the "
+"same ``--group``. ``--from-file`` expects one magnet URI or ``.torrent`` "
+"path per line, ``#`` lines are ignored."
+msgstr ""
+"``--magnet`` et ``--torrent`` sont répétables ; tous sont rattachés au "
+"même ``--group``. ``--from-file`` attend un URI magnet ou chemin "
+"``.torrent`` par ligne, les lignes ``#`` sont ignorées."
+
+#: ../../command-line-interface.rst:159 e8479dd1377647e4895ddca85bde523e
+msgid ""
+"The same workflow is available from the admin UI at ``/admin/torrent-"
+"health/manage`` (single add, bulk add, bulk delete)."
+msgstr ""
+"Le même workflow est disponible depuis l'UI admin à ``/admin/torrent-"
+"health/manage`` (ajout unitaire, ajout en masse, suppression en masse)."
+
+#: ../../command-line-interface.rst:163 31912d2b7c574f3a99d5a7569d16ff60
+msgid "Torrent metadata backfill"
+msgstr "Backfill des métadonnées de torrent"
+
+#: ../../command-line-interface.rst:165 ed490580e3b444a091fa430a23618a73
+msgid ""
+"Torrents added from a bare magnet (no ``ws=``, minimal ``tr=``) rely on "
+"libtorrent's ``ut_metadata`` extension (BEP 9) to fetch the info dict "
+"from a willing peer. Under the default 45 s ``scan-duration`` that "
+"exchange often doesn't complete, leaving the meta row with peers but no "
+"name / size / files / trackers. ``torrent-health-backfill`` enumerates "
+"those incomplete rows and rescans them with a longer window (default 300 "
+"s) so the metadata can land."
+msgstr ""
+"Les torrents ajoutés depuis un magnet brut (sans ``ws=``, avec ``tr=`` "
+"minimal) dépendent de l'extension ``ut_metadata`` de libtorrent (BEP 9) "
+"pour récupérer l'info dict auprès d'un peer coopératif. Avec le "
+"``scan-duration`` de 45 s par défaut, cet échange ne se termine souvent "
+"pas, laissant la ligne meta avec des peers mais sans nom / size / "
+"fichiers / trackers. ``torrent-health-backfill`` énumère les lignes "
+"incomplètes et les rescanne avec une fenêtre plus longue (300 s par "
+"défaut) pour que les métadonnées arrivent."
+
+#: ../../command-line-interface.rst:182 6f9ab8613bfa4ae6a2edce631af7570d
+msgid ""
+"By default the tool only targets swarms with ``last_peers_count > 0``: a "
+"dead swarm has nobody to serve the info dict, so rescanning is unlikely "
+"to recover anything. The candidate list is recomputed at every run, so "
+"already-populated rows are skipped automatically — safe to schedule "
+"daily."
+msgstr ""
+"Par défaut l'outil ne cible que les swarms avec ``last_peers_count > 0`` "
+": un swarm mort n'a personne pour servir l'info dict, donc un rescan ne "
+"récupérerait rien. La liste des candidats est recalculée à chaque run, "
+"donc les lignes déjà renseignées sont sautées automatiquement — peut "
+"tourner quotidiennement sans risque."
+
+#: ../../command-line-interface.rst:188 7a767f7f9d8a4b2e946bcecbe459e172
+msgid ""
+"Suggested cron (once a day at 01:00, after the nightly ``torrent-health``"
+" pass of the day):"
+msgstr ""
+"Cron suggéré (une fois par jour à 01:00, après la passe nocturne de "
+"``torrent-health``) :"
+
+#: ../../command-line-interface.rst:197 ebba3efb235d43a2ad2345c552525f10
+msgid "Tracker scrape — BEP-48"
+msgstr "Scrape tracker — BEP-48"
+
+#: ../../command-line-interface.rst:199 cd266da8e3f54ae8b15ac1041b3db42f
+msgid ""
+"Complements ``torrent-health`` for swarms whose tracker is an ``.onion`` "
+"(typical of LockBit and other operators running private trackers). The "
+"libtorrent scanner cannot reach those peers because DHT/uTP use UDP, "
+"which does not pass SOCKS5 — so it reports 0 peer even when the swarm is "
+"alive. ``torrent-tracker-scrape`` side-steps that by issuing standard "
+"BEP-48 ``GET /scrape`` calls via Tor and persisting the numbers the "
+"tracker itself reports (seeders / leechers / all-time downloaded)."
+msgstr ""
+"Complète ``torrent-health`` pour les swarms dont le tracker est un "
+"``.onion`` (typique de LockBit et d'autres opérateurs qui hébergent leurs"
+" propres trackers privés). Le scanner libtorrent ne peut pas atteindre "
+"ces peers parce que DHT et uTP utilisent UDP, qui ne passe pas SOCKS5 — "
+"il rapporte donc 0 peer même quand le swarm est vivant. ``torrent-"
+"tracker-scrape`` contourne ça en envoyant des requêtes BEP-48 ``GET "
+"/scrape`` standard via Tor, et persiste les chiffres remontés par le "
+"tracker lui-même (seeders / leechers / téléchargements historiques)."
+
+#: ../../command-line-interface.rst:215 2401703e16c849268610065e72eaf201
+msgid ""
+"Trackers are grouped by scrape URL; up to 64 infohashes are submitted per"
+" request (BEP-48 multi-infohash). If a tracker rejects that, the CLI "
+"falls back to one request per infohash automatically. UDP trackers "
+"(BEP-15) are also supported via a native binary client — they go clearnet"
+" and are skipped under ``only_onion``. Results land in "
+"``meta.tracker_seeders / tracker_leechers / tracker_downloaded / "
+"tracker_history`` and surface on the torrent detail page as a dedicated "
+"KPI banner."
+msgstr ""
+"Les trackers sont regroupés par URL de scrape ; jusqu'à 64 infohashes "
+"sont soumis par requête (BEP-48 multi-infohash). Si un tracker refuse ce "
+"mode, la CLI retombe automatiquement sur une requête par infohash. Les "
+"trackers UDP (BEP-15) sont aussi supportés via un client binaire natif — "
+"ils passent en clearnet et sont ignorés sous ``only_onion``. Les "
+"résultats atterrissent dans ``meta.tracker_seeders / tracker_leechers / "
+"tracker_downloaded / tracker_history`` et sont affichés sur la page "
+"detail du torrent dans une bannière KPI dédiée."
+
+#: ../../command-line-interface.rst:224 f4ed11c186b344dbadb8f16ffcebd6a9
+msgid ""
+"Suggested cron (every 3 hours, single pass covering onion HTTP + clearnet"
+" HTTP + UDP):"
+msgstr ""
+"Cron suggéré (toutes les 3 heures, passe unique couvrant onion HTTP + "
+"clearnet HTTP + UDP) :"
+
+#: ../../command-line-interface.rst:232 6ff8ab877e534eceb401addc9229d4b2
+msgid ""
+"``--clearnet-too`` adds ~15-30 s to the run but captures the "
+"``tracker_downloaded`` (all-time completions) counter on public UDP "
+"trackers like ``openbittorrent`` and ``opentrackr`` — a metric the peer "
+"scanner does not expose. With the default 30-sample history ring, a "
+"3-hour cadence yields roughly 3.7 days of trend data."
+msgstr ""
+"``--clearnet-too`` ajoute ~15-30 s au run mais capture le compteur "
+"``tracker_downloaded`` (complétions tout temps) sur les trackers UDP "
+"publics comme ``openbittorrent`` et ``opentrackr`` — une métrique que le "
+"scanner de peers n'expose pas. Avec le ring historique de 30 points par "
+"défaut, une cadence de 3 h donne environ 3,7 jours de tendance."
+
+#: ../../command-line-interface.rst:238 5eebddb841854817bab759d6ab18422a
+msgid ""
+"Config keys live under the ``torrent_tracker_scrape`` section of "
+"``config/generic.json`` — ``only_onion`` (default ``true``) restricts the"
+" scrape to onion-reachable HTTP trackers (clearnet and UDP are left to "
+"the peer scanner, which already announces on them)."
+msgstr ""
+"Les clés de config vivent dans la section ``torrent_tracker_scrape`` de "
+"``config/generic.json`` — ``only_onion`` (``true`` par défaut) restreint "
+"le scrape aux trackers HTTP onion-reachable (clearnet et UDP sont laissés"
+" au scanner de peers, qui s'annonce déjà dessus)."
+
+#: ../../command-line-interface.rst:244 1fa34452ef644837947cb1d285b745d3
+msgid "Webseed liveness check"
+msgstr "Vérification des webseeds"
+
+#: ../../command-line-interface.rst:246 4c8d4abd8db14987ae2170d2079527d3
+msgid ""
+"Sends a ``HEAD`` (fallback one-byte range ``GET`` on 405) to every unique"
+" BEP-19 webseed URL advertised by the tracked torrents — via Tor for "
+"``.onion`` targets and direct for clearnet. Builds a live map of the "
+"operator's HTTP mirror infrastructure (LockBit publishes 10+ mirrors per "
+"leak across distinct onion domains)."
+msgstr ""
+"Envoie un ``HEAD`` (retombe sur ``GET`` avec range d'un octet en cas de "
+"405) sur chaque URL de webseed unique annoncée par les torrents suivis — "
+"via Tor pour les cibles ``.onion`` et en direct pour le clearnet. "
+"Construit une carte live de l'infrastructure mirror HTTP de l'opérateur "
+"(LockBit publie 10+ mirrors par leak sur des domaines onion distincts)."
+
+#: ../../command-line-interface.rst:260 a642782f8b6944688cfc17840b295f94
+msgid ""
+"Unique URLs are probed once and the result fanned out to every infohash "
+"that advertises them (a single LockBit mirror typically hosts hundreds of"
+" leaks). Results are stored as ``meta.webseed_status`` and rendered on "
+"the detail page as a green / red dot next to each URL."
+msgstr ""
+"Les URLs uniques sont sondées une seule fois puis le résultat est propagé"
+" sur chaque infohash qui les annonce (un seul mirror LockBit héberge en "
+"général des centaines de leaks). Les résultats sont stockés dans "
+"``meta.webseed_status`` et rendus sur la page detail sous forme de "
+"pastille verte / rouge à côté de chaque URL."
+
+#: ../../command-line-interface.rst:265 e886550ff88f420c9dc54c6c9641e893
+msgid "Suggested cron (every 6 hours):"
+msgstr "Cron suggéré (toutes les 6 heures) :"
+
+#: ../../command-line-interface.rst:272 2898beb4f9c541549e6b772158b3ef4d
+msgid ""
+"Config section ``torrent_webseed_check`` in ``config/generic.json`` — "
+"``onion_only`` (default ``false``) keeps clearnet mirrors in scope."
+msgstr ""
+"Section de config ``torrent_webseed_check`` dans ``config/generic.json`` "
+"— ``onion_only`` (``false`` par défaut) garde les mirrors clearnet dans "
+"le périmètre."
+
+#: ../../command-line-interface.rst:276 acd84f1878c047c697c9e207da72864c
+msgid "Enrich peer IPs (CIRCL)"
+msgstr "Enrichir les IP de peers (CIRCL)"
+
+#: ../../command-line-interface.rst:278 37371b4ced8045d2ac46edd211b8fed1
+msgid ""
+"Walks every scan stored by ``torrent-health``, extracts the unique peer "
+"IPs and enriches them via the CIRCL services (IP ASN History + BGP "
+"Ranking). Cache hits are skipped; only IPs missing from the cache hit the"
+" network."
+msgstr ""
+"Parcourt chaque scan stocké par ``torrent-health``, extrait les IP de "
+"peers uniques et les enrichit via les services CIRCL (IP ASN History + "
+"BGP Ranking). Les entrées déjà en cache sont ignorées ; seules les IP "
+"absentes du cache font un appel réseau."
+
+#: ../../command-line-interface.rst:282 3267693fa895430680ac61d6848d52f0
+msgid ""
+"Complementary to the lazy enrichment performed by the admin UI — running "
+"this cron daily keeps the cache warm so the per-page enrichment in "
+"``/admin/torrent-health/<infohash>`` is instant."
+msgstr ""
+"Complémentaire à l'enrichissement lazy effectué par l'UI admin — lancer "
+"ce cron quotidiennement garde le cache chaud, l'enrichissement de la page"
+" ``/admin/torrent-health/<infohash>`` reste instantané."
+
+#: ../../command-line-interface.rst:292 7a767f7f9d8a4b2e946bcecbe459e172
+msgid ""
+"Suggested cron placement (daily at 03:30, after the last ``torrent-"
+"health`` pass of the day):"
+msgstr ""
+"Placement cron recommandé (chaque jour à 03:30, après la dernière passe "
+"``torrent-health`` de la journée) :"
+
+#: ../../command-line-interface.rst:300 904cea13ac34450a9a0948ce3b228963
+msgid ""
+"Records are kept in ``DB_TORRENT_HEALTH`` with a TTL controlled by "
+"``torrent_health.ip_cache_ttl_days`` in ``config/generic.json`` (set to 0"
+" to disable expiration)."
+msgstr ""
+"Les enregistrements sont conservés dans ``DB_TORRENT_HEALTH`` avec un TTL"
+" contrôlé par ``torrent_health.ip_cache_ttl_days`` dans "
+"``config/generic.json`` (mettre à 0 pour désactiver l'expiration)."
+
+#: ../../command-line-interface.rst:305 f5eba33804e24a9eb02e943606f4a5fb
 msgid "Get Tweets"
 msgstr "Récupérer les tweets"
 
-#: ../../command-line-interface.rst:104 db62c82627ad4ef4936809a97e581c4e
+#: ../../command-line-interface.rst:312 0745f1aae6414de0b4e3cf9ceebc37c8
 msgid "Send notification of previous day posts"
 msgstr "Envoyer la notification des publications de la veille"
 
-#: ../../command-line-interface.rst:111 71e7440d6288445ebea8601096137141
+#: ../../command-line-interface.rst:319 39dc491e41a74e3b8677aab285a2b380
 msgid "Send notification of previous day leaks"
 msgstr "Envoyer la notification des leaks de la veille"
 
-#: ../../command-line-interface.rst:118 0976c41af2794aaf8305c7045984d298
+#: ../../command-line-interface.rst:326 1c096c64b42c4069a2466b1e72d6651b
 msgid "Tools"
 msgstr "Outils"
 
-#: ../../command-line-interface.rst:121 20d5272ee8794c3ba1ce2d9b85f3d2d4
+#: ../../command-line-interface.rst:329 07c0df70340c4625a0b31456022315e8
 msgid "Get list of databreaches"
 msgstr "Obtenir la liste des databreaches"
 
-#: ../../command-line-interface.rst:129 47f9915130d64b669273ea6c37970247
+#: ../../command-line-interface.rst:337 d92fc72104bf415b8c6c99aefe3823b7
 msgid "Reparse groups"
 msgstr "Reparser les groupes"
 
-#: ../../command-line-interface.rst:131 1e676c57e4e6479a8c4062b28ce09945
+#: ../../command-line-interface.rst:339 1d720644c7f54862b76ca4f85cd95a9f
 msgid ""
 "This command reparse files associated to a group and update the screen "
 "data in order to be captured during next screen session."
@@ -127,15 +433,15 @@ msgstr ""
 "Cette commande reparse les fichiers associés à un groupe et met à jour "
 "les données de captures pour la prochaine session screen."
 
-#: ../../command-line-interface.rst:138 e19615a20d764f42859d996c3cb919b1
+#: ../../command-line-interface.rst:346 fda0291c736a4b4987abd8ab526fa18a
 msgid "Import data from Malpedia"
 msgstr "Importer les données depuis Malpedia"
 
-#: ../../command-line-interface.rst:145 92efe91680ca4f288912b01b808440d2
+#: ../../command-line-interface.rst:353 b6b07f3c62ae4eaaad27e8a09ba81727
 msgid "Import data from the public instance"
 msgstr "Importer les données depuis l'instance publique"
 
-#: ../../command-line-interface.rst:147 30f3944bc346496db513ef18d9d26f8d
+#: ../../command-line-interface.rst:355 f0d5a9b3aeb74a73965d770018daf3b8
 msgid ""
 "Redownload data from public instance, should be used only for the first "
 "populating."
@@ -143,15 +449,15 @@ msgstr ""
 "Retélécharge les données depuis l'instance publique ; à utiliser "
 "uniquement pour le premier peuplement."
 
-#: ../../command-line-interface.rst:155 da58d4a717fc4cf386b28dffc0a91d03
+#: ../../command-line-interface.rst:363 2710a98a962e49a9b6802d56a21bebfb
 msgid "Generate a csv stats file"
 msgstr "Générer un fichier CSV de statistiques"
 
-#: ../../command-line-interface.rst:162 e281402bea944d3085760635a79a4017
+#: ../../command-line-interface.rst:370 bff0055a6c9b4923b12b56779129a09e
 msgid "Generate screenshot thumbnails"
 msgstr "Générer les miniatures de captures"
 
-#: ../../command-line-interface.rst:164 5020be3c978c4aa99ff53ee00985c4a3
+#: ../../command-line-interface.rst:372 220ef1d9098e4cfe85b40502cc5bd983
 msgid ""
 "Pre-generates the JPEG thumbnails served on group/market detail pages. On"
 " first run this can take a while (hundreds of thousands of screenshots); "
@@ -163,7 +469,7 @@ msgstr ""
 "captures) ; les runs suivants sont incrémentaux et ne touchent que les "
 "captures plus récentes que leur miniature."
 
-#: ../../command-line-interface.rst:175 a0c798d39ea449e9b5b93e44dfe168b0
+#: ../../command-line-interface.rst:383 12efcb2ebfd54e82bafa30bd701967d1
 msgid ""
 "The script skips ``source/screenshots/old`` and "
 "``source/screenshots/logo``, and mirrors the source directory tree under "
@@ -173,11 +479,11 @@ msgstr ""
 "``source/screenshots/logo``, et reproduit l'arborescence source sous "
 "``source/screenshots/thumbs/``."
 
-#: ../../command-line-interface.rst:179 0e991259a2894bbfb4f3809767e99d98
+#: ../../command-line-interface.rst:387 976ad87cd90d427dbc938487b442fc54
 msgid "Regenerate Subresource Integrity (SRI) hashes"
 msgstr "Régénérer les hashes Subresource Integrity (SRI)"
 
-#: ../../command-line-interface.rst:181 8d523e7b25c14763b0fd52f6d3f7048e
+#: ../../command-line-interface.rst:389 8f8724f23bb34956955ac682936f619b
 msgid ""
 "Every static JS/CSS asset is referenced in templates with an "
 "``integrity=\"sha512-...\"`` attribute read from ``website/web/sri.txt``."
@@ -187,7 +493,7 @@ msgstr ""
 "attribut ``integrity=\"sha512-...\"`` lu depuis ``website/web/sri.txt``. "
 "Après modification d'un fichier statique, il faut régénérer ce fichier :"
 
-#: ../../command-line-interface.rst:189 62c0721729ad4abda94d4e5b49849db6
+#: ../../command-line-interface.rst:397 60b93b8d19df4c6f86cb11438d466616
 msgid ""
 "Failing to do so results in ``KeyError`` 500 errors when Flask-Jinja "
 "tries to look up the hash of an asset that was added but not yet indexed."
@@ -195,11 +501,11 @@ msgstr ""
 "L'oubli provoque des erreurs 500 ``KeyError`` lorsque Flask-Jinja cherche"
 " le hash d'un asset ajouté mais non indexé."
 
-#: ../../command-line-interface.rst:193 b0ffe8e97be047cca66d72ada1db100e
+#: ../../command-line-interface.rst:401 e9ef1f64f132466dae61313ab2ba96b3
 msgid "Translation catalogues"
 msgstr "Catalogues de traduction"
 
-#: ../../command-line-interface.rst:195 6e720016ef074206ba0fc6a6bff2ba5c
+#: ../../command-line-interface.rst:403 8b266c9d048c40faa551d65bb34eb94d
 msgid "See :doc:`i18n` for the full workflow. Quick reference:"
 msgstr "Voir :doc:`i18n` pour le workflow complet. Référence rapide :"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RansomLook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"POT-Creation-Date: 2026-04-23 20:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: ../../features.rst:2 aa77df725a8748cfa49dd74f43735684
+#: ../../features.rst:2 63a6f49b66674db29247c1aecd031564
 msgid "Web interface"
 msgstr "Interface web"
 
-#: ../../features.rst:4 88a6f6f5224a4b8a8fcb8ad488d56566
+#: ../../features.rst:4 55a6873e58584c53ab0011c28725a89b
 msgid ""
 "This page gives an overview of every public-facing page of a RansomLook "
 "instance. All pages are available on the official public instance at "
@@ -33,53 +33,53 @@ msgstr ""
 " Elles sont disponibles sur l'instance publique officielle à "
 "https://www.ransomlook.io."
 
-#: ../../features.rst:7 a55af542b6a94d098610183aabfd4972
+#: ../../features.rst:7 80bf7d8e294842e3aa8ce4e5ea9588f3
 msgid "Navigation is organised in three groups in the sidebar:"
 msgstr "La navigation est organisée en trois groupes dans la barre latérale :"
 
-#: ../../features.rst:9 d369702ad6ef44aaa38bd8046ccbbb27
+#: ../../features.rst:9 d0cc1b1255574a48bc0dd8ddb1647a9c
 msgid "**Data** — Recent, Browse, Trending, Stats"
 msgstr "**Data** — Recent, Browse, Trending, Stats"
 
-#: ../../features.rst:10 8cff6dc5a7964af4a74ecf2086e955ba
+#: ../../features.rst:10 f50ca5dfc8924803ac2607fa5a942c50
 msgid "**Intel** — URLs, Crypto, Leaks, Notes, RF Dumps"
 msgstr "**Intel** — URLs, Crypto, Leaks, Notes, RF Dumps"
 
-#: ../../features.rst:11 48571afb3a8e4318b8d1eafa7e076b36
+#: ../../features.rst:11 87a4c12d61b44834ada77a87c8743ca8
 msgid "**Info** — API, Glossary, About"
 msgstr "**Info** — API, Glossary, About"
 
-#: ../../features.rst:14 2a37002eaf7b4d609380d511140b1335
+#: ../../features.rst:14 427abdf7ce4c45bca6e994072cb1d373
 msgid "Homepage (``/``)"
 msgstr "Page d'accueil (``/``)"
 
-#: ../../features.rst:16 edd4823033f442feb3b37c096230ed39
+#: ../../features.rst:16 9160842dc3064ed1a1ba381c52c4fb77
 msgid "RansomLook homepage"
 msgstr "Page d'accueil RansomLook"
 
-#: ../../features.rst:20 08c80c0230714fbe949c0ff1e8f9939b
+#: ../../features.rst:20 c2f2c9be2b044f6ab7662a473cde56f8
 msgid "The landing page summarises live activity:"
 msgstr "La page d'accueil résume l'activité en direct :"
 
-#: ../../features.rst:22 33aa564bd82143f790470741e00b395f
+#: ../../features.rst:22 907d2700e0854f82bf22037c1df94b02
 msgid "total ransomware posts tracked,"
 msgstr "total des publications ransomware suivies,"
 
-#: ../../features.rst:23 f06b701536fd48a8b9246e87cae4462f
+#: ../../features.rst:23 519a062e473345729fa6fda27168c711
 msgid "last 7-day headline metrics with delta vs the previous week,"
 msgstr "indicateurs clés des 7 derniers jours avec delta vs la semaine précédente,"
 
-#: ../../features.rst:24 19f769927c3f4fe083cb679f817aa5ba
+#: ../../features.rst:24 27c26773d0fd442ebe3fe49c791908d2
 msgid "*Top movers* (groups with the biggest weekly swing) and *Latest posts*,"
 msgstr ""
 "*Top movers* (groupes aux plus fortes variations hebdomadaires) et "
 "*Dernières publications*,"
 
-#: ../../features.rst:25 d18fd843cf99422d95c458450b685dc8
+#: ../../features.rst:25 926ceb3edbac42729a26085989674630
 msgid "a 30-day sparkline of the overall posting activity,"
 msgstr "une sparkline 30 jours de l'activité de publication globale,"
 
-#: ../../features.rst:26 5a5a8255fd2541f68dd461887d7b0964
+#: ../../features.rst:26 5018bf9aac354f578bef90bb1f961d94
 msgid ""
 "CTAs towards :ref:`/recent <page-recent>`, :ref:`/stats <page-stats>` and"
 " the API docs."
@@ -87,21 +87,21 @@ msgstr ""
 "CTA vers :ref:`/recent <page-recent>`, :ref:`/stats <page-stats>` et la "
 "documentation API."
 
-#: ../../features.rst:31 a8685feed6294984ade5ae1dcb8c9e31
+#: ../../features.rst:31 d3cc9789794e4b65b8f19217c50b7897
 msgid "Recent posts (``/recent``)"
 msgstr "Publications récentes (``/recent``)"
 
-#: ../../features.rst:33 cf002951be754400b1b4cce8d8e43632
+#: ../../features.rst:33 3677c7502fc749d49319f5e8610b2092
 msgid "Recent posts page"
 msgstr "Page des publications récentes"
 
-#: ../../features.rst:37 4c326d7884874e56a247c0d5f79f9713
+#: ../../features.rst:37 b75c0ce25e8e474597a3c803a3259ada
 msgid "Flat chronological listing of victim posts across every tracked group."
 msgstr ""
 "Liste chronologique plate des publications de victimes pour tous les "
 "groupes suivis."
 
-#: ../../features.rst:39 9381c739e4c1459d813adba2f4a48bed
+#: ../../features.rst:39 ff717090874c4c2e826aaf351eb992b9
 msgid ""
 "**Time window selector** — ``1 / 3 / 7 / 30 days``. Default window: 3 "
 "days."
@@ -109,7 +109,7 @@ msgstr ""
 "**Sélecteur de fenêtre temporelle** — ``1 / 3 / 7 / 30 jours``. Fenêtre "
 "par défaut : 3 jours."
 
-#: ../../features.rst:40 9786f37c54f24f2c9857b26922a40f70
+#: ../../features.rst:40 68de53eb8fc949bb9598776917ed0beb
 msgid ""
 "Hard cap at 2000 rows per window. When exceeded, a notice shows how many "
 "rows were trimmed."
@@ -117,7 +117,7 @@ msgstr ""
 "Plafond dur à 2000 lignes par fenêtre. S'il est dépassé, un message "
 "indique combien de lignes ont été coupées."
 
-#: ../../features.rst:41 06bcb13fc6ca4710842bfa6e23cbf2cc
+#: ../../features.rst:41 c23c22bd172f4cc79c12bc6a020a160f
 msgid ""
 "Live filters: free-text search (title + group name) and a per-group "
 "dropdown."
@@ -125,19 +125,19 @@ msgstr ""
 "Filtres live : recherche libre (titre + nom du groupe) et liste "
 "déroulante par groupe."
 
-#: ../../features.rst:42 892e7e01cadb406699b8f28a80f3f61e
+#: ../../features.rst:42 e97ddfebc78a43988de0077e6c1ce36e
 msgid "24-hour sparkline of posting activity in the hero."
 msgstr "Sparkline 24 heures de l'activité dans le hero."
 
-#: ../../features.rst:47 29dcf080df8e42e98f7282d0c8592e8c
+#: ../../features.rst:47 6d829b076c7f43a19bfacdc6d5c5beb7
 msgid "Browse (``/browse``)"
 msgstr "Parcourir (``/browse``)"
 
-#: ../../features.rst:49 22a76cbeedc8454683cc2956c58c7302
+#: ../../features.rst:49 a14b1d71c7b34fdea6b4899bec1bddaf
 msgid "Browse entities page"
 msgstr "Page de navigation"
 
-#: ../../features.rst:53 757164588a944849b040c6716a42ff6c
+#: ../../features.rst:53 286eeed8eb064c15b13860f3da09c6a2
 msgid ""
 "Card grid of every tracked entity — ransomware groups, markets/forums and"
 " threat actors."
@@ -145,11 +145,11 @@ msgstr ""
 "Grille de cartes de toutes les entités suivies — groupes de ransomware, "
 "marchés/forums et acteurs de menace."
 
-#: ../../features.rst:55 b835eec0511d4dc5b4b7301badd4cc3a
+#: ../../features.rst:55 6ffb839435934690ad7c0bc94c9b62ae
 msgid "Tabs to switch between *All / Groups / Markets / Actors*."
 msgstr "Onglets pour basculer entre *Tous / Groupes / Marchés / Acteurs*."
 
-#: ../../features.rst:56 a06156eee5a94c458410f1a9a3cc754a
+#: ../../features.rst:56 33886cd08e14413f973d26f2a06fa919
 msgid ""
 "Health chips (*Healthy / Degraded / Offline*) filter entities by mirror "
 "availability."
@@ -157,11 +157,11 @@ msgstr ""
 "Chips de santé (*Healthy / Degraded / Offline*) filtrent les entités par "
 "disponibilité de miroir."
 
-#: ../../features.rst:57 7ba242307e484efca6d76f803c9a513a
+#: ../../features.rst:57 cba4313411e5444c92dbf5fa4d7bd433
 msgid "Alphabet bar (A-Z / 0-9 / #) and live name/alias search."
 msgstr "Barre alphabétique (A-Z / 0-9 / #) et recherche live par nom/alias."
 
-#: ../../features.rst:58 aff15a0c164545c6ba60cd94ea981066
+#: ../../features.rst:58 5d1862dffc5e4557a54228a51c22e63c
 msgid ""
 "Each card exposes parser status, private flag, wanted-listing flag, alias"
 " count."
@@ -169,15 +169,15 @@ msgstr ""
 "Chaque carte expose le statut du parser, le flag privé, le flag wanted et"
 " le nombre d'alias."
 
-#: ../../features.rst:63 743e1744b1574b258ca97c7ec1203a86
+#: ../../features.rst:63 189bac64dc594e6ca8b7f89c396f65f7
 msgid "URLs (``/urls``)"
 msgstr "URLs (``/urls``)"
 
-#: ../../features.rst:65 3ff2d49743e14e1797cb8d96197ff0b3
+#: ../../features.rst:65 07c7208eacb74ce5ab6c2298b7f6d9c9
 msgid "URL inventory page"
 msgstr "Page d'inventaire d'URLs"
 
-#: ../../features.rst:69 99148295327143f892efb747fc97d794
+#: ../../features.rst:69 9e661b6ef1c849ae9d1a918aa40d9767
 msgid ""
 "Flat view of every tracked mirror URL for groups and markets. Useful for "
 "IR teams checking if an observed URL matches a tracked mirror."
@@ -186,7 +186,7 @@ msgstr ""
 "Utile aux équipes IR pour vérifier si une URL observée correspond à un "
 "miroir connu."
 
-#: ../../features.rst:72 0ec0e106228440748e3f53b209a5817a
+#: ../../features.rst:72 da575c6f487241acbf48fe3617587961
 msgid ""
 "Filters: entity type (*All / Groups / Markets*), availability (*All / "
 "Online / Offline*), live text search matching both entity name and URL "
@@ -196,7 +196,7 @@ msgstr ""
 "(*Tous / En ligne / Hors ligne*), recherche live sur le nom d'entité et "
 "la portion d'URL."
 
-#: ../../features.rst:74 3a0e79035dc14bf5a4ebdf259b7b9f35
+#: ../../features.rst:74 cb47f745a25f42d38fe50799debb7d19
 msgid ""
 "One row per mirror — shows the entity, the full URL, live status, last "
 "scrape date, 30-day uptime and a 30-day health sparkline."
@@ -205,11 +205,11 @@ msgstr ""
 "direct, la date de dernier scrape, l'uptime sur 30 jours et une sparkline"
 " de santé sur 30 jours."
 
-#: ../../features.rst:76 809fd518c4164590ad07506f5caa33df
+#: ../../features.rst:76 ed2a53d843af41ac9ba628adb866aca1
 msgid "**CSV export** (``/urls.csv``) respects the active filters."
 msgstr "**Export CSV** (``/urls.csv``) respecte les filtres actifs."
 
-#: ../../features.rst:77 0cad2596feda4c49a437f681e648d53a
+#: ../../features.rst:77 2645fc9432e44b3596f1a894246f5e66
 msgid ""
 "Respects privacy: private entities and private URLs are hidden to "
 "anonymous visitors."
@@ -217,15 +217,15 @@ msgstr ""
 "Respect de la confidentialité : les entités et URLs privées sont masquées"
 " aux visiteurs anonymes."
 
-#: ../../features.rst:82 7e2ddb7af3b6429e9a2440c2b2fd7cad
+#: ../../features.rst:82 27d66b5a15e24e42abfc536182ee856d
 msgid "Trending (``/hot``)"
 msgstr "Tendances (``/hot``)"
 
-#: ../../features.rst:84 ed5103d4e5f345a98a093b19b8927588
+#: ../../features.rst:84 ea420a14df9644078a22b0b4a47c2d96
 msgid "Trending groups page"
 msgstr "Page des groupes en tendance"
 
-#: ../../features.rst:88 2a486df946ed465fa60c423b057a7268
+#: ../../features.rst:88 cd6f5aa6962e4713847bfa56fe06fa17
 msgid ""
 "Ranks groups by posting activity over a configurable window "
 "(1/3/7/14/30/90 days)."
@@ -233,33 +233,33 @@ msgstr ""
 "Classe les groupes par activité de publication sur une fenêtre "
 "configurable (1/3/7/14/30/90 jours)."
 
-#: ../../features.rst:90 86cd7d1cacb840b791dafb7e7d858f6a
+#: ../../features.rst:90 0a6327ff2c604da3938ac3f1c84610f0
 msgid "Sort modes: *Trending (Δ%)*, *Volume*, *New entrants*."
 msgstr "Modes de tri : *Tendance (Δ%)*, *Volume*, *Nouveaux entrants*."
 
-#: ../../features.rst:91 915a8ba9669a4ba7a5d3507fcc47c8de
+#: ../../features.rst:91 a17037bb359447b89414d65fb65d8788
 msgid "CSV export of the ranked list."
 msgstr "Export CSV du classement."
 
-#: ../../features.rst:92 76b5a54debf445d19fc1fdcd63f8a1ea
+#: ../../features.rst:92 b144b6253d3b43cfa96981ec5b48c467
 msgid "Per-row sparkline showing the daily post distribution inside the window."
 msgstr ""
 "Sparkline par ligne montrant la distribution quotidienne des publications"
 " sur la fenêtre."
 
-#: ../../features.rst:97 f5233a8c4f2c4cc0b7f25d9380d4af2b
+#: ../../features.rst:97 62f9686d65c54e3fb03ea7df7e315ae3
 msgid "Stats (``/stats``)"
 msgstr "Statistiques (``/stats``)"
 
-#: ../../features.rst:99 4a7fa8f0ae3d4cdaa1921a2a909ad873
+#: ../../features.rst:99 88f3bc2286e9441b936a6d592ea13fc8
 msgid "Interactive statistics page"
 msgstr "Page de statistiques interactives"
 
-#: ../../features.rst:103 e5304af7d78c46e191a5e330b867659a
+#: ../../features.rst:103 b659c6f1853d432c9f2d321285e9fd4e
 msgid "Interactive charts (Plotly) covering posts across time."
 msgstr "Graphiques interactifs (Plotly) couvrant les publications dans le temps."
 
-#: ../../features.rst:105 ac5a48e1646449178cc71d774297cb32
+#: ../../features.rst:105 71e1bcdbc8234ea98a4ca90f73baebb9
 msgid ""
 "Controls: time period (7/14/30/90 days or custom range), "
 "hourly/daily/weekly aggregation, optional rolling average (3/7/14), Top-N"
@@ -270,7 +270,7 @@ msgstr ""
 "(3/7/14), filtre Top-N groupes (5/10/20/tous), normalisation en "
 "pourcentage."
 
-#: ../../features.rst:107 dd5fdcc7df9546d0a2bfa214c70c5890
+#: ../../features.rst:107 9235537ea9464afb9ca2e72694475f23
 msgid ""
 "Three charts: Top-N bar, stacked area, timeline scatter. PNG export "
 "available on each."
@@ -278,53 +278,53 @@ msgstr ""
 "Trois graphiques : barres Top-N, aires empilées, nuage chronologique. "
 "Export PNG sur chacun."
 
-#: ../../features.rst:108 3ca32faa05384fc0b6ffa6ac4f1586e6
+#: ../../features.rst:108 c08cf4b9040f40d3bc6092a9ae32f8da
 msgid "CSV export of the filtered dataset, share URL to reproduce a given view."
 msgstr ""
 "Export CSV du jeu de données filtré, URL partageable pour reproduire une "
 "vue."
 
-#: ../../features.rst:113 b62cc86ccb884b14a448123d5895f301
+#: ../../features.rst:113 459b54c5f80a4f4691e6ea4b6556b6f3
 msgid "Compare (``/compare``)"
 msgstr "Comparer (``/compare``)"
 
-#: ../../features.rst:115 dbd34698aedc4a2f864502c9c20c75b7
+#: ../../features.rst:115 ebaed9f26bcd42918f5c88c1580836f8
 msgid "Compare two entities"
 msgstr "Comparer deux entités"
 
-#: ../../features.rst:119 57205a5ad0474b8c8b7e740974117b83
+#: ../../features.rst:119 376f62f3d4744be883267b1a659433d1
 msgid "Side-by-side comparison of two entities (groups or markets/forums)."
 msgstr "Comparaison côte à côte de deux entités (groupes ou marchés/forums)."
 
-#: ../../features.rst:121 bf3f08ec2cbe4131ac5af8cedd3547e4
+#: ../../features.rst:121 654d3ca3cdb54cc19af038636e01af2c
 msgid "Posts over 7d/30d/365d, mirrors up, 30-day uptime, Captcha and RaaS flags."
 msgstr ""
 "Publications sur 7j/30j/365j, miroirs en ligne, uptime 30j, flags Captcha"
 " et RaaS."
 
-#: ../../features.rst:122 fbc6554820f3478ab055fe7f397303ae
+#: ../../features.rst:122 c07c6c9942bc4d61b5cb3e006a597710
 msgid "Live charts: post volume bars + mirror availability gauges."
 msgstr ""
 "Graphiques en direct : barres de volume de publications + jauges de "
 "disponibilité des miroirs."
 
-#: ../../features.rst:127 fbe8a7e6fa22427daaa0f02370917f54
+#: ../../features.rst:127 5137098cb1de4b39a673f1b25c41a607
 msgid "Crypto (``/crypto``)"
 msgstr "Crypto (``/crypto``)"
 
-#: ../../features.rst:129 3419b9dcbdf84dcba32ccf5606ffe4a4
+#: ../../features.rst:129 ebee56fdebd940d0b30e57a580e4f8a1
 msgid "Cryptocurrencies by group"
 msgstr "Cryptomonnaies par groupe"
 
-#: ../../features.rst:133 78f470bb9ac643bea534f959b1669bac
+#: ../../features.rst:133 f49a6e3761c84f4cbcc639d71c4d40b5
 msgid "Cryptocurrency wallets grouped by actor."
 msgstr "Portefeuilles de cryptomonnaies groupés par acteur."
 
-#: ../../features.rst:135 77a8fc57cc5e482587f0ce736eb40471
+#: ../../features.rst:135 952e8cb445994232aa212a3da14b897f
 msgid "Chip grid with live filter by name / alias."
 msgstr "Grille de chips avec filtre live par nom / alias."
 
-#: ../../features.rst:136 4a719dd5221a4da5bdd58787514f40b9
+#: ../../features.rst:136 54f9de6f76114492a63a21ea73605037
 msgid ""
 "Per-group detail page (``/crypto/<name>``) lists observed wallets by "
 "blockchain, each with their transactions, filter controls (date range, "
@@ -336,19 +336,19 @@ msgstr ""
 "dates, montant min/max, direction) et l'intégration Breadcrumbs pour les "
 "blockchains supportées."
 
-#: ../../features.rst:139 ff5cbb070f864672851654eb75e8e6f3
+#: ../../features.rst:139 832271f0595c49469a187d9be79dd23d
 msgid "CSV export per wallet and per group."
 msgstr "Export CSV par portefeuille et par groupe."
 
-#: ../../features.rst:144 8768b61c59cc4dd98dc23298457fa9a8
+#: ../../features.rst:144 9e8532638cbe40afac86ae581b730c0d
 msgid "Leaks (``/leaks``)"
 msgstr "Leaks (``/leaks``)"
 
-#: ../../features.rst:146 f6eca878fc2b4df580387c3081a857af
+#: ../../features.rst:146 2a6292af6ab94c7fbbeb7056052ead3f
 msgid "Leaks listing page"
 msgstr "Page de liste des leaks"
 
-#: ../../features.rst:150 41a1f80877154adc96e7b73e4d3cd1c7
+#: ../../features.rst:150 0bfd27a63437433fb8d22079bb2733b5
 msgid ""
 "Public leak databases tracked for enrichment. Search by "
 "name/description/URL/title. Each entry opens a modal with size, record "
@@ -359,15 +359,15 @@ msgstr ""
 "taille, nombre d'enregistrements, date d'indexation et colonnes du "
 "schéma."
 
-#: ../../features.rst:156 dd2b71b8c61c441d83aad7f53a5a50e1
+#: ../../features.rst:156 86085a2b32c3438ea235802987b64cfc
 msgid "Notes (``/notes``)"
 msgstr "Notes (``/notes``)"
 
-#: ../../features.rst:158 1139471618814fabbaa1c7472ebabb06
+#: ../../features.rst:158 fed7fb9368274032b866c3fc4cc3c64a
 msgid "Ransomware notes by group"
 msgstr "Notes de rançon par groupe"
 
-#: ../../features.rst:162 7fdfc1b03b4d48f9ae819d5f4c36c80b
+#: ../../features.rst:162 27b5ef9bede44646a5fd0fb5be4c7cbf
 msgid ""
 "Ransom note samples grouped by actor. Detail page (``/notes/<group>``) "
 "lists every note with content and a *Copy* action."
@@ -376,11 +376,11 @@ msgstr ""
 "(``/notes/<group>``) liste chaque note avec son contenu et une action "
 "*Copier*."
 
-#: ../../features.rst:168 2d44533ce02b4a43aef88b9946fd061b
+#: ../../features.rst:168 1f5456bd5a974d19b1fe638c5186f4b6
 msgid "RF Dumps (``/RF``)"
 msgstr "RF Dumps (``/RF``)"
 
-#: ../../features.rst:170 644340adf09e4e099400d16b73193944
+#: ../../features.rst:170 7b486889f322447981b0371e286b1dca
 msgid ""
 "Optional Recorded Future integration. Available when an API key is "
 "configured in ``config/generic.json``. Lists retrieved dumps with "
@@ -391,15 +391,728 @@ msgstr ""
 "avec description et date de téléchargement ; la vue modale affiche les "
 "métadonnées de la brèche."
 
-#: ../../features.rst:175 08a49d9c2e5e4f21b54ed079f8a367c5
+#: ../../features.rst:177 e39add9fc5be469892f61574ffb49a0e
+msgid "Torrent swarm health (``/torrent-health``)"
+msgstr "Santé des swarms torrent (``/torrent-health``)"
+
+#: ../../features.rst:179 fe1714bcba024dc39455934823296eaa
+msgid ""
+"Tracks the health of every BitTorrent magnet referenced by a post **or "
+"manually attached to a group**. Read-only browsing is public; adding, "
+"removing and force-rescanning are reserved to administrators."
+msgstr ""
+"Suit l'état de santé de chaque magnet BitTorrent référencé par un post "
+"**ou rattaché manuellement à un groupe**. La consultation est publique ; "
+"l'ajout, la suppression et le rescan forcé sont réservés aux "
+"administrateurs."
+
+#: ../../features.rst:183 c242944a897543d9b9512fda70d2d883
+msgid "Torrent swarm health admin page"
+msgstr "Page admin de santé des swarms torrent"
+
+#: ../../features.rst:187 49917955b51440859d00c9be09f269fb
+msgid "Scan pipeline:"
+msgstr "Pipeline de scan :"
+
+#: ../../features.rst:189 f8e778155e5241699594bdb304524847
+msgid ""
+"A cron worker (``poetry run torrent-health``) walks all magnets, extracts"
+" the infohash and joins each swarm passively. No per-torrent rate limit "
+"is applied: any piece data that flows during the short scan window is "
+"written to a dedicated tempdir that is wiped at batch end, so the node "
+"neither persists nor re-seeds content."
+msgstr ""
+"Un worker cron (``poetry run torrent-health``) parcourt tous les magnets,"
+" extrait l'infohash et rejoint passivement chaque swarm. Aucune limite de"
+" débit par torrent n'est appliquée : les données de pieces transitant "
+"pendant la courte fenêtre de scan sont écrites dans un tempdir dédié, "
+"supprimé en fin de batch, de sorte que le nœud ne persiste ni ne "
+"réinjecte aucun contenu."
+
+#: ../../features.rst:194 7a8b42114fc346f8b1d85f6276ee5d7e
+msgid ""
+"For each scan the worker records ``seeders``, ``leechers``, total peer "
+"count, torrent size (when known) and a sample of peers with their IP, "
+"port, download percentage, client identification and observation source "
+"(DHT, PEX, tracker, LSD). A peer is counted as *seeder* when libtorrent "
+"flips its ``seed`` flag **or** when its observed ``progress`` reaches ≥ "
+"99.9 % (handles peers that are complete but haven't exchanged the "
+"bitfield yet)."
+msgstr ""
+"Pour chaque scan, le worker enregistre ``seeders``, ``leechers``, le "
+"nombre total de pairs, la taille du torrent (si connue) et un échantillon"
+" de pairs avec leur IP, port, pourcentage téléchargé, identification "
+"client et source d'observation (DHT, PEX, tracker, LSD). Un pair est "
+"compté comme *seeder* lorsque libtorrent active son flag ``seed`` **ou** "
+"lorsque son ``progress`` observé atteint ≥ 99,9 % (gère les pairs "
+"complets qui n'ont pas encore échangé le bitfield)."
+
+#: ../../features.rst:201 538fe255d942450d91f9f8b40a5727b8
+msgid ""
+"Scan entries are kept for ``torrent_health.scan_retention_days`` days "
+"(auto-expire via Valkey TTL, default 30). Metadata for infohashes "
+"inactive for ``torrent_health.dead_threshold_days`` days is purged "
+"(default 90). Both values accept ``0`` to mean *keep forever*."
+msgstr ""
+"Les entrées de scan sont conservées pendant "
+"``torrent_health.scan_retention_days`` jours (expiration automatique via "
+"TTL Valkey, défaut 30). Les métadonnées des infohashes inactifs depuis "
+"``torrent_health.dead_threshold_days`` jours sont purgées (défaut 90). "
+"Les deux valeurs acceptent ``0`` pour signifier *conserver indéfiniment*."
+
+#: ../../features.rst:205 aeb6b0dd13d046629372f0782c151563
+msgid ""
+"IPs listed in ``torrent_health.ignored_ips`` are excluded from peer "
+"samples, indexes, pivots and exports. Use it to hide your own scanner "
+"host or known researcher nodes."
+msgstr ""
+"Les IPs listées dans ``torrent_health.ignored_ips`` sont exclues des "
+"échantillons de pairs, des indexes, des pivots et des exports. Utile pour"
+" masquer votre propre scanner ou des nœuds de chercheurs connus."
+
+#: ../../features.rst:209 82df5e2a9ab04b1684bf1e504f1454f5
+msgid "Public views:"
+msgstr "Vues publiques :"
+
+#: ../../features.rst:211 dbe5012b2ea94645a15cfb95902dd0e4
+#, fuzzy
+msgid ""
+"``/torrent-health`` — the listing. Header banner shows five KPIs: *Swarms"
+" tracked / Alive / Dead / Seeders total / Scans last 24 h*. Below it, "
+"each column is sortable (click the header; default sort is *Peers* "
+"descending so live swarms surface first). The table carries a dedicated "
+"*Size* column and a free-text search (infohash, name or group). Filtering"
+" chips for every known group let you narrow to a single family in one "
+"click, and an *alive only* toggle hides dead swarms. Each row is tinted "
+"according to health (green for alive, amber for degraded, red for dead)."
+msgstr ""
+"``/torrent-health`` — la liste. Le bandeau en tête affiche cinq KPIs : "
+"*Swarms suivis / Vivants / Morts / Seeders total / Scans 24 h*. Chaque "
+"colonne est triable (clic sur l'en-tête ; tri par défaut *Pairs* "
+"décroissant pour faire remonter les swarms actifs). Le tableau comporte "
+"une colonne *Taille* dédiée et une recherche libre (infohash, nom ou "
+"groupe). Des chips de filtrage par groupe permettent de restreindre à une"
+" famille en un clic, et un interrupteur *vivants uniquement* masque les "
+"swarms morts. Chaque ligne est teintée selon la santé (vert vivant, "
+"orange dégradé, rouge mort)."
+
+#: ../../features.rst:219 05fbb64b2af94fc7aedfdbfad85e532b
+#, fuzzy
+msgid ""
+"``/torrent-health/<infohash>`` — detail with KPIs, 30-day sparkline, "
+"latest peer sample (each IP / ASN linked to its pivot page), and the full"
+" history table. Historical rows are expandable to reveal that scan's peer"
+" sample."
+msgstr ""
+"``/torrent-health/<infohash>`` — détail avec KPIs, sparkline 30 jours, "
+"dernier échantillon de pairs (chaque IP / ASN cliquable vers sa page de "
+"pivot), et tableau d'historique complet. Les lignes d'historique sont "
+"dépliables pour afficher l'échantillon de pairs du scan correspondant."
+
+#: ../../features.rst:224 a9c134da3bee461cb38f2b23142a8df0
+msgid "Admin-only actions:"
+msgstr "Actions réservées aux admins :"
+
+#: ../../features.rst:226 ca95791bb5c84833881a50c379f11e09
+#, fuzzy
+msgid ""
+"A *Refresh now* button appears on the listing and detail pages **for "
+"logged-in admins only**. It triggers a live scan, rate-limited 1/min per "
+"caller and infohash. The scan runs in a background thread so the UI stays"
+" responsive; the button switches to *Scanning (N s)…* (where N is the "
+"configured ``scan_duration_seconds``) and reloads itself when the window "
+"is over. A running lock (TTL = scan_duration + 60 s safety) prevents "
+"concurrent refreshes on the same infohash."
+msgstr ""
+"Un bouton *Refresh now* apparaît sur les pages liste et détail **pour les"
+" admins connectés uniquement**. Il déclenche un scan à la demande, limité"
+" à 1/min par appelant et infohash. Le scan tourne dans un thread d"
+"'arrière-plan pour laisser l'UI réactive ; le bouton passe à *Scanning (N"
+" s)…* (où N est le ``scan_duration_seconds`` configuré) et recharge la "
+"page à la fin. Un verrou de concurrence (TTL = scan_duration + 60 s de "
+"marge) empêche les rescans concurrents sur le même infohash."
+
+#: ../../features.rst:235 2ce3a978e6494e66b16b60536fe37496
+msgid "Pivot intelligence (``/torrent-health/pivot``)"
+msgstr "Pivot d'intelligence (``/torrent-health/pivot``)"
+
+#: ../../features.rst:237 56ad3e72c8434046a0985df41e2c577f
+msgid "Torrent pivot — top IPs tab"
+msgstr "Pivot torrent — onglet top IPs"
+
+#: ../../features.rst:241 080125972f244d9eaa1e6ebb672eb087
+msgid ""
+"Public page exposing cross-torrent correlations: an analyst clicks an IP "
+"or ASN anywhere in the app and lands here to see every torrent the peer "
+"has touched. Five tabs:"
+msgstr ""
+"Page publique exposant les corrélations cross-torrent : un analyste "
+"clique sur une IP ou un ASN n'importe où dans l'application et arrive ici"
+" pour voir tous les torrents touchés par ce pair. Cinq onglets :"
+
+#: ../../features.rst:245 957376f9366e4e1f97fe9dd8457242eb
+msgid ""
+"**Top IPs** — most-observed peers across all scans, with *seen / torrent "
+"/ as-seeder* counters."
+msgstr ""
+"**Top IPs** — pairs les plus observés sur l'ensemble des scans, avec les "
+"compteurs *vus / torrent / en seeder*."
+
+#: ../../features.rst:247 dc72c997495d4e8ca24700ff8e0ab208
+msgid "**Seeder IPs** — same ranking restricted to observations flagged seeder."
+msgstr ""
+"**Seeder IPs** — même classement restreint aux observations flaggées "
+"seeder."
+
+#: ../../features.rst:248 a5958eb5043e41df857609ec62a94d11
+msgid "**Top ASN** — ranked by distinct IPs observed for that AS."
+msgstr "**Top ASN** — classés par nombre d'IPs distinctes observées pour l'AS."
+
+#: ../../features.rst:249 defc47ca7ba645c2aeffd53cb04868b2
+msgid "**Seeder ASN** — AS with at least one confirmed seeder."
+msgstr "**Seeder ASN** — AS avec au moins un seeder confirmé."
+
+#: ../../features.rst:250 79d5a8e9f3374dd9b24f93c211619433
+msgid ""
+"**Cross-group** — IPs that appear in 2+ distinct ransomware groups. High "
+"signal: shared seedboxes, common actors, or researchers aggregating "
+"leaks."
+msgstr ""
+"**Cross-group** — IPs apparaissant dans 2+ groupes ransomware distincts. "
+"Signal fort : seedboxes partagées, acteurs communs, ou chercheurs "
+"agrégeant des leaks."
+
+#: ../../features.rst:253 1bc4f0be17f0437e80639f6f3d19b5b6
+msgid ""
+"A *Window* selector above the tabs restricts the computation to the last "
+"*24h / 7d / 30d / 90d* (all-time by default). An *Export CSV* button on "
+"each tab downloads the current view."
+msgstr ""
+"Un sélecteur *Window* au-dessus des onglets restreint le calcul aux "
+"dernières *24 h / 7 j / 30 j / 90 j* (toute période par défaut). Un "
+"bouton *Export CSV* sur chaque onglet télécharge la vue courante."
+
+#: ../../features.rst:257 501e2da0d90c4e218adcc12b6bc4bbfd
+msgid ""
+"Per-IP (``/torrent-health/ip/<ip>``) and per-ASN (``/torrent-"
+"health/asn/<asn>``) pages list every torrent the peer or AS has touched, "
+"with role (seeder/leecher), last peer count and last scan. The per-IP "
+"page also shows a 30-day SVG sparkline of its daily observation counts "
+"(blue = seen, green = confirmed seeder)."
+msgstr ""
+"Les pages par IP (``/torrent-health/ip/<ip>``) et par ASN (``/torrent-"
+"health/asn/<asn>``) listent chaque torrent touché par le pair ou l'AS, "
+"avec rôle (seeder/leecher), dernier nombre de pairs et dernier scan. La "
+"page par IP affiche aussi une sparkline SVG 30 jours du nombre "
+"d'observations quotidiennes (bleu = vu, vert = seeder confirmé)."
+
+#: ../../features.rst:264 e21d06ba8edc4b828b48faf76376f9f7
+msgid "Manage torrents (``/admin/torrent-health/manage``)"
+msgstr "Gestion des torrents (``/admin/torrent-health/manage``)"
+
+#: ../../features.rst:266 ef6a0f1b9f9146c28ca99c36c94f579b
+msgid ""
+"**Admin-only.** Attach a torrent to a ransomware group even when no post "
+"references it (Telegram drops, forum-only leaks, private mirrors):"
+msgstr ""
+"**Réservée aux admins.** Rattache un torrent à un groupe ransomware même "
+"en l'absence de post associé (drops Telegram, leaks forum, miroirs "
+"privés) :"
+
+#: ../../features.rst:269 8c70d043dacd4fe7b90219f4c160fb06
+msgid ""
+"*Single add*: pick a group, paste a magnet URI **or** upload a "
+"``.torrent`` file — the magnet is derived via libtorrent."
+msgstr ""
+"*Ajout unitaire* : choisissez un groupe, collez un URI magnet **ou** "
+"uploadez un fichier ``.torrent`` — le magnet est dérivé via libtorrent."
+
+#: ../../features.rst:271 d80b137edcb74fa291292140dcadcb69
+msgid ""
+"*Bulk add*: paste one magnet per line (``#`` lines are ignored), pick a "
+"group, submit."
+msgstr ""
+"*Ajout en masse* : collez un magnet par ligne (les lignes ``#`` sont "
+"ignorées), choisissez un groupe, validez."
+
+#: ../../features.rst:273 8e98cbf0f01e4285a94cc56bde4acfda
+msgid "*Delete*: per-row button or bulk via checkboxes."
+msgstr "*Suppression* : bouton par ligne ou en masse via cases à cocher."
+
+#: ../../features.rst:275 eea2ade0e39e4b8db881262c834c2b38
+msgid ""
+"Manually added torrents are merged with post-linked ones by "
+"``collect_magnets()`` and picked up by the next cron run. The same action"
+" is available at the CLI::"
+msgstr ""
+"Les torrents ajoutés manuellement sont fusionnés avec ceux issus des "
+"posts par ``collect_magnets()`` et repris par le prochain run cron. La "
+"même action est disponible en CLI ::"
+
+#: ../../features.rst:285 e2a7536247bd472f9d474fe7146d8e8e
+msgid "Static torrent metadata"
+msgstr "Métadonnées statiques du torrent"
+
+#: ../../features.rst:287 acc44efc54bb4873b1f1c1914aad6f0d
+msgid ""
+"Beyond runtime swarm health, every ``.torrent`` file and magnet carries "
+"static metadata — a goldmine for ransomware intel. RansomLook extracts "
+"and persists the full info dict on add and on every scan:"
+msgstr ""
+"En plus de la santé du swarm, chaque fichier ``.torrent`` et chaque "
+"magnet embarque des métadonnées statiques — une mine d'or pour l'intel "
+"ransomware. RansomLook extrait et persiste l'info dict complet à l'ajout "
+"et à chaque scan :"
+
+#: ../../features.rst:291 8930b56ac44b417b8baf0b59e864b638
+msgid ""
+"**created_by** — the client that produced the ``.torrent`` (e.g. "
+"``qBittorrent/5.1.2``, ``mktorrent 1.1``, ``buildtorrent/0.9.1``). "
+"Fingerprints whether the affiliate is manual (GUI client) or automated "
+"(CLI-scripted packaging). Same creator across many leaks → same operator "
+"workflow."
+msgstr ""
+"**created_by** — le client qui a produit le ``.torrent`` (p. ex. "
+"``qBittorrent/5.1.2``, ``mktorrent 1.1``, ``buildtorrent/0.9.1``). Révèle"
+" si l'affilié est manuel (client GUI) ou automatisé (packaging scripté en"
+" CLI). Même créateur sur plusieurs leaks → même workflow d'opérateur."
+
+#: ../../features.rst:296 35ef9145e8d74e3788b4660e65812f42
+msgid "**creation_date** — Unix timestamp, rendered in the browser's local time."
+msgstr ""
+"**creation_date** — timestamp Unix, affiché dans l'heure locale du "
+"navigateur."
+
+#: ../../features.rst:298 009b122c758b41b399015d08543ca329
+msgid "**comment** — free-form note left by the author."
+msgstr "**comment** — note libre laissée par l'auteur."
+
+#: ../../features.rst:299 156ab92a6a8c48d3bd06f75c807d7fea
+msgid ""
+"**trackers** — BEP-3 ``announce`` + BEP-12 ``announce-list``, fully "
+"merged."
+msgstr ""
+"**trackers** — ``announce`` (BEP-3) + ``announce-list`` (BEP-12), "
+"entièrement fusionnés."
+
+#: ../../features.rst:301 8358fabc6d324445af8533adc9c6edde
+msgid ""
+"**webseeds** — BEP-19 HTTP mirrors (``url-list`` / ``httpseeds``). See "
+"the *Webseed liveness* section below."
+msgstr ""
+"**webseeds** — mirrors HTTP BEP-19 (``url-list`` / ``httpseeds``). Voir "
+"la section *Vérification des webseeds* plus bas."
+
+#: ../../features.rst:303 c0824dede27a4069a14bbc81ef388bc9
+#, python-brace-format
+msgid ""
+"**files** — full ``{path, size}`` list of every file in the torrent. For "
+"multi-file leaks this exposes the victim's directory tree "
+"(``C:\\Users\\…\\Documents\\clients\\…``), customer names, document "
+"types. Displayed as a collapsible table on the detail page (capped at "
+"2000 rows for rendering)."
+msgstr ""
+"**files** — liste complète ``{path, size}`` de chaque fichier du torrent."
+" Pour les leaks multi-fichiers, cela expose l'arborescence de la victime "
+"(``C:\\Users\\…\\Documents\\clients\\…``), les noms de clients, les types"
+" de documents. Affiché en tableau repliable sur la page detail (limité à "
+"2000 lignes pour le rendu)."
+
+#: ../../features.rst:308 705593a26c284c8e9c4de516ddeb05af
+msgid "**piece_length / num_pieces / private** — BT structure."
+msgstr "**piece_length / num_pieces / private** — structure BT."
+
+#: ../../features.rst:310 469fcc941f244863b4fe1401063d3760
+msgid ""
+"Magnet URIs contribute ``tr=`` (trackers) and ``ws=`` (webseeds) at add "
+"time; the remaining fields arrive when libtorrent completes the info dict"
+" fetch via DHT during the next scan. A single meta hash is kept per "
+"infohash and enriched monotonically — existing values are not overwritten"
+" by an emptier scan."
+msgstr ""
+"Les URIs magnet apportent ``tr=`` (trackers) et ``ws=`` (webseeds) à "
+"l'ajout ; les autres champs arrivent quand libtorrent complète la "
+"récupération de l'info dict via DHT pendant le scan suivant. Un seul hash"
+" meta est conservé par infohash et enrichi de façon monotone — les "
+"valeurs existantes ne sont jamais écrasées par un scan plus vide."
+
+#: ../../features.rst:316 be3447fa5952410cbdc75bbfe4e957ca
+msgid ""
+"When the default scan window is too short for ``ut_metadata`` to finish "
+"(large info dicts, slow peers), the row ends up with peers but no name / "
+"size / files / trackers. The ``torrent-health-backfill`` CLI rescans "
+"those incomplete rows with a longer window (default 300 s) — safe to "
+"schedule daily, skips already-complete rows automatically. See :ref"
+":`command-line-interface` for flags."
+msgstr ""
+"Quand la fenêtre de scan par défaut est trop courte pour que "
+"``ut_metadata`` termine (gros info dicts, peers lents), la ligne se "
+"retrouve avec des peers mais sans nom / size / fichiers / trackers. La "
+"CLI ``torrent-health-backfill`` rescanne ces lignes incomplètes avec une "
+"fenêtre plus longue (300 s par défaut) — planifiable quotidiennement "
+"sans risque, saute automatiquement les lignes déjà complètes. Voir :ref"
+":`command-line-interface` pour les flags."
+
+#: ../../features.rst:324 52447307119e4e65834fced65d775d76
+msgid "Tracker scrape — BEP-48 (``poetry run torrent-tracker-scrape``)"
+msgstr "Scrape tracker — BEP-48 (``poetry run torrent-tracker-scrape``)"
+
+#: ../../features.rst:326 6d32f06f2b3140b58c5edf67b0255ff0
+msgid ""
+"Groups with **private onion trackers** (LockBit, …) confound the "
+"libtorrent scanner: DHT and uTP do not pass SOCKS5, so the scanner "
+"reports 0 peer even when the swarm is active behind Tor. The ``torrent-"
+"tracker-scrape`` CLI side-steps that by issuing BEP-48 HTTP ``GET "
+"/scrape`` calls directly — Tor SOCKS5 for ``.onion``, clearnet for "
+"everything else — and persists:"
+msgstr ""
+"Les groupes avec **trackers onion privés** (LockBit, …) mettent le "
+"scanner libtorrent en échec : DHT et uTP ne passent pas SOCKS5, donc le "
+"scanner rapporte 0 peer même quand le swarm est actif derrière Tor. La "
+"CLI ``torrent-tracker-scrape`` contourne ça en envoyant directement des "
+"requêtes BEP-48 HTTP ``GET /scrape`` — Tor SOCKS5 pour les ``.onion``, "
+"clearnet pour le reste — et persiste :"
+
+#: ../../features.rst:333 5f86e91832044a1e824187e16b97c5f3
+msgid ""
+"**tracker_seeders / tracker_leechers** — current swarm size from the "
+"tracker's own bookkeeping."
+msgstr ""
+"**tracker_seeders / tracker_leechers** — taille actuelle du swarm selon "
+"la comptabilité interne du tracker."
+
+#: ../../features.rst:335 3c0680a0067a47dab2782a7509dea40c
+msgid ""
+"**tracker_downloaded** — total historical completions (a metric the peer-"
+"enumeration scanner cannot expose)."
+msgstr ""
+"**tracker_downloaded** — total historique des téléchargements complétés "
+"(une métrique que le scanner d'énumération de peers ne peut pas exposer)."
+
+#: ../../features.rst:337 eb85d9eb32124e4685c41701934d6939
+msgid "**tracker_last_scrape / tracker_last_url** — audit trail."
+msgstr "**tracker_last_scrape / tracker_last_url** — piste d'audit."
+
+#: ../../features.rst:338 d759b2a5285646398e47a59af1eba720
+msgid "**tracker_history** — 30-point rolling window for a future sparkline."
+msgstr ""
+"**tracker_history** — fenêtre glissante de 30 points pour une future "
+"sparkline."
+
+#: ../../features.rst:340 1d43f3961850451fb3d7b4b34895e1ee
+msgid ""
+"Infohashes are grouped by scrape URL and submitted in batches (default 64"
+" per request). Trackers that reject multi-infohash batches fall back to "
+"one request per infohash automatically. UDP trackers (BEP-15) are "
+"supported too via a native binary client; they go clearnet (UDP does not "
+"pass SOCKS5) and are skipped automatically when ``only_onion`` is set."
+msgstr ""
+"Les infohashes sont groupés par URL de scrape et soumis par lots (64 par "
+"requête par défaut). Les trackers qui refusent les lots multi-infohash "
+"sont automatiquement repassés en une requête par infohash. Les trackers "
+"UDP (BEP-15) sont aussi supportés via un client binaire natif ; ils "
+"passent en clearnet (UDP ne transite pas par SOCKS5) et sont ignorés "
+"automatiquement quand ``only_onion`` est activé."
+
+#: ../../features.rst:347 b99da3472e5746478c332cce826cbef1
+msgid "Config in ``generic.json``::"
+msgstr "Config dans ``generic.json`` ::"
+
+#: ../../features.rst:353 e8602334ed3b4d6490d921b38f01b98b
+msgid ""
+"``only_onion: false`` (or ``--clearnet-too`` on the CLI) also scrapes "
+"clearnet HTTP and UDP trackers. The ``downloaded`` counter returned by "
+"those is a metric the libtorrent scanner does not expose, so running the "
+"full scrape is worth the extra ~15-30 s even when the swarms are "
+"otherwise covered."
+msgstr ""
+"``only_onion: false`` (ou ``--clearnet-too`` en CLI) scrape aussi les "
+"trackers HTTP clearnet et UDP. Le compteur ``downloaded`` qu'ils "
+"retournent est une métrique que le scanner libtorrent n'expose pas, donc "
+"le scrape complet vaut les ~15-30 s supplémentaires même quand les swarms"
+" sont par ailleurs couverts."
+
+#: ../../features.rst:359 7b5ceef8719b4ee4a2d2d4230dd97726
+msgid "Typical cron (single pass, every 3 h, onion + clearnet + UDP)::"
+msgstr "Cron type (passe unique, toutes les 3 h, onion + clearnet + UDP) ::"
+
+#: ../../features.rst:363 52d5d05b98c54842822ef62a567847ba
+msgid ""
+"The resulting numbers appear on ``/torrent-health/<infohash>`` as a KPI "
+"banner labelled *Tracker scrape (BEP-48)*, and the last 30 samples are "
+"kept in ``meta.tracker_history`` (≈3.7 days at 3 h cadence)."
+msgstr ""
+"Les chiffres résultants apparaissent sur ``/torrent-health/<infohash>`` "
+"dans une bannière KPI intitulée *Tracker scrape (BEP-48)*, et les 30 "
+"derniers échantillons sont conservés dans ``meta.tracker_history`` (≈3,7 "
+"jours à cadence 3 h)."
+
+#: ../../features.rst:368 ed1245f5a2904b04aa6f64350bacd3d4
+msgid "Webseed liveness check (``poetry run torrent-webseed-check``)"
+msgstr "Vérification des webseeds (``poetry run torrent-webseed-check``)"
+
+#: ../../features.rst:370 8a01a4278b8f4e558ccf915f1e98db4d
+msgid ""
+"Ransomware magnets typically embed a fleet of **BEP-19 webseeds** — "
+"direct HTTP URLs to the leak file served by the operator's own mirror "
+"infrastructure. A single LockBit magnet routinely carries 10+ mirrors "
+"across distinct onion domains, which doubles as a map of the group's "
+"distribution fabric."
+msgstr ""
+"Les magnets ransomware embarquent généralement une flotte de **webseeds "
+"BEP-19** — des URLs HTTP directes vers le fichier du leak servi par "
+"l'infrastructure mirror propre à l'opérateur. Un seul magnet LockBit "
+"transporte couramment plus de 10 mirrors sur des domaines onion "
+"distincts, ce qui cartographie du même coup le réseau de distribution du "
+"groupe."
+
+#: ../../features.rst:376 ef61ce86417845f387be178a4c5c86ad
+msgid ""
+"``torrent-webseed-check`` issues a ``HEAD`` on every unique webseed URL "
+"(falls back to a one-byte range ``GET`` when the server answers 405), "
+"through Tor for ``.onion`` targets and direct for clearnet. For each URL "
+"it records:"
+msgstr ""
+"``torrent-webseed-check`` envoie un ``HEAD`` sur chaque URL de webseed "
+"unique (retombe sur un ``GET`` avec range d'un octet quand le serveur "
+"répond 405), via Tor pour les cibles ``.onion`` et en direct pour le "
+"clearnet. Pour chaque URL il enregistre :"
+
+#: ../../features.rst:381 5bd8ce34dffa41099331322680c82da1
+msgid ""
+"``online`` (boolean — ``2xx``/``3xx``), ``code`` (HTTP status), "
+"``rtt_ms``, ``size`` (``Content-Length``), ``ts`` (check time), optional "
+"``error`` (exception class when a connection fails)."
+msgstr ""
+"``online`` (booléen — ``2xx``/``3xx``), ``code`` (statut HTTP), "
+"``rtt_ms``, ``size`` (``Content-Length``), ``ts`` (heure du check), "
+"``error`` optionnel (classe d'exception en cas d'échec)."
+
+#: ../../features.rst:385 95325e2d78284ed9b1ef07ad95f6bbf7
+msgid ""
+"Results are fanned out per infohash into the ``meta.webseed_status`` "
+"field and rendered on the torrent detail page as a **green / red dot** "
+"next to every URL — a live view of mirror availability, ideal for "
+"tracking takedowns and infrastructure churn per operator. The checker is "
+"threaded (default 16 workers) and dedupes across infohashes that "
+"advertise the same mirror."
+msgstr ""
+"Les résultats sont dispatchés par infohash dans le champ "
+"``meta.webseed_status`` et rendus sur la page de détail du torrent sous "
+"forme de **pastille verte / rouge** à côté de chaque URL — une vue live "
+"de la disponibilité des mirrors, idéale pour suivre les takedowns et le "
+"turnover d'infrastructure par opérateur. Le checker est threadé (16 "
+"workers par défaut) et déduplique les infohashes qui annoncent le même "
+"mirror."
+
+#: ../../features.rst:392 b55a952c1cc446ae9df3f037525fdb12
+msgid "Config::"
+msgstr "Config ::"
+
+#: ../../features.rst:398 1e0f63bbbc4c4fecbf3a5a0ad1d6e77e
+msgid ""
+"Typical cron (every 6 h, complements the ``torrent-health`` and "
+"``torrent-tracker-scrape`` jobs)::"
+msgstr ""
+"Cron type (toutes les 6 h, complémentaire des jobs ``torrent-health`` et "
+"``torrent-tracker-scrape``) ::"
+
+#: ../../features.rst:404 7db27e417444481296ff37348306179a
+msgid "Torrent intel pipeline"
+msgstr "Pipeline intel torrent"
+
+#: ../../features.rst:420 d2f5f2d0dc1246b6b231e360d6d8388b
+msgid "Programmatic access:"
+msgstr "Accès programmatique :"
+
+#: ../../features.rst:422 9fe488c85bfb4c2d9a3aae9dfd065931
+msgid ""
+"All ``/api/torrent/*`` and ``/api/enrich/*`` endpoints are registered in "
+"the Swagger namespace and therefore visible on ``/doc``. Read endpoints "
+"are public; the single write endpoint (refresh) requires an admin session"
+" or a valid API key (``Authorization: <token>``)."
+msgstr ""
+"Tous les endpoints ``/api/torrent/*`` et ``/api/enrich/*`` sont "
+"enregistrés dans la namespace Swagger et visibles sur ``/doc``. Les "
+"endpoints en lecture sont publics ; l'unique endpoint d'écriture "
+"(refresh) requiert une session admin ou une clé API valide "
+"(``Authorization: <token>``)."
+
+#: ../../features.rst:427 9ef2de810b3a43e2893de0d6a823fc88
+msgid "Read endpoints (public):"
+msgstr "Endpoints en lecture (publics) :"
+
+#: ../../features.rst:429 cd52be31787944ddb461602f8f1c953a
+msgid ""
+"``GET /api/torrent/health`` — paginated list, supports ``?alive=1`` and "
+"``?q=``."
+msgstr ""
+"``GET /api/torrent/health`` — liste paginée, supporte ``?alive=1`` et "
+"``?q=``."
+
+#: ../../features.rst:430 1b1a66d4bfb04390a9fadca2c2f53b18
+msgid "``GET /api/torrent/health/<infohash>`` — metadata + ``?history=N`` scans."
+msgstr ""
+"``GET /api/torrent/health/<infohash>`` — métadonnées + ``?history=N`` "
+"scans."
+
+#: ../../features.rst:431 aa4d921524fa47aca35c5e92edaa40c9
+msgid ""
+"``GET /api/torrent/top/ips`` — top peers. ``?limit=`` ``?seed_only=1`` "
+"``?days=7|30|90`` (window) ``?format=csv``."
+msgstr ""
+"``GET /api/torrent/top/ips`` — top pairs. ``?limit=`` ``?seed_only=1`` "
+"``?days=7|30|90`` (fenêtre) ``?format=csv``."
+
+#: ../../features.rst:433 b7240bc7692748a89aa2a378855ef251
+msgid "``GET /api/torrent/top/asn`` — same filters as top/ips, scoped to ASN."
+msgstr ""
+"``GET /api/torrent/top/asn`` — mêmes filtres que top/ips, au périmètre "
+"ASN."
+
+#: ../../features.rst:434 8a1b93fadcd34d30958e81103abd09d1
+msgid ""
+"``GET /api/torrent/top/cross-group`` — IPs spanning 2+ groups. "
+"``?format=csv``."
+msgstr ""
+"``GET /api/torrent/top/cross-group`` — IPs couvrant 2+ groupes. "
+"``?format=csv``."
+
+#: ../../features.rst:436 97de97395b754176839f01f3eae68c84
+msgid ""
+"``GET /api/torrent/ip/<ip>`` — enrichment + torrent associations. "
+"``?format=csv``."
+msgstr ""
+"``GET /api/torrent/ip/<ip>`` — enrichissement + associations torrent. "
+"``?format=csv``."
+
+#: ../../features.rst:437 0411dbf0e48d4c3eaa677ea35b169a3e
+msgid ""
+"``GET /api/torrent/ip/<ip>/timeline`` — daily counts, last N days "
+"(default 30)."
+msgstr ""
+"``GET /api/torrent/ip/<ip>/timeline`` — compteurs quotidiens sur les N "
+"derniers jours (défaut 30)."
+
+#: ../../features.rst:438 a86996ff13d24dda99889a1f579c9504
+msgid ""
+"``GET /api/torrent/asn/<asn>`` — IPs + torrents for the AS. "
+"``?format=csv``."
+msgstr "``GET /api/torrent/asn/<asn>`` — IPs + torrents de l'AS. ``?format=csv``."
+
+#: ../../features.rst:440 b091e8a7d6dc4f1a9ea8781dd3be004e
+msgid "Write endpoint (admin session or API key):"
+msgstr "Endpoint d'écriture (session admin ou clé API) :"
+
+#: ../../features.rst:442 808dc78186164a32b035ebbac408e1f7
+msgid ""
+"``POST /api/torrent/refresh/<infohash>`` — queue a live rescan. Returns "
+"``202 Accepted`` immediately; the scan runs in a background thread. "
+"Recorded in the audit log (``torrent_refresh``)."
+msgstr ""
+"``POST /api/torrent/refresh/<infohash>`` — met en file un rescan à la "
+"demande. Retourne ``202 Accepted`` immédiatement ; le scan tourne dans un"
+" thread d'arrière-plan. Consigné dans l'audit log (``torrent_refresh``)."
+
+#: ../../features.rst:447 01e09f40e01a4da0b83553d7932ef87a
+msgid "Peer IP enrichment"
+msgstr "Enrichissement des IP de peers"
+
+#: ../../features.rst:449 ecf2d64a8a014a8f819f86f4e4745eee
+msgid ""
+"Each peer IP observed during a scan is enriched via `CIRCL "
+"<https://www.circl.lu/>`_ services:"
+msgstr ""
+"Chaque IP de peer observée pendant un scan est enrichie via les services "
+"`CIRCL <https://www.circl.lu/>`_ :"
+
+#: ../../features.rst:452 01a639cb782c4e35b77319282f67e1fd
+msgid "**ASN** — queried from `IP ASN History <https://ipasnhistory.circl.lu/>`_."
+msgstr ""
+"**ASN** — récupéré depuis `IP ASN History "
+"<https://ipasnhistory.circl.lu/>`_."
+
+#: ../../features.rst:453 294ac2e425214b61a7a7cf09e0b3755d
+msgid ""
+"**Organisation and country code** — queried from `BGP Ranking <https"
+"://bgpranking-ng.circl.lu/>`_."
+msgstr ""
+"**Organisation et code pays** — récupérés depuis `BGP Ranking <https"
+"://bgpranking-ng.circl.lu/>`_."
+
+#: ../../features.rst:455 270937db505f4fc6bf89cb971ecd20fc
+msgid "**Reverse DNS** — resolved locally, with a 2-second timeout."
+msgstr "**Reverse DNS** — résolu localement, avec un timeout de 2 secondes."
+
+#: ../../features.rst:457 a383e9a5d6414cb1877cb434846d3f3d
+msgid ""
+"Records are cached in ``DB_TORRENT_HEALTH`` under ``ipenrich:<ip>`` with "
+"a TTL governed by ``torrent_health.ip_cache_ttl_days`` in the config "
+"(default 7 days; ``0`` disables the TTL)."
+msgstr ""
+"Les enregistrements sont cachés dans ``DB_TORRENT_HEALTH`` sous "
+"``ipenrich:<ip>`` avec un TTL piloté par "
+"``torrent_health.ip_cache_ttl_days`` dans la config (défaut 7 jours ; "
+"``0`` désactive le TTL)."
+
+#: ../../features.rst:461 877208bc31b34168a8a85770a66c6eae
+msgid ""
+"Two endpoints expose the enrichment (same auth model as above — admin "
+"session or API key):"
+msgstr ""
+"Deux endpoints exposent l'enrichissement (même modèle d'authentification "
+"que ci-dessus — session admin ou clé d'API) :"
+
+#: ../../features.rst:464 0b72ef2f1d1240999ae51e42ca3a0f7b
+msgid ""
+"``GET /api/enrich/ip/<ip>`` — single IP, optional ``?force=1`` bypass "
+"cache."
+msgstr ""
+"``GET /api/enrich/ip/<ip>`` — IP unique, ``?force=1`` optionnel pour "
+"bypass le cache."
+
+#: ../../features.rst:465 8ba32c68704c4f83a1b186ef09d9f489
+#, python-brace-format
+msgid ""
+"``POST /api/enrich/ip/bulk`` — batch up to 200 IPs per request (JSON "
+"``{\"ips\": [...]}`` ). Used by the admin UI to enrich every peer of the "
+"displayed scan in one round-trip."
+msgstr ""
+"``POST /api/enrich/ip/bulk`` — batch jusqu'à 200 IP par requête (JSON "
+"``{\"ips\": [...]}`` ). Utilisé par l'UI admin pour enrichir tous les "
+"peers d'un scan en un seul aller-retour."
+
+#: ../../features.rst:469 81b841e2da354c37a2d456ac874c699d
+msgid "Enrichment runs in two complementary modes:"
+msgstr "L'enrichissement fonctionne selon deux modes complémentaires :"
+
+#: ../../features.rst:471 c766bd65540b4eeb8a6721b9512d580e
+msgid ""
+"**Lazy (default)** — the admin detail page fetches the bulk endpoint at "
+"page load; uncached IPs hit CIRCL on demand."
+msgstr ""
+"**Lazy (par défaut)** — la page de détail admin appelle l'endpoint bulk "
+"au chargement ; les IP non cachées atteignent CIRCL à la demande."
+
+#: ../../features.rst:473 3bcf654f945a4b038dcab6b219b0e6ae
+msgid ""
+"**Proactive (optional)** — ``poetry run enrich-ips`` (cron job, typically"
+" daily) walks every stored peer IP and refreshes the cache so the UI is "
+"always instant."
+msgstr ""
+"**Proactif (optionnel)** — ``poetry run enrich-ips`` (cron, typiquement "
+"quotidien) parcourt chaque IP de peer stockée et rafraîchit le cache pour"
+" que l'UI soit toujours instantanée."
+
+#: ../../features.rst:478 a6c58b4cbbf04055b06029aa61540719
 msgid "Entity detail pages"
 msgstr "Pages de détail d'entité"
 
-#: ../../features.rst:178 97d77aa452af48e9ba7edc7b32164113
+#: ../../features.rst:481 58f013d4cced4aac8b9c7f45ce4ca6cc
 msgid "Group (``/group/<name>``)"
 msgstr "Groupe (``/group/<name>``)"
 
-#: ../../features.rst:180 14ccb89546bf4cfab8d77651da7c159d
+#: ../../features.rst:483 3a21b1ae7c254842ae9d927e43be032f
 msgid ""
 "Hero with logo, quick stats (total posts, posts over 7d/30d, 30-day "
 "uptime average)."
@@ -407,11 +1120,11 @@ msgstr ""
 "Hero avec logo, stats rapides (total publications, publications sur "
 "7j/30j, uptime moyen sur 30j)."
 
-#: ../../features.rst:181 37e11756b0424230a0b949ea5b1f6326
+#: ../../features.rst:484 e7aed2f1cd554b20b9098b6c52d5b3e1
 msgid "Activity sparkline (30 days), Plotly time chart."
 msgstr "Sparkline d'activité (30 jours), graphique temporel Plotly."
 
-#: ../../features.rst:182 0c4814047e064119a532fb4f9e5934f6
+#: ../../features.rst:485 72e902ef41bf4fae99d92de46d048daa
 msgid ""
 "Contact details (PGP, Matrix, Telegram, Tox, Session, Simplex, Max, "
 "Sonar, mail, Jabber)."
@@ -419,7 +1132,7 @@ msgstr ""
 "Coordonnées (PGP, Matrix, Telegram, Tox, Session, Simplex, Max, Sonar, "
 "e-mail, Jabber)."
 
-#: ../../features.rst:183 4c4be1c79b3f4ae4821313bba4d9b3f8
+#: ../../features.rst:486 f7d4ad01c2cf452991f5f7892398f941
 msgid ""
 "Mirror listings split by role (URLs / File servers / Chat / Admin) each "
 "showing status, screenshot thumb, 30-day uptime and a health sparkline."
@@ -428,29 +1141,29 @@ msgstr ""
 " Admin) chacune affichant statut, miniature de capture, uptime 30j et "
 "sparkline de santé."
 
-#: ../../features.rst:185 822dbff325384e1dae5a40eed3ae1e5c
+#: ../../features.rst:488 5469ca1775a54e72843bc602b6699ca6
 msgid "Affiliates list (linked to actor pages when known)."
 msgstr "Liste des affiliés (liés aux pages d'acteur quand connus)."
 
-#: ../../features.rst:186 52881b877db04d6c991ed36b26304a6c
+#: ../../features.rst:489 576bf7942bac47d1831bb770b6a2689d
 msgid "CSV export for URLs and posts."
 msgstr "Export CSV pour les URLs et les publications."
 
-#: ../../features.rst:189 340773346ac04c69839a9a89e1ed5237
+#: ../../features.rst:492 c3b46be6e6a94daba42a0ea73c7a5fd8
 msgid "Market / Forum (``/market/<name>``)"
 msgstr "Marché / Forum (``/market/<name>``)"
 
-#: ../../features.rst:191 1d1cbc32624c4843835a9d177cc62abc
+#: ../../features.rst:494 b707b3e3ef824ee39e93735d4ee502d8
 msgid "Same layout as group pages but sourced from the market database."
 msgstr ""
 "Même disposition que les pages de groupe mais données issues de la base "
 "des marchés."
 
-#: ../../features.rst:194 d7c7b36cbe2c4ba49dabadee56ccfeac
+#: ../../features.rst:497 6d0a3741890845bea9d5fd3b980a8671
 msgid "Actor (``/actor/<name>``)"
 msgstr "Acteur (``/actor/<name>``)"
 
-#: ../../features.rst:196 c31f9294a510475a9e03aa29b7ec813c
+#: ../../features.rst:499 121e9b68d4c14960aa749642a32bb525
 msgid ""
 "Hero with aliases, *WANTED* banner linking to FBI / Europol / INTERPOL "
 "notices when applicable."
@@ -458,27 +1171,27 @@ msgstr ""
 "Hero avec alias, bandeau *WANTED* liant aux fiches FBI / Europol / "
 "INTERPOL si applicable."
 
-#: ../../features.rst:197 e55720fe0ead44238151f3a4ff91c843
+#: ../../features.rst:500 dc90dd8f6ea842efbf0f1883dc482e79
 msgid "Relation graph (cytoscape) showing linked groups, markets and peer actors."
 msgstr ""
 "Graphe de relations (cytoscape) montrant les groupes, marchés et acteurs "
 "pairs liés."
 
-#: ../../features.rst:198 77d4fc69d2cc4909a29165987bd6fdbf
+#: ../../features.rst:501 1e988a84a881416fa9384df496bd8e3e
 msgid "Personal information, contacts, sources and image gallery with lightbox."
 msgstr ""
 "Informations personnelles, contacts, sources et galerie d'images avec "
 "lightbox."
 
-#: ../../features.rst:201 4de40b24c83d44b88be78bbe501f92b8
+#: ../../features.rst:504 9de388b472ac472fb933336426868d77
 msgid "Glossary (``/glossary``)"
 msgstr "Glossaire (``/glossary``)"
 
-#: ../../features.rst:203 3bcd705eaf77427d8ec97bb198f1414d
+#: ../../features.rst:506 f316fe2cc818418ba1242b2608e8b5ed
 msgid "Glossary page"
 msgstr "Page glossaire"
 
-#: ../../features.rst:207 fbe5e9041a2a4d9f8814731d87ad983d
+#: ../../features.rst:510 94ef2d27259247d2810730156b535d58
 msgid ""
 "Reference page defining terminology used throughout RansomLook: groups, "
 "actors, infrastructure types (DLS, FS, Chat, Admin, Relay), data metrics,"
@@ -488,51 +1201,51 @@ msgstr ""
 "groupes, acteurs, types d'infrastructure (DLS, FS, Chat, Admin, Relay), "
 "métriques de données, écosystème et relations."
 
-#: ../../features.rst:211 295b410d2b6447c0986fe3278667fb61
+#: ../../features.rst:514 7c11126b825341e591760769e503d4c6
 msgid "About (``/about``)"
 msgstr "À propos (``/about``)"
 
-#: ../../features.rst:213 e23d7b21374d4a9196311fb42b22442b
+#: ../../features.rst:516 49b696893055455bb7b77180cecdf1a0
 msgid "About page"
 msgstr "Page À propos"
 
-#: ../../features.rst:217 cdd16b13470844aa9a52c7289a755bf9
+#: ../../features.rst:520 6e423c404ce14f95959796e314ce45eb
 msgid "Project overview with sections:"
 msgstr "Présentation du projet avec les sections :"
 
-#: ../../features.rst:219 c9d3e18052f541069abc95bb75f9a8b2
+#: ../../features.rst:522 6c9d23e1fb694feeafe91dda2c000989
 msgid "What is RansomLook / main components"
 msgstr "Qu'est-ce que RansomLook / composants principaux"
 
-#: ../../features.rst:220 27b42b7a6d02490da2811f9219ebf014
+#: ../../features.rst:523 9215bdd9b25a461791988bcc54137926
 msgid "Who uses RansomLook (SOC, CTI, CSIRT, research, journalism)"
 msgstr "Qui utilise RansomLook (SOC, CTI, CSIRT, recherche, journalisme)"
 
-#: ../../features.rst:221 9b503bff70894a48b93ba2cc38c4701b
+#: ../../features.rst:524 511fdd2bbb974b57aa28b49ca1e27a19
 msgid "Getting started (entry-point per use case)"
 msgstr "Premiers pas (point d'entrée par cas d'usage)"
 
-#: ../../features.rst:222 5f4d24b321c6471d9361a7963bed0740
+#: ../../features.rst:525 73dc97ef45f343e396a8ca428051c641
 msgid "Data freshness policy"
 msgstr "Politique de fraîcheur des données"
 
-#: ../../features.rst:223 0c9c405bf770411abc87b8fa61cfd691
+#: ../../features.rst:526 01621faa76374f0586149c98e8e700f9
 msgid "License (AGPL v3), API license (CC BY 4.0)"
 msgstr "Licence (AGPL v3), licence API (CC BY 4.0)"
 
-#: ../../features.rst:224 806a8fd9711a4a8583f0cd0786b7dd58
+#: ../../features.rst:527 c973dc8fa4a34ebfad370b6e6e18eccb
 msgid "Credits and external data sources"
 msgstr "Crédits et sources de données externes"
 
-#: ../../features.rst:227 f850f030e76443cbb025a520c7f461d2
+#: ../../features.rst:530 24dfc37fddf841b2afd90023849ac2b5
 msgid "Feeds and automation"
 msgstr "Flux et automatisation"
 
-#: ../../features.rst:230 45401fd536f14d1fbd913908257e8be4
+#: ../../features.rst:533 8390d093a4334139bd17fa6587de197e
 msgid "RSS feed"
 msgstr "Flux RSS"
 
-#: ../../features.rst:232 e2bcb2cd6f5a4c97860b4f3c070d6b3e
+#: ../../features.rst:535 5824627e34784662bd98db0069e9a137
 msgid ""
 "A ``/rss.xml`` feed exposes the most recent posts. The sidebar footer "
 "exposes a direct link next to the social icons."
@@ -540,21 +1253,21 @@ msgstr ""
 "Un flux ``/rss.xml`` expose les publications les plus récentes. Le bas de"
 " la barre latérale contient un lien direct à côté des icônes sociales."
 
-#: ../../features.rst:236 bf33074b4b0b457687d44d95804f15d0
+#: ../../features.rst:539 a79a03c48ac343e18889b8d5fabf4766
 msgid "API"
 msgstr "API"
 
-#: ../../features.rst:238 0bf469b5baff44e29551e7c1b6961ae8
+#: ../../features.rst:541 67dbc96d93b1463e93af9dea4cdebb9d
 msgid "Swagger documentation is served at ``/doc/``. See :doc:`api` for details."
 msgstr ""
 "La documentation Swagger est servie à ``/doc/``. Voir :doc:`api` pour les"
 " détails."
 
-#: ../../features.rst:241 a7ddb2cb98f743d7b5386beabd948ef2
+#: ../../features.rst:544 0d0622b798324cfabadd0787c6ed75b1
 msgid "Language switcher"
 msgstr "Sélecteur de langue"
 
-#: ../../features.rst:243 156e0d01978449f494e3c84f9b84fe01
+#: ../../features.rst:546 e9db2b6e5e1c47d3aeb67629cf36f64f
 msgid ""
 "Every page can be rendered in English or French. The switcher lives in "
 "the top bar (``EN / FR``). The active locale is persisted in a cookie "
@@ -567,7 +1280,88 @@ msgstr ""
 "est déduite de l'en-tête ``Accept-Language`` du navigateur, avec "
 "l'anglais par défaut."
 
-#: ../../features.rst:248 e23a047afc1944ea8c583ffd21d2ee36
+#: ../../features.rst:551 e378890efde848ca88adcce3621daa37
 msgid "See :doc:`i18n` for contributing new translations."
 msgstr "Voir :doc:`i18n` pour contribuer de nouvelles traductions."
+
+#~ msgid ""
+#~ "Scan entries are kept for 30 days"
+#~ " (auto-expire via Valkey TTL). "
+#~ "Metadata for infohashes inactive for 90"
+#~ " days is purged."
+#~ msgstr ""
+#~ "Les entrées de scan sont conservées "
+#~ "30 jours (auto-expire via TTL "
+#~ "Valkey). Les métadonnées des infohashes "
+#~ "inactifs depuis 90 jours sont purgées."
+
+#~ msgid "``/admin/torrent-health`` — searchable table, filter by alive-only."
+#~ msgstr ""
+#~ "``/admin/torrent-health`` — tableau avec "
+#~ "recherche, filtre \"alive only\"."
+
+#~ msgid ""
+#~ "A *Refresh now* button triggers a "
+#~ "live scan (rate-limited 1/min per "
+#~ "caller and infohash)."
+#~ msgstr ""
+#~ "Un bouton *Refresh now* déclenche un "
+#~ "scan à la demande (rate-limited "
+#~ "1/min par appelant et infohash)."
+
+#~ msgid ""
+#~ "**Authenticated section.** Tracks the health"
+#~ " of every BitTorrent magnet referenced "
+#~ "by a post in the database. Useful"
+#~ " for incident response (confirming a "
+#~ "leak is still alive in the wild)"
+#~ " and for law-enforcement enquiries "
+#~ "(retrieving peer samples)."
+#~ msgstr ""
+#~ "**Section authentifiée.** Suit l'état de "
+#~ "chaque magnet BitTorrent référencé par "
+#~ "un post en base. Utile pour la "
+#~ "réponse à incident (confirmer qu'un leak"
+#~ " est encore actif) et pour les "
+#~ "réquisitions des forces de l'ordre "
+#~ "(récupération d'échantillons de peers)."
+
+#~ msgid "UI (logged-in users only):"
+#~ msgstr "UI (utilisateurs connectés uniquement) :"
+
+#~ msgid ""
+#~ "``POST /api/torrent/refresh/<infohash>`` — force "
+#~ "a rescan, returns the result."
+#~ msgstr ""
+#~ "``POST /api/torrent/refresh/<infohash>`` — force "
+#~ "un rescan, retourne le résultat."
+
+#~ msgid ""
+#~ "All three endpoints require either an"
+#~ " admin session or a valid API "
+#~ "key (``Authorization: <token>``); tokens do"
+#~ " not grant access to the admin "
+#~ "UI. Every access is recorded in "
+#~ "the audit log (``torrent_read_detail``, "
+#~ "``torrent_refresh``) for traceability."
+#~ msgstr ""
+#~ "Les trois endpoints exigent soit une "
+#~ "session admin, soit une clé d'API "
+#~ "valide (``Authorization: <token>``) ; les "
+#~ "tokens ne donnent pas accès à l'UI"
+#~ " admin. Chaque accès est enregistré "
+#~ "dans le journal d'audit "
+#~ "(``torrent_read_detail``, ``torrent_refresh``) pour "
+#~ "la traçabilité."
+
+#~ msgid ""
+#~ "``only_onion: false`` also scrapes clearnet"
+#~ " trackers (usually redundant since "
+#~ "libtorrent already covers them). Typical "
+#~ "cron::"
+#~ msgstr ""
+#~ "``only_onion: false`` scrape aussi les "
+#~ "trackers clearnet (habituellement redondant "
+#~ "puisque libtorrent les couvre déjà). "
+#~ "Cron type ::"
 

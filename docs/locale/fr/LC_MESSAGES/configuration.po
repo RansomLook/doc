@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RansomLook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 16:06+0200\n"
+"POT-Creation-Date: 2026-04-21 23:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -173,11 +173,161 @@ msgstr ""
 "Nombre de threads utilisés pour le scraping. À ajuster selon votre CPU et"
 " votre RAM."
 
-#: ../../configuration.rst:76 b640a284525b4821ad76886df06d9296
+#: ../../configuration.rst:76 cf265016fa9c453f8dfd720fb84c9dc4
+msgid "torrent_health"
+msgstr "torrent_health"
+
+#: ../../configuration.rst:77 aedbe15749b948bfbff1a128ee34c738
+msgid ""
+"Settings for the BitTorrent swarm health tracker (``poetry run torrent-"
+"health``) and the CIRCL IP enrichment (``poetry run enrich-ips``). All "
+"keys are optional; the defaults below apply when the section is missing."
+msgstr ""
+"Paramètres du tracker de santé des swarms BitTorrent (``poetry run "
+"torrent-health``) et de l'enrichissement IP CIRCL (``poetry run enrich-"
+"ips``). Toutes les clés sont optionnelles ; les valeurs par défaut ci-"
+"dessous s'appliquent si la section est absente."
+
+#: ../../configuration.rst:81 044f368f227c4cd0aa7431d36f67645c
+msgid ""
+"Retention keys (``*_days``) accept ``0`` to mean \"unlimited — never "
+"expire\"."
+msgstr ""
+"Les clés de rétention (``*_days``) acceptent ``0`` pour « illimité — "
+"jamais d'expiration »."
+
+#: ../../configuration.rst:87 825096634de44d63b1a7d3f18ed70476
+msgid "Key"
+msgstr "Clé"
+
+#: ../../configuration.rst:88 cb37baf78ec8434f8fdb5a93d2e6124d
+msgid "Default"
+msgstr "Défaut"
+
+#: ../../configuration.rst:89 d443f98e0d1f4372a87aad1cccd72be4
+msgid "Description"
+msgstr "Description"
+
+#: ../../configuration.rst:90 42c985658ecf480cb281b7902f447182
+msgid "``scan_retention_days``"
+msgstr "``scan_retention_days``"
+
+#: ../../configuration.rst:91 2d8422d547854d63a1e04b34ac3a6611
+msgid "``30``"
+msgstr "``30``"
+
+#: ../../configuration.rst:92 a0c13335124641f19054076eff1701d3
+msgid ""
+"How long each scan entry (with peer sample) is kept in Valkey. ``0`` "
+"disables the TTL so the history grows unbounded."
+msgstr ""
+"Durée de conservation de chaque scan (avec son échantillon de peers) dans"
+" Valkey. ``0`` désactive le TTL, l'historique croît sans limite."
+
+#: ../../configuration.rst:94 05c312fb7dfb428c9d138f1de3e16d35
+msgid "``dead_threshold_days``"
+msgstr "``dead_threshold_days``"
+
+#: ../../configuration.rst:95 023240996a9044c1be31d7c8a37467e4
+msgid "``90``"
+msgstr "``90``"
+
+#: ../../configuration.rst:96 4fd0feed5630481da4238956a304ccca
+msgid ""
+"Metadata for an infohash with no peer seen for this many days is purged "
+"at the end of every ``torrent-health`` run. ``0`` disables the purge."
+msgstr ""
+"Les métadonnées d'un infohash sans aucun peer observé depuis ce nombre de"
+" jours sont purgées à la fin de chaque passe ``torrent-health``. ``0`` "
+"désactive la purge."
+
+#: ../../configuration.rst:99 b1e1f273176d4ce0a9df3a5466ca8005
+msgid "``ip_cache_ttl_days``"
+msgstr "``ip_cache_ttl_days``"
+
+#: ../../configuration.rst:100 ../../configuration.rst:118
+#: 08cd7a0593fd4cacad51e51dc2234183 12dda7eddffd4b04b2c8d9c11df7d4bf
+msgid "``7``"
+msgstr "``7``"
+
+#: ../../configuration.rst:101 f61add03660b4bcab67f3d5667ea2e5e
+msgid ""
+"How long a CIRCL-enriched IP record (ASN / org / country / PTR) is "
+"cached. ``0`` makes the cache permanent."
+msgstr ""
+"Durée de cache d'un enregistrement IP enrichi par CIRCL (ASN / org / pays"
+" / PTR). ``0`` rend le cache permanent."
+
+#: ../../configuration.rst:103 9c6f41ff863d4b78990f6aaf20484296
+msgid "``scan_duration_seconds``"
+msgstr "``scan_duration_seconds``"
+
+#: ../../configuration.rst:104 3758ec78005649f9a51e541887b445ba
+msgid "``45``"
+msgstr "``45``"
+
+#: ../../configuration.rst:105 8cafe5bcf0a5406abbc83783a23832df
+msgid ""
+"Seconds the scanner stays in each swarm before snapshotting peers. Raise "
+"for very large swarms (many handshakes to complete)."
+msgstr ""
+"Nombre de secondes pendant lesquelles le scanner reste dans chaque swarm "
+"avant l'instantané des peers. À augmenter pour les gros swarms (beaucoup "
+"de handshakes à compléter)."
+
+#: ../../configuration.rst:107 08ce4ede6eac40f8a3c5ef58181f919b
+msgid "``batch_size``"
+msgstr "``batch_size``"
+
+#: ../../configuration.rst:108 5273ffd75abd490ab3bbf616b41dda3c
+msgid "``10``"
+msgstr "``10``"
+
+#: ../../configuration.rst:109 23c3a94405894d908f4ccbaad075afdf
+msgid "Number of magnets scanned concurrently within one session window."
+msgstr "Nombre de magnets scannés en parallèle dans une fenêtre de session."
+
+#: ../../configuration.rst:110 7ff72434dd86404eb1ec54f5329ee042
+msgid "``alive_interval_hours``"
+msgstr "``alive_interval_hours``"
+
+#: ../../configuration.rst:111 99d43dbebfc545e08889823701786fcd
+msgid "``6``"
+msgstr "``6``"
+
+#: ../../configuration.rst:112 3e96f935bae645ba95463a505ae248b8
+msgid ""
+"Adaptive schedule: minimum interval between scans for a swarm that had "
+"peers on its last visit."
+msgstr ""
+"Ordonnancement adaptatif : intervalle minimum entre deux scans d'un swarm"
+" qui avait des peers à sa dernière visite."
+
+#: ../../configuration.rst:114 3d846e35d66344abb386b842799ffa3e
+msgid "``dead_interval_hours``"
+msgstr "``dead_interval_hours``"
+
+#: ../../configuration.rst:115 17be2b07343d4a54b98fe01eb13287da
+msgid "``24``"
+msgstr "``24``"
+
+#: ../../configuration.rst:116 55d076d6ea694593890cfd9bb6f956a4
+msgid "Same, for swarms that had zero peers recently (< 7 days)."
+msgstr "Idem, pour les swarms sans peer récemment (< 7 jours)."
+
+#: ../../configuration.rst:117 c2313cdbd36c45958a705f62dd89c506
+msgid "``frozen_interval_days``"
+msgstr "``frozen_interval_days``"
+
+#: ../../configuration.rst:119 7ba3c1edc803432aa0399ad259d2a722
+msgid "Same, for swarms with no peer observed for more than a week."
+msgstr "Idem, pour les swarms sans peer observé depuis plus d'une semaine."
+
+#: ../../configuration.rst:122 b640a284525b4821ad76886df06d9296
 msgid "twitter"
 msgstr "twitter"
 
-#: ../../configuration.rst:77 7cdb7558bebe466e9aec892569532a92
+#: ../../configuration.rst:123 7cdb7558bebe466e9aec892569532a92
 msgid ""
 "This section contains the information to post new posts on Twitter/X "
 "using its API."
@@ -185,11 +335,11 @@ msgstr ""
 "Cette section contient les informations pour publier les nouveaux posts "
 "sur Twitter/X via son API."
 
-#: ../../configuration.rst:80 b853a4b5a5254075a1068f1d03912118
+#: ../../configuration.rst:126 b853a4b5a5254075a1068f1d03912118
 msgid "users"
 msgstr "users"
 
-#: ../../configuration.rst:81 9f02a175095348958e253943fc896d07
+#: ../../configuration.rst:127 9f02a175095348958e253943fc896d07
 msgid ""
 "List of local users to use. Doesn't work when LDAP is activated. Password"
 " are in cleartext ;D."
@@ -197,23 +347,23 @@ msgstr ""
 "Liste des utilisateurs locaux. Inactive quand LDAP est activé. Les mots "
 "de passe sont en clair ;D."
 
-#: ../../configuration.rst:84 3287ef7c40ac4bf489d4464c4367980b
+#: ../../configuration.rst:130 3287ef7c40ac4bf489d4464c4367980b
 msgid "website_listen_ip"
 msgstr "website_listen_ip"
 
-#: ../../configuration.rst:85 09b46c2f173b4748b8ea5e07483d6878
+#: ../../configuration.rst:131 09b46c2f173b4748b8ea5e07483d6878
 msgid "IP to use by gunicorn."
 msgstr "IP utilisée par gunicorn."
 
-#: ../../configuration.rst:88 bc9b24ad9a3a45778bcd88a52e2ff494
+#: ../../configuration.rst:134 bc9b24ad9a3a45778bcd88a52e2ff494
 msgid "website_listen_port"
 msgstr "website_listen_port"
 
-#: ../../configuration.rst:89 98c5a2f80e594df2b9404a3cebf3e6d4
+#: ../../configuration.rst:135 98c5a2f80e594df2b9404a3cebf3e6d4
 msgid "Port to use by gunicorn."
 msgstr "Port utilisé par gunicorn."
 
-#: ../../configuration.rst:92 1907cb136a1f4e6fa65670c678125528
+#: ../../configuration.rst:138 1907cb136a1f4e6fa65670c678125528
 msgid "Sample of configuration file"
 msgstr "Exemple de fichier de configuration"
 

@@ -135,6 +135,11 @@ RansomLook instance.
             RFW[poetry run rf]
             NotifyW[poetry run notify /<br/>notifyleak]
             Torrent[poetry run torrent]
+            TorrentHealth[poetry run torrent-health]
+            TorrentHealthBf[poetry run<br/>torrent-health-backfill]
+            TorrentTrScr[poetry run<br/>torrent-tracker-scrape]
+            TorrentWSCk[poetry run<br/>torrent-webseed-check]
+            EnrichIPs[poetry run enrich-ips]
             Thumbs[tools/<br/>generate_thumbs.py]
         end
 

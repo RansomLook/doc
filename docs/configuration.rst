@@ -72,6 +72,52 @@ thread
 ^^^^^^
 Number of threads to use for scraping. You need to adjust the value with your CPU and RAM.
 
+torrent_health
+^^^^^^^^^^^^^^
+Settings for the BitTorrent swarm health tracker (``poetry run torrent-health``)
+and the CIRCL IP enrichment (``poetry run enrich-ips``). All keys are optional;
+the defaults below apply when the section is missing.
+
+Retention keys (``*_days``) accept ``0`` to mean "unlimited — never expire".
+
+.. list-table::
+   :header-rows: 1
+   :widths: 28 12 60
+
+   * - Key
+     - Default
+     - Description
+   * - ``scan_retention_days``
+     - ``30``
+     - How long each scan entry (with peer sample) is kept in Valkey.
+       ``0`` disables the TTL so the history grows unbounded.
+   * - ``dead_threshold_days``
+     - ``90``
+     - Metadata for an infohash with no peer seen for this many days is
+       purged at the end of every ``torrent-health`` run. ``0`` disables
+       the purge.
+   * - ``ip_cache_ttl_days``
+     - ``7``
+     - How long a CIRCL-enriched IP record (ASN / org / country / PTR) is
+       cached. ``0`` makes the cache permanent.
+   * - ``scan_duration_seconds``
+     - ``45``
+     - Seconds the scanner stays in each swarm before snapshotting peers.
+       Raise for very large swarms (many handshakes to complete).
+   * - ``batch_size``
+     - ``10``
+     - Number of magnets scanned concurrently within one session window.
+   * - ``alive_interval_hours``
+     - ``6``
+     - Adaptive schedule: minimum interval between scans for a swarm that
+       had peers on its last visit.
+   * - ``dead_interval_hours``
+     - ``24``
+     - Same, for swarms that had zero peers recently (< 7 days).
+   * - ``frozen_interval_days``
+     - ``7``
+     - Same, for swarms with no peer observed for more than a week.
+
 twitter
 ^^^^^^^
 This section contains the information to post new posts on Twitter/X using its API.
